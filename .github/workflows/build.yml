@@ -5,7 +5,8 @@
 #
 # Rebuilds the derived processed files whose inputs are committed
 # (process_value, process_zones, process_node_signal), regenerates the
-# four chart pages, renders docs/index.html, then commits docs/ only
+# four chart pages, renders docs/index.html, then commits docs/ and the
+# regenerated data/processed/ files (except the owner review sheet)
 # when something changed.
 #
 # process_adoption.py is intentionally NOT re-run here: it reads the OEB
@@ -79,11 +80,23 @@ jobs:
           set -euo pipefail
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add docs
+
+          # The review sheet carries the owner's manual review, but the
+          # rebuild script regenerates it with a blank owner_status column.
+          # Never let this job modify the committed copy.
+          git restore --source=HEAD --staged --worktree -- \
+            data/processed/crosswalk_review_top20.csv || true
+
+          # collect.yml only fetches the raw histories; this job rebuilds
+          # the derived layer from them, so stage those regenerated files
+          # alongside docs/. (Staging them also keeps `git pull --rebase`
+          # from failing on unstaged changes.)
+          git add docs data/processed
+
           if git diff --cached --quiet; then
             echo "No changes to commit."
           else
-            git commit -m "build: regenerate site ($(date -u +%Y-%m-%d))"
+            git commit -m "build: regenerate derived outputs and site ($(date -u +%Y-%m-%d))"
             # collect.yml also commits to main: rebase onto it first,
             # and retry the push once if a collect commit raced us.
             git pull --rebase
