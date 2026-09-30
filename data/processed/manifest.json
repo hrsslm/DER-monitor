@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-30T01:11:48.781637+00:00",
+  "generated_at": "2026-09-30T01:25:11.067679+00:00",
   "oeb_vintage": "2024-2",
   "files": {
     "ieso/PUB_DAHourlyOntarioZonalPrice_20260930.xml": {
@@ -759,7 +759,7 @@
           "parsed_at": "2026-09-29T23:47:04.941178+00:00"
         }
       },
-      "updated_at": "2026-09-29T23:51:05.773063+00:00"
+      "updated_at": "2026-09-30T01:24:39.704785+00:00"
     },
     "lfda": {
       "files": {
@@ -785,7 +785,7 @@
           "parsed_at": "2026-09-29T23:47:44.882100+00:00"
         }
       },
-      "updated_at": "2026-09-29T23:51:06.320616+00:00"
+      "updated_at": "2026-09-30T01:24:40.228704+00:00"
     },
     "da_lmp": {
       "files": {
@@ -1369,9 +1369,72 @@
           "size": "",
           "rows": 25296,
           "parsed_at": "2026-09-29T23:58:12.000183+00:00"
+        },
+        "PUB_DAHourlyEnergyLMP_20260807.csv": {
+          "sha256": "dd8071c8dca6740e84bd531f186883e67aece859f8740a308636150f3206abeb",
+          "mtime": "",
+          "size": "",
+          "rows": 25104,
+          "parsed_at": "2026-09-30T01:24:42.757015+00:00"
+        },
+        "PUB_DAHourlyEnergyLMP_20260808.csv": {
+          "sha256": "d600c504eecabc29adecec7d5b6c4b573f9b42b60ede5a978999b9c4211cee4b",
+          "mtime": "",
+          "size": "",
+          "rows": 25104,
+          "parsed_at": "2026-09-30T01:24:44.633150+00:00"
+        },
+        "PUB_DAHourlyEnergyLMP_20260819.csv": {
+          "sha256": "83368cee8b45af7907905e82c3d6c938a2d610c40a1dcc753eeff43af0d367cb",
+          "mtime": "",
+          "size": "",
+          "rows": 25104,
+          "parsed_at": "2026-09-30T01:24:46.184149+00:00"
+        },
+        "PUB_DAHourlyEnergyLMP_20260826.csv": {
+          "sha256": "87a841b2b6e9435517314a32f8b9301755a20d9c9be81ff9b4c799630d6c5ce3",
+          "mtime": "",
+          "size": "",
+          "rows": 25104,
+          "parsed_at": "2026-09-30T01:24:48.493872+00:00"
+        },
+        "PUB_DAHourlyEnergyLMP_20260910.csv": {
+          "sha256": "06f727a9ba844a441b1cad40dd11a32908c8be05101dbc8c3a3da390f89063fd",
+          "mtime": "",
+          "size": "",
+          "rows": 25080,
+          "parsed_at": "2026-09-30T01:24:51.371970+00:00"
+        },
+        "PUB_DAHourlyEnergyLMP_20260913.csv": {
+          "sha256": "3da9b1b8bc97cea4a2263d73f225a320c1d2a1a9b29a189c9b2667156651fa28",
+          "mtime": "",
+          "size": "",
+          "rows": 25296,
+          "parsed_at": "2026-09-30T01:24:53.446963+00:00"
+        },
+        "PUB_DAHourlyEnergyLMP_20260922.csv": {
+          "sha256": "d3668ec0e8e12ad67bd7f860c920825b2ece6e8bf56f9293814f5da0cebaeab1",
+          "mtime": "",
+          "size": "",
+          "rows": 25296,
+          "parsed_at": "2026-09-30T01:24:55.044940+00:00"
+        },
+        "PUB_DAHourlyEnergyLMP_20260923.csv": {
+          "sha256": "2755efec5a7dff173fb340f0924cbfb614975b511caab796e64f360a1b659d3d",
+          "mtime": "",
+          "size": "",
+          "rows": 25296,
+          "parsed_at": "2026-09-30T01:24:56.876681+00:00"
+        },
+        "PUB_DAHourlyEnergyLMP_20260929.csv": {
+          "sha256": "d18db3d8f1cdcef90f515fc9bf8607262faea99f6a4a462ee90796b43df224e9",
+          "mtime": "",
+          "size": "",
+          "rows": 25296,
+          "parsed_at": "2026-09-30T01:24:59.286912+00:00"
         }
       },
-      "updated_at": "2026-09-29T23:58:12.194838+00:00"
+      "updated_at": "2026-09-30T01:25:03.648405+00:00"
     },
     "fuelmix": {
       "files": {
@@ -1467,7 +1530,7 @@
           "parsed_at": "2026-09-29T23:58:28.372984+00:00"
         }
       },
-      "updated_at": "2026-09-29T23:58:28.989250+00:00"
+      "updated_at": "2026-09-30T01:25:11.067636+00:00"
     }
   }
 }
