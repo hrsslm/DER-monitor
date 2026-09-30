@@ -82,7 +82,7 @@ files below.</p>
 <section aria-label="Data status">
 <h2>Data status</h2>
 <div class="status-grid">
-<div class="status-card"><h3>Collection (per feed)</h3><ul><li>da_lmp: 2026-09-29 23:58 UTC</li><li>da_zonal: 2026-09-29 23:51 UTC</li><li>fuelmix: 2026-09-29 23:58 UTC</li><li>lfda: 2026-09-29 23:51 UTC</li></ul></div>
+<div class="status-card"><h3>Collection (per feed)</h3><ul><li>da_lmp: 2026-09-30 01:25 UTC</li><li>da_zonal: 2026-09-30 01:24 UTC</li><li>fuelmix: 2026-09-30 01:25 UTC</li><li>lfda: 2026-09-30 01:24 UTC</li></ul></div>
 <div class="status-card"><h3>OEMP-era price history</h3>
 <p>77.0 days (2.5 months), 2026-07-01 to 2026-09-16</p>
 <p>First full 12-month window available on 2027-07-01 (assuming no gaps)</p>
@@ -90,7 +90,7 @@ files below.</p>
 <div class="status-card"><h3>Wholesale signal</h3>
 <p>1,022 of 1,055 nodes drawn (33 lack coordinates)</p>
 <p>Node-to-zone coverage: 54.2% vs the 90% bar — aggregation withheld</p>
-<p>DA LMP day coverage (2026-08-28 to 2026-10-01): missing: 2026-08-28, 2026-09-23; partial: 2026-09-10, 2026-09-13, 2026-09-22, 2026-09-29, 2026-10-01</p></div>
+<p>DA LMP day coverage (2026-08-28 to 2026-10-01): missing: 2026-08-28; partial: 2026-10-01</p></div>
 <div class="status-card"><h3>Adoption (RRR)</h3>
 <p>Vintage 2024-2, data year 2024</p>
 <p>52 LDCs in scale, 1 multi-zone, 5 not reported</p>
@@ -169,7 +169,7 @@ the two. RPP rates include a Global Adjustment estimate and RPP cost
 recovery, so the wedge is not only an energy-value gap.</li>
 </ul>
 <h3>Data sources, vintages, retention</h3>
-<table><tr><th>Feed</th><th>Last collected</th></tr><tr><td>da_lmp</td><td>2026-09-29 23:58 UTC</td></tr><tr><td>da_zonal</td><td>2026-09-29 23:51 UTC</td></tr><tr><td>fuelmix</td><td>2026-09-29 23:58 UTC</td></tr><tr><td>lfda</td><td>2026-09-29 23:51 UTC</td></tr></table>
+<table><tr><th>Feed</th><th>Last collected</th></tr><tr><td>da_lmp</td><td>2026-09-30 01:25 UTC</td></tr><tr><td>da_zonal</td><td>2026-09-30 01:24 UTC</td></tr><tr><td>fuelmix</td><td>2026-09-30 01:25 UTC</td></tr><tr><td>lfda</td><td>2026-09-30 01:24 UTC</td></tr></table>
 <ul>
 <li>IESO day-ahead zonal price: daily files from 2026-07-01 (rolling ~3
 months of index retention); LFDA annual files; IESO day-ahead hourly LMP;
@@ -193,7 +193,7 @@ selectable; Class B scenarios are kept separate from RPP.</p>
 approves review-sheet rows; unreviewed rows are never plotted as findings.</li>
 </ul>
 <h3>Known gaps</h3>
-<p>fully missing days: 2026-08-28, 2026-09-23; partial days (incomplete downloads, retried by the scheduled collector): 2026-09-10, 2026-09-13, 2026-09-22, 2026-09-29, 2026-10-01 (trailing 35 days, 2026-08-28 to 2026-10-01, computed from da_lmp_hourly.csv). The scheduled collector retries incomplete
+<p>fully missing days: 2026-08-28; partial days (incomplete downloads, retried by the scheduled collector): 2026-10-01 (trailing 35 days, 2026-08-28 to 2026-10-01, computed from da_lmp_hourly.csv). The scheduled collector retries incomplete
 downloads on later runs.</p>
 <h3>Timezone convention</h3>
 <p>Config <code>TIMEZONE_MODE = EST_fixed</code>:
@@ -203,7 +203,7 @@ IESO source timestamps rederived to true UTC from fixed -05:00; joins in UTC; ta
 reports under the IESO's terms of use. LDC polygon provenance and licence
 to be confirmed by the owner before public release.</p>
 </section>
-<footer>Data: IESO public reports; OEB RRR open data (Open Government Licence &ndash; Ontario). LDC polygon provenance and licence to be confirmed by the owner before public release.<br>Built <span id="build-timestamp" data-utc="2026-09-30 01:12 UTC" data-toronto="2026-09-29 21:12 EDT">2026-09-30 01:12 UTC / 2026-09-29 21:12 EDT</span> &middot; commit a4b1a52.</footer>
+<footer>Data: IESO public reports; OEB RRR open data (Open Government Licence &ndash; Ontario). LDC polygon provenance and licence to be confirmed by the owner before public release.<br>Built <span id="build-timestamp" data-utc="2026-09-30 01:35 UTC" data-toronto="2026-09-29 21:35 EDT">2026-09-30 01:35 UTC / 2026-09-29 21:35 EDT</span> &middot; commit 42c6629.</footer>
 
 <script>
 (function () {
