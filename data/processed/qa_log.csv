@@ -1,0 +1,79 @@
+phase,dataset,action,record_id,count,note
+2A,value_preview,run,2026-07-01..2026-09-16,1848,"10512 timestamps dropped in join; label=summer preview, not annual; no headline gap metric"
+2C,crosswalk_review,review_sheet_not_findings,crosswalk_review_top20,39,"review sheet rows are unapproved assignments, NOT findings"
+2C,ldc_node_signal,excluded_from_correlation,ED-2003-0043,1,Hydro One Networks Inc.: multi-zone/residual; kept out of the Page 4 correlation
+2C,ldc_zone_crosswalk,ldc_without_zoned_nodes,"ED-2002-0493,ED-2002-0499,ED-2002-0500,ED-2002-0511,ED-2002-0520,ED-2002-0540,ED-2002-0542,ED-2002-0544,ED-2002-0554,ED-2002-0577,ED-2003-0003,ED-2003-0015,ED-2003-0027,ED-2003-0028,ED-2003-0033,ED-2003-0079,ED-2023-0202,ED-2023-0262",18,"LDC polygons containing no zoned LMP nodes; no crosswalk rows, left for owner review"
+2C,node_coordinates,excluded_missing,no_coordinates,33,1022/1055 LMP nodes have coordinates; nodes without are excluded from crosswalk voting
+2C,node_zone_report,skipped_missing_source,PUB_NodeZoneMap,1,"PUB_NodeZoneMap.xml/csv still 404 on 2026-09-30; ladder step 1 skipped, Capacity Auction Zone Table used instead"
+2C,rolling_window,computed,2026-09-02_to_2026-10-01,1055,30-day rolling means of daily means per node; negatives kept; no zone aggregation per stop condition
+2C,zone_aggregation,stop_condition_fired,non_inferred_coverage,572,"non-inferred node-to-zone coverage 54.2% (572/1055) below 90%; k=3 inference NOT applied, no zone aggregation; Page 3 falls back to the node-level view"
+2C,zone_table,ambiguous_base_excluded,CUMBERLAND,1,station base(s) claimed by stations in different zones; excluded from matching
+2b,ldc_adoption,excluded_no_value,ED-2001-0090,0,"owner decision exclude_no_rrr (or no RRR name match): reported=False, no metric"
+2b,ldc_adoption,excluded_no_value,ED-2003-0037,0,"owner decision exclude_no_rrr (or no RRR name match): reported=False, no metric"
+2b,ldc_adoption,excluded_no_value,ED-2003-0079,0,"owner decision exclude_no_rrr (or no RRR name match): reported=False, no metric"
+2b,ldc_adoption,excluded_no_value,ED-2003-0081,0,"owner decision exclude_no_rrr (or no RRR name match): reported=False, no metric"
+2b,ldc_adoption,excluded_no_value,ED-2004-0405,0,"owner decision exclude_no_rrr (or no RRR name match): reported=False, no metric"
+2b,oeb_rrr_xml,merge_rule_applied,ED-2003-0024,0,only the target has rows in 2024; ['ED-2002-0502'] contributed nothing
+2b,oeb_rrr_xml,merge_rule_applied,ED-2003-0043,0,only the target has rows in 2024; ['ED-2002-0530'] contributed nothing
+phase1,ldc_decisions,exclude_no_rrr,ED-2001-0090,1,"flagged excluded (no RRR data); draw grey as 'not reported', never as zero; status=final"
+phase1,ldc_decisions,exclude_no_rrr,ED-2003-0037,1,"flagged excluded (no RRR data); draw grey as 'not reported', never as zero; status=final"
+phase1,ldc_decisions,exclude_no_rrr,ED-2003-0079,1,"flagged excluded (no RRR data); draw grey as 'not reported', never as zero; status=final"
+phase1,ldc_decisions,exclude_no_rrr,ED-2003-0081,1,"flagged excluded (no RRR data); draw grey as 'not reported', never as zero; status=final"
+phase1,ldc_decisions,exclude_no_rrr,ED-2004-0405,1,"flagged excluded (no RRR data); draw grey as 'not reported', never as zero; status=final"
+phase1,ldc_decisions,merge_into,ED-2002-0502,1,dissolved ED-2002-0502 (Espanola Regional Hydro Distribution Corporation) into ED-2003-0024 at load time; status=final
+phase1,ldc_decisions,merge_into,ED-2002-0530,1,dissolved ED-2002-0530 (Orillia Power Distribution Corporation) into ED-2003-0043 at load time; status=final
+phase1,ldc_decisions,relicensed_as,ED-2023-0202,1,renamed ED-2002-0498 -> ED-2023-0202 (Centre Wellington Hydro Ltd.); status=final
+phase1,ldc_decisions,relicensed_as,ED-2023-0262,1,renamed ED-2002-0545 -> ED-2023-0262 (Lakefront Utilities Inc.); status=final
+phase1,ldc_names,name_split,ED-2021-0280,2,"supplied utility_name contains ' | '; tried parts: ['GrandBridge Energy Inc. (Formerly Energy+ Inc.)', 'GrandBridge Energy Inc. (Formerly Brantford Power Inc.)']"
+phase1,ldc_reconciliation,unmatched_name,ED-2001-0090,1,Attawapiskat Power Corporation has no RRR rows; see ldc_name_map_review.csv
+phase1,ldc_reconciliation,unmatched_name,ED-2002-0530,1,Orillia Power Distribution Corporation has no RRR rows; see ldc_name_map_review.csv
+phase1,ldc_reconciliation,unmatched_name,ED-2003-0037,1,Hydro One Remote Communities Inc. has no RRR rows; see ldc_name_map_review.csv
+phase1,ldc_reconciliation,unmatched_name,ED-2003-0079,1,Fort Albany Power Corporation has no RRR rows; see ldc_name_map_review.csv
+phase1,ldc_reconciliation,unmatched_name,ED-2003-0081,1,Kashechewan Power Corporation has no RRR rows; see ldc_name_map_review.csv
+phase1,ldc_reconciliation,unmatched_name,ED-2004-0405,1,Cornwall Street Railway Light and Power Company Limited has no RRR rows; see ldc_name_map_review.csv
+phase1,ldc_service_areas,geometry_repaired,ED-2002-0556,1,KMZ geometry invalid; repaired with make_valid (Hydro Ottawa Limited)
+phase1,ldc_service_areas,geometry_repaired,ED-2002-0563,1,KMZ geometry invalid; repaired with make_valid (Entegrus Powerlines Inc.)
+phase1,ldc_service_areas,geometry_repaired,ED-2003-0037,1,KMZ geometry invalid; repaired with make_valid (Hydro One Remote Communities Inc.)
+phase1,ldc_service_areas,geometry_repaired,ED-2003-0043,1,KMZ geometry invalid; repaired with make_valid (Hydro One Networks Inc.)
+phase1,ldc_service_areas,geometry_repaired,ED-2016-0360,1,KMZ geometry invalid; repaired with make_valid (Alectra Utilities Corporation)
+phase1,ldc_service_areas,geometry_repaired,ED-2019-0128,1,KMZ geometry invalid; repaired with make_valid (Elexicon Energy Inc.)
+phase1,ldc_service_areas,geometry_repaired,ED-2021-0280,1,KMZ geometry invalid; repaired with make_valid (GrandBridge Energy Inc. (Formerly Energy+ Inc.))
+phase1,ldc_service_areas_simplified,simplified_geometry_repaired,ED-2002-0511,1,rendering-only copy: self-intersection introduced by 4-decimal rounding; repaired with make_valid
+phase1,ldc_service_areas_simplified,simplified_geometry_repaired,ED-2002-0516,1,rendering-only copy: self-intersection introduced by 4-decimal rounding; repaired with make_valid
+phase1,ldc_service_areas_simplified,simplified_geometry_repaired,ED-2003-0043,1,rendering-only copy: self-intersection introduced by 4-decimal rounding; repaired with make_valid
+phase1,node_locations,unmatched_no_coordinates,ALLANBURG-LT.DRCTENGY_DRA,1,LMP pricing location has no coordinates in ieso_node_locations.csv
+phase1,node_locations,unmatched_no_coordinates,APIROQFALLS-LT.AG4,1,LMP pricing location has no coordinates in ieso_node_locations.csv
+phase1,node_locations,unmatched_no_coordinates,BELLCREEK-LT.TT_LF_DRA,1,LMP pricing location has no coordinates in ieso_node_locations.csv
+phase1,node_locations,unmatched_no_coordinates,BRUCE_GEN:PZ,1,LMP pricing location has no coordinates in ieso_node_locations.csv
+phase1,node_locations,unmatched_no_coordinates,BRUCE_SOUTHWEST_LOAD:PZ,1,LMP pricing location has no coordinates in ieso_node_locations.csv
+phase1,node_locations,unmatched_no_coordinates,CARTERCGS-LT.AG12,1,LMP pricing location has no coordinates in ieso_node_locations.csv
+phase1,node_locations,unmatched_no_coordinates,CHATHAM-LT.AESLNR1_DRA,1,LMP pricing location has no coordinates in ieso_node_locations.csv
+phase1,node_locations,unmatched_no_coordinates,CHATHAM-LT.LINDE_DRA,1,LMP pricing location has no coordinates in ieso_node_locations.csv
+phase1,node_locations,unmatched_no_coordinates,CHATHAM-LT.VINEFR_DRA,1,LMP pricing location has no coordinates in ieso_node_locations.csv
+phase1,node_locations,unmatched_no_coordinates,CHERRYWOOD-LT.LINDE_DRA,1,LMP pricing location has no coordinates in ieso_node_locations.csv
+phase1,node_locations,unmatched_no_coordinates,ELORABESS-LT.BATT_LF1,1,LMP pricing location has no coordinates in ieso_node_locations.csv
+phase1,node_locations,unmatched_no_coordinates,ELORABESS-LT.BATT_LF2,1,LMP pricing location has no coordinates in ieso_node_locations.csv
+phase1,node_locations,unmatched_no_coordinates,ELORABESS-LT.BATT_TG1,1,LMP pricing location has no coordinates in ieso_node_locations.csv
+phase1,node_locations,unmatched_no_coordinates,ELORABESS-LT.BATT_TG2,1,LMP pricing location has no coordinates in ieso_node_locations.csv
+phase1,node_locations,unmatched_no_coordinates,ESSA-LT.GCPOWER_DRA,1,LMP pricing location has no coordinates in ieso_node_locations.csv
+phase1,node_locations,unmatched_no_coordinates,FROOD-LT.T12_DRA,1,LMP pricing location has no coordinates in ieso_node_locations.csv
+phase1,node_locations,unmatched_no_coordinates,GLENGARRY-LT.BATT_LF1,1,LMP pricing location has no coordinates in ieso_node_locations.csv
+phase1,node_locations,unmatched_no_coordinates,GLENGARRY-LT.BATT_TG1,1,LMP pricing location has no coordinates in ieso_node_locations.csv
+phase1,node_locations,unmatched_no_coordinates,HEDLEYBESS-LT.BATT_LF1,1,LMP pricing location has no coordinates in ieso_node_locations.csv
+phase1,node_locations,unmatched_no_coordinates,HEDLEYBESS-LT.BATT_LF2,1,LMP pricing location has no coordinates in ieso_node_locations.csv
+phase1,node_locations,unmatched_no_coordinates,HEDLEYBESS-LT.BATT_TG1,1,LMP pricing location has no coordinates in ieso_node_locations.csv
+phase1,node_locations,unmatched_no_coordinates,HEDLEYBESS-LT.BATT_TG2,1,LMP pricing location has no coordinates in ieso_node_locations.csv
+phase1,node_locations,unmatched_no_coordinates,INCO4-LT.T12_DRA,1,LMP pricing location has no coordinates in ieso_node_locations.csv
+phase1,node_locations,unmatched_no_coordinates,IPPB5G-LT.T1_LF,1,LMP pricing location has no coordinates in ieso_node_locations.csv
+phase1,node_locations,unmatched_no_coordinates,JBLCAN-LT.T1_LF,1,LMP pricing location has no coordinates in ieso_node_locations.csv
+phase1,node_locations,unmatched_no_coordinates,LAKEHEAD-LT.ENPOWINC_DRA,1,LMP pricing location has no coordinates in ieso_node_locations.csv
+phase1,node_locations,unmatched_no_coordinates,LENNOX-LT.PEMBROKE_DRA,1,LMP pricing location has no coordinates in ieso_node_locations.csv
+phase1,node_locations,unmatched_no_coordinates,NEPEAN-LT.LFJQ,1,LMP pricing location has no coordinates in ieso_node_locations.csv
+phase1,node_locations,unmatched_no_coordinates,ONTARIO_ZONAL_PRICE,1,LMP pricing location has no coordinates in ieso_node_locations.csv
+phase1,node_locations,unmatched_no_coordinates,ONTARIO_ZONAL_PRICE_REF,1,LMP pricing location has no coordinates in ieso_node_locations.csv
+phase1,node_locations,unmatched_no_coordinates,OVERBROOK-LT.T2_LF,1,LMP pricing location has no coordinates in ieso_node_locations.csv
+phase1,node_locations,unmatched_no_coordinates,PIPERVILLE-LT.B12_LF,1,LMP pricing location has no coordinates in ieso_node_locations.csv
+phase1,node_locations,unmatched_no_coordinates_summary,ALL,32,32 of 1054 LMP pricing locations have no coordinates; logged per owner decision
+phase1,oeb_rrr_xml,licence_number_check,all_four_tables,0,no licence-number elements exist in the raw RRR XML; company name is the only join key
+phase1,oeb_rrr_xml,name_inventory,distinct_current_names,53,distinct RRR Current_Company_Name values across the four tables
+phase1,oeb_rrr_xml,name_inventory,distinct_historical_names,76,distinct RRR Historical_Company_Name values across the four tables

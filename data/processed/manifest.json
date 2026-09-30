@@ -1,0 +1,1473 @@
+{
+  "generated_at": "2026-09-30T01:11:48.781637+00:00",
+  "oeb_vintage": "2024-2",
+  "files": {
+    "ieso/PUB_DAHourlyOntarioZonalPrice_20260930.xml": {
+      "url": "https://reports-public.ieso.ca/public/DAHourlyOntarioZonalPrice/PUB_DAHourlyOntarioZonalPrice_20260930.xml",
+      "etag": "\"1771-65ca29641f09f\"",
+      "last_modified": "Tue, 29 Sep 2026 17:33:55 GMT",
+      "sha256": "942cce23a20816dd2b1148bfa3385bb3f75a8f08047b86fdab5f9b72678f35b7",
+      "fetched_at": "2026-09-29T18:47:07.561354+00:00",
+      "bytes": 6001,
+      "rows": 24,
+      "index_mtime": "29-Sep-2026 12:33",
+      "index_size": "5.9K"
+    },
+    "ieso/PUB_HourlyLFDA.csv": {
+      "url": "https://reports-public.ieso.ca/public/HourlyLFDA/PUB_HourlyLFDA.csv",
+      "etag": "\"277c9-65c9f0aabf49a\"",
+      "last_modified": "Tue, 29 Sep 2026 13:20:08 GMT",
+      "sha256": "27da4fe5b544f0bd3d6cecd091df4f8b93884f47d3e70fc0b03d62f889f6ca06",
+      "fetched_at": "2026-09-29T19:02:12.133389+00:00",
+      "bytes": 161737,
+      "rows": 6192,
+      "index_mtime": "29-Sep-2026 08:20",
+      "index_size": "158K"
+    },
+    "ieso/PUB_DAHourlyEnergyLMP_20260930.csv": {
+      "url": "https://reports-public.ieso.ca/public/DAHourlyEnergyLMP/PUB_DAHourlyEnergyLMP_20260930.csv",
+      "etag": null,
+      "last_modified": null,
+      "sha256": "9a36a49ec24855e49a316457fbb4059c8621685328795cd6da264a70c7dbde70",
+      "fetched_at": "2026-09-29T18:54:36.342325+00:00",
+      "bytes": 988983,
+      "rows": 25296,
+      "index_mtime": "29-Sep-2026 12:34",
+      "index_size": "966K"
+    },
+    "ieso/PUB_VGForecastSummary_20260929.xml": {
+      "url": "https://reports-public.ieso.ca/public/VGForecastSummary/PUB_VGForecastSummary_20260929.xml",
+      "etag": "\"197d8-65ca3bd59aa33\"",
+      "last_modified": "Tue, 29 Sep 2026 18:56:26 GMT",
+      "sha256": "d96ae09f1e313f17fc8858af55d26be32b6c59e5f53e5bdb275aac187de3e101",
+      "fetched_at": "2026-09-29T18:56:56.184015+00:00",
+      "bytes": 104408,
+      "rows": 3,
+      "index_mtime": "29-Sep-2026 13:56",
+      "index_size": "102K"
+    },
+    "ieso/contract_list.xlsx": {
+      "url": "https://www.ieso.ca/-/media/Files/IESO/Document-Library/power-data/supply/IESO-Active-Contracted-Generation-List.xlsx",
+      "etag": null,
+      "last_modified": null,
+      "sha256": "ce153867c3534a65193fe7fe82515ffdf243d0a911ddc30ba829b30ba6616dc1",
+      "fetched_at": "2026-09-29T18:54:41.233069+00:00",
+      "bytes": 402864,
+      "rows": 3581,
+      "content_length": 402864
+    },
+    "oeb/ED 2.1.14 Table 1 Net Metering.xml": {
+      "url": "https://www.oeb.ca/documents/opendata/rrr/2024-2/ED 2.1.14 Table 1 Net Metering.xml",
+      "etag": "\"115930-650ae1a6b6248\"",
+      "last_modified": "Thu, 30 Apr 2026 14:15:58 GMT",
+      "sha256": "57fb5cad011de516176bbe269f1546cdc537d9c0c5c8318070da07fff3d59981",
+      "fetched_at": "2026-09-29T18:48:13.046545+00:00",
+      "bytes": 1136944,
+      "rows": 2420
+    },
+    "oeb/ED 2.1.14 Table 3 Embedded Generation.xml": {
+      "url": "https://www.oeb.ca/documents/opendata/rrr/2024-2/ED 2.1.14 Table 3 Embedded Generation.xml",
+      "etag": "\"3cd13-650ae1a6c44d7\"",
+      "last_modified": "Thu, 30 Apr 2026 14:15:58 GMT",
+      "sha256": "275fca6ec2700584d3a0a982bf3b1cfedaba4c3c92f0c36085bfdd2338d89119",
+      "fetched_at": "2026-09-29T18:48:14.464346+00:00",
+      "bytes": 249107,
+      "rows": 605
+    },
+    "oeb/ED 2.1.14 Table 4 Embedded Generation by Type.xml": {
+      "url": "https://www.oeb.ca/documents/opendata/rrr/2024-2/ED 2.1.14 Table 4 Embedded Generation by Type.xml",
+      "etag": "\"38c59-650ae1a6ceccf\"",
+      "last_modified": "Thu, 30 Apr 2026 14:15:58 GMT",
+      "sha256": "3c8faddd44ccd1ace666bdb006e8ac3acb45001135db5bcfa5ae5251b0730a58",
+      "fetched_at": "2026-09-29T18:48:16.384703+00:00",
+      "bytes": 232537,
+      "rows": 856
+    },
+    "oeb/ED 2.1.5.4 Demand and Revenue.xml": {
+      "url": "https://www.oeb.ca/documents/opendata/rrr/2024-2/ED 2.1.5.4 Demand and Revenue.xml",
+      "etag": "\"2edc5d-650ae137b6444\"",
+      "last_modified": "Thu, 30 Apr 2026 14:14:01 GMT",
+      "sha256": "b9f76b6a45c2e1f1e659cd679b84e609d825840b948c03af3c22a2829baf8e37",
+      "fetched_at": "2026-09-29T18:56:18.169090+00:00",
+      "bytes": 3071069,
+      "rows": 5445
+    },
+    "oeb/service_area_map.zip": {
+      "url": "https://www.oeb.ca/documents/opendata/open-data-electricity-map-20260825.zip",
+      "etag": "\"1edf4c-65a1b3e0f57c7\"",
+      "last_modified": "Fri, 28 Aug 2026 13:15:12 GMT",
+      "sha256": "e3eaab55c215250f04c6923fbd32b8f8b1ffaa2d596daf4711f415d48b106f31",
+      "fetched_at": "2026-09-29T18:48:20.905215+00:00",
+      "bytes": 2023244,
+      "rows": null
+    },
+    "oeb/ED 2.1.2 Customers & Connections.xml": {
+      "url": "https://www.oeb.ca/documents/opendata/rrr/2024-2/ED 2.1.2 Customers & Connections.xml",
+      "etag": "\"1b9d92-650ae14490816\"",
+      "last_modified": "Thu, 30 Apr 2026 14:14:15 GMT",
+      "sha256": "18bd5a6c60caf6016f05c3f450830cd862753c7ecbf90e4eaa57b9a986eb168d",
+      "fetched_at": "2026-09-30T00:04:06.574483+00:00",
+      "bytes": 1809810,
+      "rows": 3717
+    }
+  },
+  "history": {
+    "da_zonal": {
+      "files": {
+        "PUB_DAHourlyOntarioZonalPrice_20260701.xml": {
+          "sha256": "2981258a43490e753d52957718e3578a3e020c7011fd8af3204d3242736ddc27",
+          "mtime": "",
+          "size": "",
+          "rows": 24,
+          "parsed_at": "2026-09-29T23:43:56.378260+00:00"
+        },
+        "PUB_DAHourlyOntarioZonalPrice_20260702.xml": {
+          "sha256": "f631905bd7662684183640f283660b5bf7f28187f6a3de3a2dd70973b885c699",
+          "mtime": "",
+          "size": "",
+          "rows": 24,
+          "parsed_at": "2026-09-29T23:43:59.606823+00:00"
+        },
+        "PUB_DAHourlyOntarioZonalPrice_20260703.xml": {
+          "sha256": "f1bf6837fac73bdb40f72923277ad297bf3e5483d3a015ea4a18ff420f1161f1",
+          "mtime": "",
+          "size": "",
+          "rows": 24,
+          "parsed_at": "2026-09-29T23:44:03.369555+00:00"
+        },
+        "PUB_DAHourlyOntarioZonalPrice_20260704.xml": {
+          "sha256": "f09fcfaa182df67ed2a577c51729b4debb0ccb575c7c0bb04d300617754bb690",
+          "mtime": "",
+          "size": "",
+          "rows": 24,
+          "parsed_at": "2026-09-29T23:44:11.652735+00:00"
+        },
+        "PUB_DAHourlyOntarioZonalPrice_20260705.xml": {
+          "sha256": "85b30342bd33bc27417816decfab1739a00ac8604a94c4cc0387334f962ffbe2",
+          "mtime": "",
+          "size": "",
+          "rows": 24,
+          "parsed_at": "2026-09-29T23:44:12.221094+00:00"
+        },
+        "PUB_DAHourlyOntarioZonalPrice_20260706.xml": {
+          "sha256": "c25cb5dfdb7ced5919a387cecbc6b8d5a06ad18f9748f1af38bed5a7686cfe32",
+          "mtime": "",
+          "size": "",
+          "rows": 24,
+          "parsed_at": "2026-09-29T23:44:12.861658+00:00"
+        },
+        "PUB_DAHourlyOntarioZonalPrice_20260707.xml": {
+          "sha256": "27fe40c0ea4b1c6c67a47616627b77f3d7c7089ac460fcaeeadab1a3902adb55",
+          "mtime": "",
+          "size": "",
+          "rows": 24,
+          "parsed_at": "2026-09-29T23:44:13.332669+00:00"
+        },
+        "PUB_DAHourlyOntarioZonalPrice_20260708.xml": {
+          "sha256": "12c9a6db8a76a756fb94fada26af35f08c83d9912d92effa20663ad34f0c84da",
+          "mtime": "",
+          "size": "",
+          "rows": 24,
+          "parsed_at": "2026-09-29T23:44:16.344054+00:00"
+        },
+        "PUB_DAHourlyOntarioZonalPrice_20260709.xml": {
+          "sha256": "248a4b64c3bc610136ea5d26c97c35ad16ec311465aff7c850e9c6d64c9029ca",
+          "mtime": "",
+          "size": "",
+          "rows": 24,
+          "parsed_at": "2026-09-29T23:44:17.065793+00:00"
+        },
+        "PUB_DAHourlyOntarioZonalPrice_20260710.xml": {
+          "sha256": "947968fc10be1e7c964ff825810c9de90a35535ddc5dbe7fd4c9f35537bf6f32",
+          "mtime": "",
+          "size": "",
+          "rows": 24,
+          "parsed_at": "2026-09-29T23:44:20.209985+00:00"
+        },
+        "PUB_DAHourlyOntarioZonalPrice_20260711.xml": {
+          "sha256": "5c2b7eb57c3d6c38e7f95a831b81cbc2df9d38deba5308953cd523a55d2506bb",
+          "mtime": "",
+          "size": "",
+          "rows": 24,
+          "parsed_at": "2026-09-29T23:44:20.745785+00:00"
+        },
+        "PUB_DAHourlyOntarioZonalPrice_20260712.xml": {
+          "sha256": "f2c88d28d41740b6c3e5af00a94ed38e83286de921a66e27ca43fa662355e32b",
+          "mtime": "",
+          "size": "",
+          "rows": 24,
+          "parsed_at": "2026-09-29T23:44:21.684430+00:00"
+        },
+        "PUB_DAHourlyOntarioZonalPrice_20260713.xml": {
+          "sha256": "015af2e1c6d3d4b44be8644bc0464ddd659a93f0aa349206bbccccab72c65fd7",
+          "mtime": "",
+          "size": "",
+          "rows": 24,
+          "parsed_at": "2026-09-29T23:44:22.414887+00:00"
+        },
+        "PUB_DAHourlyOntarioZonalPrice_20260714.xml": {
+          "sha256": "2458384f119907a1566316776c341a57ccb7719ac1ebe9e828e2103e4b8a52f8",
+          "mtime": "",
+          "size": "",
+          "rows": 24,
+          "parsed_at": "2026-09-29T23:44:22.954780+00:00"
+        },
+        "PUB_DAHourlyOntarioZonalPrice_20260715.xml": {
+          "sha256": "c9d5371b3164890915c14382e143d0674a64ed5b94b1c33114fddd9c95ee68d7",
+          "mtime": "",
+          "size": "",
+          "rows": 24,
+          "parsed_at": "2026-09-29T23:44:24.432123+00:00"
+        },
+        "PUB_DAHourlyOntarioZonalPrice_20260716.xml": {
+          "sha256": "dc4970ef8b654b4139b20382f3d36d2c544c42956dc1f7d8a99f5dc7be8d00b3",
+          "mtime": "",
+          "size": "",
+          "rows": 24,
+          "parsed_at": "2026-09-29T23:44:24.985510+00:00"
+        },
+        "PUB_DAHourlyOntarioZonalPrice_20260717.xml": {
+          "sha256": "971e88ccb17c66b4200733563d3a37baf14d5bfd3684b5b9e4121b4d174c0cda",
+          "mtime": "",
+          "size": "",
+          "rows": 24,
+          "parsed_at": "2026-09-29T23:44:25.640538+00:00"
+        },
+        "PUB_DAHourlyOntarioZonalPrice_20260718.xml": {
+          "sha256": "c0cb2ee04296a68bdc17d7f6df7500386d39989aba9720dc653f236d88715c9c",
+          "mtime": "",
+          "size": "",
+          "rows": 24,
+          "parsed_at": "2026-09-29T23:44:26.441164+00:00"
+        },
+        "PUB_DAHourlyOntarioZonalPrice_20260719.xml": {
+          "sha256": "c41fc2d87206f5f36ed8461998217b06d44db16c61317f8a63748433a727d866",
+          "mtime": "",
+          "size": "",
+          "rows": 24,
+          "parsed_at": "2026-09-29T23:44:27.306079+00:00"
+        },
+        "PUB_DAHourlyOntarioZonalPrice_20260720.xml": {
+          "sha256": "c34783d97991bedd71762969ca1c56a82c22bbf19b382bcc43687e5276a92195",
+          "mtime": "",
+          "size": "",
+          "rows": 24,
+          "parsed_at": "2026-09-29T23:44:28.303139+00:00"
+        },
+        "PUB_DAHourlyOntarioZonalPrice_20260721.xml": {
+          "sha256": "d4495457248a76ceb52519f0034101e67b6b9d7080a12ef8f9c0d45db64f9558",
+          "mtime": "",
+          "size": "",
+          "rows": 24,
+          "parsed_at": "2026-09-29T23:44:31.263867+00:00"
+        },
+        "PUB_DAHourlyOntarioZonalPrice_20260722.xml": {
+          "sha256": "445d273ee13d38046bd911e2c64f750e87499b2f3e2c532311c16fcdf10386b0",
+          "mtime": "",
+          "size": "",
+          "rows": 24,
+          "parsed_at": "2026-09-29T23:44:31.856159+00:00"
+        },
+        "PUB_DAHourlyOntarioZonalPrice_20260723.xml": {
+          "sha256": "233af823f0a0f1c40bc3d1b2616adcf91a392abf0ea7e9d53c58be70655c9c7c",
+          "mtime": "",
+          "size": "",
+          "rows": 24,
+          "parsed_at": "2026-09-29T23:44:32.477227+00:00"
+        },
+        "PUB_DAHourlyOntarioZonalPrice_20260724.xml": {
+          "sha256": "15de63dc984698e075ba6cbf74b1b54cdfc2a46bdc1fd8aaffab0831068452be",
+          "mtime": "",
+          "size": "",
+          "rows": 24,
+          "parsed_at": "2026-09-29T23:44:33.092639+00:00"
+        },
+        "PUB_DAHourlyOntarioZonalPrice_20260725.xml": {
+          "sha256": "50ee627c9023de1999855ccafba659b32c693827c7fbaea346e2a4f45ed7714b",
+          "mtime": "",
+          "size": "",
+          "rows": 24,
+          "parsed_at": "2026-09-29T23:44:33.680868+00:00"
+        },
+        "PUB_DAHourlyOntarioZonalPrice_20260726.xml": {
+          "sha256": "c8161c573c0bee5c4595e43ee09f8490b20684588b28d05eabc5a6d26ece414c",
+          "mtime": "",
+          "size": "",
+          "rows": 24,
+          "parsed_at": "2026-09-29T23:44:34.210017+00:00"
+        },
+        "PUB_DAHourlyOntarioZonalPrice_20260727.xml": {
+          "sha256": "4d61012a6d3e3b0f16d46808271e8e1388bd9e02c732de08b040ab9b1da28bbd",
+          "mtime": "",
+          "size": "",
+          "rows": 24,
+          "parsed_at": "2026-09-29T23:44:34.772808+00:00"
+        },
+        "PUB_DAHourlyOntarioZonalPrice_20260728.xml": {
+          "sha256": "add48ef434227eb41dcc58b94ae81a09e022bada934ab7f38ae6d464d297a42d",
+          "mtime": "",
+          "size": "",
+          "rows": 24,
+          "parsed_at": "2026-09-29T23:44:35.792025+00:00"
+        },
+        "PUB_DAHourlyOntarioZonalPrice_20260729.xml": {
+          "sha256": "8a990c6ceb682d62ef28282e4ddd272a7ebed7d3bca679a5ac64747d908719ee",
+          "mtime": "",
+          "size": "",
+          "rows": 24,
+          "parsed_at": "2026-09-29T23:44:36.634412+00:00"
+        },
+        "PUB_DAHourlyOntarioZonalPrice_20260730.xml": {
+          "sha256": "aa2ace275e9112144a111143793d0b6a51fbaa36fbfcc9bc7330c5a467031521",
+          "mtime": "",
+          "size": "",
+          "rows": 24,
+          "parsed_at": "2026-09-29T23:44:37.458630+00:00"
+        },
+        "PUB_DAHourlyOntarioZonalPrice_20260731.xml": {
+          "sha256": "47f1390803e285c18db524d2dbbc8820acf3f05d2a9a9abd698ddb958a041df9",
+          "mtime": "",
+          "size": "",
+          "rows": 24,
+          "parsed_at": "2026-09-29T23:44:37.995529+00:00"
+        },
+        "PUB_DAHourlyOntarioZonalPrice_20260801.xml": {
+          "sha256": "4efd49fd7bfade1a914949ae97c161d1909e7d6904054630411f09bc471891d2",
+          "mtime": "",
+          "size": "",
+          "rows": 24,
+          "parsed_at": "2026-09-29T23:44:38.902575+00:00"
+        },
+        "PUB_DAHourlyOntarioZonalPrice_20260802.xml": {
+          "sha256": "71a6a10c1c7e75471bbf44d2836b9c19f563c76d709c25aca2aa2ec004c38242",
+          "mtime": "",
+          "size": "",
+          "rows": 24,
+          "parsed_at": "2026-09-29T23:44:39.567797+00:00"
+        },
+        "PUB_DAHourlyOntarioZonalPrice_20260803.xml": {
+          "sha256": "7aacab4b97b21afe6f361e8439552a1ec8133b0a06108eaadee6e4b352ba16f0",
+          "mtime": "",
+          "size": "",
+          "rows": 24,
+          "parsed_at": "2026-09-29T23:44:42.973899+00:00"
+        },
+        "PUB_DAHourlyOntarioZonalPrice_20260804.xml": {
+          "sha256": "d0202def373476216a6b7b9d1449e641c1658691c37cc875b0effae804ddcb65",
+          "mtime": "",
+          "size": "",
+          "rows": 24,
+          "parsed_at": "2026-09-29T23:44:43.725954+00:00"
+        },
+        "PUB_DAHourlyOntarioZonalPrice_20260805.xml": {
+          "sha256": "fc2d4c5014771d46b3c240d44d86a5b077f2501d5cb5ac326b062e6ca0a83472",
+          "mtime": "",
+          "size": "",
+          "rows": 24,
+          "parsed_at": "2026-09-29T23:44:51.366675+00:00"
+        },
+        "PUB_DAHourlyOntarioZonalPrice_20260806.xml": {
+          "sha256": "1d7b0f608e73e3b833469e7320659a9df40ad240615f42208016c0d411ebd92c",
+          "mtime": "",
+          "size": "",
+          "rows": 24,
+          "parsed_at": "2026-09-29T23:44:59.125475+00:00"
+        },
+        "PUB_DAHourlyOntarioZonalPrice_20260807.xml": {
+          "sha256": "e6e17cdcfcbdfd13d2febf8dac4cd881883ccb0d0659abc46c3a3dc0dafd5c58",
+          "mtime": "",
+          "size": "",
+          "rows": 24,
+          "parsed_at": "2026-09-29T23:45:13.912032+00:00"
+        },
+        "PUB_DAHourlyOntarioZonalPrice_20260808.xml": {
+          "sha256": "6be3dd19254f4c806a13b433b04a07d026b5de17b94543a92a1e254f88700076",
+          "mtime": "",
+          "size": "",
+          "rows": 24,
+          "parsed_at": "2026-09-29T23:45:15.179990+00:00"
+        },
+        "PUB_DAHourlyOntarioZonalPrice_20260809.xml": {
+          "sha256": "37f11fc43bf4d8ea851e9078b266549ace5d80ab9c70c8f42a521e1548620302",
+          "mtime": "",
+          "size": "",
+          "rows": 24,
+          "parsed_at": "2026-09-29T23:45:19.335435+00:00"
+        },
+        "PUB_DAHourlyOntarioZonalPrice_20260810.xml": {
+          "sha256": "52746e18300dfda9383dfc5498799fb19d6273d1857c6a4fb357ca288d64ea13",
+          "mtime": "",
+          "size": "",
+          "rows": 24,
+          "parsed_at": "2026-09-29T23:45:20.261376+00:00"
+        },
+        "PUB_DAHourlyOntarioZonalPrice_20260811.xml": {
+          "sha256": "be86891b66706fcd4c3b2de7e4f5e681a31a34f02654def4de0b5c47a8cbd2d1",
+          "mtime": "",
+          "size": "",
+          "rows": 24,
+          "parsed_at": "2026-09-29T23:45:27.917393+00:00"
+        },
+        "PUB_DAHourlyOntarioZonalPrice_20260812.xml": {
+          "sha256": "4da8b07a308b293dde24fab792a2b3e2b1097b39e069dd282f724c360b2665d5",
+          "mtime": "",
+          "size": "",
+          "rows": 24,
+          "parsed_at": "2026-09-29T23:45:28.404719+00:00"
+        },
+        "PUB_DAHourlyOntarioZonalPrice_20260813.xml": {
+          "sha256": "eb43ca17241774c80cc953f2103edc916cf35da492f154798773a5810afbd1c7",
+          "mtime": "",
+          "size": "",
+          "rows": 24,
+          "parsed_at": "2026-09-29T23:45:29.010234+00:00"
+        },
+        "PUB_DAHourlyOntarioZonalPrice_20260814.xml": {
+          "sha256": "2eec1831991c95418e488a243e3f97c70faa11be131a30c1dd2bc28cde20610e",
+          "mtime": "",
+          "size": "",
+          "rows": 24,
+          "parsed_at": "2026-09-29T23:45:29.553135+00:00"
+        },
+        "PUB_DAHourlyOntarioZonalPrice_20260815.xml": {
+          "sha256": "a62e2718ab504806c7a6abdd91faeafd846c407cc524273f8c4a96b009a0d25b",
+          "mtime": "",
+          "size": "",
+          "rows": 24,
+          "parsed_at": "2026-09-29T23:45:30.148980+00:00"
+        },
+        "PUB_DAHourlyOntarioZonalPrice_20260816.xml": {
+          "sha256": "11e147040f8ea73eb233e1d93de0e4a295edab488554d5871d9570d3be76b514",
+          "mtime": "",
+          "size": "",
+          "rows": 24,
+          "parsed_at": "2026-09-29T23:45:37.569010+00:00"
+        },
+        "PUB_DAHourlyOntarioZonalPrice_20260817.xml": {
+          "sha256": "1713f2bf5387d885eabc8c2debb0a27899df85e1f1985de859957cc433730045",
+          "mtime": "",
+          "size": "",
+          "rows": 24,
+          "parsed_at": "2026-09-29T23:45:40.654492+00:00"
+        },
+        "PUB_DAHourlyOntarioZonalPrice_20260818.xml": {
+          "sha256": "2905d229b8465bc291cb7c7271a126b9510ee95cf2e6263c24d39b48bfc0d42d",
+          "mtime": "",
+          "size": "",
+          "rows": 24,
+          "parsed_at": "2026-09-29T23:45:41.191060+00:00"
+        },
+        "PUB_DAHourlyOntarioZonalPrice_20260819.xml": {
+          "sha256": "c5b010b423f49e3810c921b5d5d2f123fd07d664e472e1f1d4124d7a73ccfab2",
+          "mtime": "",
+          "size": "",
+          "rows": 24,
+          "parsed_at": "2026-09-29T23:45:41.583693+00:00"
+        },
+        "PUB_DAHourlyOntarioZonalPrice_20260820.xml": {
+          "sha256": "a626edabec783d6929ed528be793826091ba3e49e64eb736f83a1a59004135de",
+          "mtime": "",
+          "size": "",
+          "rows": 24,
+          "parsed_at": "2026-09-29T23:45:42.118188+00:00"
+        },
+        "PUB_DAHourlyOntarioZonalPrice_20260821.xml": {
+          "sha256": "87e2e02c23b03d732e09b4197cfe0c2ff211905df1b971ddb5258e7c81e0b0ae",
+          "mtime": "",
+          "size": "",
+          "rows": 24,
+          "parsed_at": "2026-09-29T23:45:42.717678+00:00"
+        },
+        "PUB_DAHourlyOntarioZonalPrice_20260822.xml": {
+          "sha256": "24eda363963015992c5d9bb3f099a37160cdbe1f31a7e8734056530c81b93f68",
+          "mtime": "",
+          "size": "",
+          "rows": 24,
+          "parsed_at": "2026-09-29T23:45:43.193593+00:00"
+        },
+        "PUB_DAHourlyOntarioZonalPrice_20260823.xml": {
+          "sha256": "70f876e8de55d992d5e5626ccb36314ba2d779796a3df52cef8606b77dfcda9f",
+          "mtime": "",
+          "size": "",
+          "rows": 24,
+          "parsed_at": "2026-09-29T23:45:43.935886+00:00"
+        },
+        "PUB_DAHourlyOntarioZonalPrice_20260824.xml": {
+          "sha256": "1a25c67ee1065df69e3f864b3b2a48e1e86efcc574e9c60403600a047933548a",
+          "mtime": "",
+          "size": "",
+          "rows": 24,
+          "parsed_at": "2026-09-29T23:45:51.321772+00:00"
+        },
+        "PUB_DAHourlyOntarioZonalPrice_20260825.xml": {
+          "sha256": "544729bf2cf43426f6cbf868827a193440073d368bab9c905c4450880683deef",
+          "mtime": "",
+          "size": "",
+          "rows": 24,
+          "parsed_at": "2026-09-29T23:45:51.796138+00:00"
+        },
+        "PUB_DAHourlyOntarioZonalPrice_20260826.xml": {
+          "sha256": "1cc2afc65ed8eaafbd30dba6aa4c581ba792d3948ea0744f6d22f0a86fb579f1",
+          "mtime": "",
+          "size": "",
+          "rows": 24,
+          "parsed_at": "2026-09-29T23:45:54.902662+00:00"
+        },
+        "PUB_DAHourlyOntarioZonalPrice_20260827.xml": {
+          "sha256": "e4cddb8bb4968c0e1be84195102fae5f19e67ed5b56fa2aaa585d9ec6afc5674",
+          "mtime": "",
+          "size": "",
+          "rows": 24,
+          "parsed_at": "2026-09-29T23:45:55.384829+00:00"
+        },
+        "PUB_DAHourlyOntarioZonalPrice_20260828.xml": {
+          "sha256": "62a26cf9bbc0baf3db66781e37448ef14325b15fc35eed5d4efd2de30de8b40b",
+          "mtime": "",
+          "size": "",
+          "rows": 24,
+          "parsed_at": "2026-09-29T23:45:55.919381+00:00"
+        },
+        "PUB_DAHourlyOntarioZonalPrice_20260829.xml": {
+          "sha256": "863ddf1c572f969777816502a604017b04cecd9ccba167cd437a891d41f2dc22",
+          "mtime": "",
+          "size": "",
+          "rows": 24,
+          "parsed_at": "2026-09-29T23:45:56.637089+00:00"
+        },
+        "PUB_DAHourlyOntarioZonalPrice_20260830.xml": {
+          "sha256": "80ccee36ec8e5c793b904fde67f451dc06be1d7e924539e9bd789a053f3ec464",
+          "mtime": "",
+          "size": "",
+          "rows": 24,
+          "parsed_at": "2026-09-29T23:45:57.316601+00:00"
+        },
+        "PUB_DAHourlyOntarioZonalPrice_20260831.xml": {
+          "sha256": "64e215b982ed67ff43b6510a050cef0d7f30ebbb2aa617faf6969bc5f4de7df6",
+          "mtime": "",
+          "size": "",
+          "rows": 24,
+          "parsed_at": "2026-09-29T23:45:58.235988+00:00"
+        },
+        "PUB_DAHourlyOntarioZonalPrice_20260901.xml": {
+          "sha256": "ad7097a77a2a3e71467f66475c355df81b4bbc3b4b48e6437b1bf3f0228c6a3e",
+          "mtime": "",
+          "size": "",
+          "rows": 24,
+          "parsed_at": "2026-09-29T23:45:58.732966+00:00"
+        },
+        "PUB_DAHourlyOntarioZonalPrice_20260902.xml": {
+          "sha256": "0d67515209c2252d9db32b8ca1bd56aa7ef331e5d364ba85327e07786cb39c04",
+          "mtime": "",
+          "size": "",
+          "rows": 24,
+          "parsed_at": "2026-09-29T23:45:59.386103+00:00"
+        },
+        "PUB_DAHourlyOntarioZonalPrice_20260903.xml": {
+          "sha256": "1bcfe38c8e793fedcda5db73d509bd350a4285c2ba4929de2779697b1cf8a815",
+          "mtime": "",
+          "size": "",
+          "rows": 24,
+          "parsed_at": "2026-09-29T23:46:00.330304+00:00"
+        },
+        "PUB_DAHourlyOntarioZonalPrice_20260904.xml": {
+          "sha256": "55cafc2fb1b5f777eb077352559d20daa5d2a443905feb634bbd0e54ebeea634",
+          "mtime": "",
+          "size": "",
+          "rows": 24,
+          "parsed_at": "2026-09-29T23:46:01.397461+00:00"
+        },
+        "PUB_DAHourlyOntarioZonalPrice_20260905.xml": {
+          "sha256": "708de361a6e3e53892162c23474d9b5b353471033fbb396d6e7d6ffaa881eb3c",
+          "mtime": "",
+          "size": "",
+          "rows": 24,
+          "parsed_at": "2026-09-29T23:46:04.950140+00:00"
+        },
+        "PUB_DAHourlyOntarioZonalPrice_20260906.xml": {
+          "sha256": "4be26b29d6d6b7e1f446e38189ea7c86a35384257beeb3e081c2e24529426c58",
+          "mtime": "",
+          "size": "",
+          "rows": 24,
+          "parsed_at": "2026-09-29T23:46:09.336341+00:00"
+        },
+        "PUB_DAHourlyOntarioZonalPrice_20260907.xml": {
+          "sha256": "401913f280ec9dbd6bce4cc1856569a6d929d4c7d2d00f5ffba042fb0f9c921a",
+          "mtime": "",
+          "size": "",
+          "rows": 24,
+          "parsed_at": "2026-09-29T23:46:12.202482+00:00"
+        },
+        "PUB_DAHourlyOntarioZonalPrice_20260908.xml": {
+          "sha256": "85a1559b9de7f3cebd706ae9a58c12111a09b22e281b79882ffafb1e0ea1efde",
+          "mtime": "",
+          "size": "",
+          "rows": 24,
+          "parsed_at": "2026-09-29T23:46:12.744299+00:00"
+        },
+        "PUB_DAHourlyOntarioZonalPrice_20260909.xml": {
+          "sha256": "fbe9933200b77d532b928f7ce5a63523b5701e198f62297218e8f1f6f339ac24",
+          "mtime": "",
+          "size": "",
+          "rows": 24,
+          "parsed_at": "2026-09-29T23:46:15.735390+00:00"
+        },
+        "PUB_DAHourlyOntarioZonalPrice_20260910.xml": {
+          "sha256": "0871c4f47b295bc9f317ce0270534ba90ae82be2357a4a2e9c6b34dc8cf160a5",
+          "mtime": "",
+          "size": "",
+          "rows": 24,
+          "parsed_at": "2026-09-29T23:46:16.215123+00:00"
+        },
+        "PUB_DAHourlyOntarioZonalPrice_20260911.xml": {
+          "sha256": "b556e1707a6a26c7bc4dbd6ec860e73f914430819fc1d29f9a0f322fdee89947",
+          "mtime": "",
+          "size": "",
+          "rows": 24,
+          "parsed_at": "2026-09-29T23:46:19.247472+00:00"
+        },
+        "PUB_DAHourlyOntarioZonalPrice_20260912.xml": {
+          "sha256": "a805c2bc02f27b13d0b3e086102ade8c82a50b366be799c1c44ed6afa4c9025d",
+          "mtime": "",
+          "size": "",
+          "rows": 24,
+          "parsed_at": "2026-09-29T23:46:19.806722+00:00"
+        },
+        "PUB_DAHourlyOntarioZonalPrice_20260913.xml": {
+          "sha256": "aa6ce9f5a7bde4602ba2932bd83be08efa3d436337dae9870530d41a5e7d21b6",
+          "mtime": "",
+          "size": "",
+          "rows": 24,
+          "parsed_at": "2026-09-29T23:46:20.286009+00:00"
+        },
+        "PUB_DAHourlyOntarioZonalPrice_20260914.xml": {
+          "sha256": "b654bbd66e17d1a28f02dbec35b313b245297c5e38073eef22e03faf614b09c1",
+          "mtime": "",
+          "size": "",
+          "rows": 24,
+          "parsed_at": "2026-09-29T23:46:20.941588+00:00"
+        },
+        "PUB_DAHourlyOntarioZonalPrice_20260915.xml": {
+          "sha256": "471bc238c3cf90c5cb04edfc84534b627b47e9725b49c59fa05f5832918a77d9",
+          "mtime": "",
+          "size": "",
+          "rows": 24,
+          "parsed_at": "2026-09-29T23:46:23.798079+00:00"
+        },
+        "PUB_DAHourlyOntarioZonalPrice_20260916.xml": {
+          "sha256": "ef0a0702a713730deb1a32897574934eff80c615858cc738ec7a34308823a340",
+          "mtime": "",
+          "size": "",
+          "rows": 24,
+          "parsed_at": "2026-09-29T23:46:24.323521+00:00"
+        },
+        "PUB_DAHourlyOntarioZonalPrice_20260917.xml": {
+          "sha256": "3b4412c998c80ee78747d0bdfff4bf43d24dc5db8bbba65216a1c8420db73883",
+          "mtime": "",
+          "size": "",
+          "rows": 24,
+          "parsed_at": "2026-09-29T23:46:37.650425+00:00"
+        },
+        "PUB_DAHourlyOntarioZonalPrice_20260918.xml": {
+          "sha256": "41568444c0df9d939392e3d7050deab371e28f0c3ece73252eb095f86a770378",
+          "mtime": "",
+          "size": "",
+          "rows": 24,
+          "parsed_at": "2026-09-29T23:46:46.674135+00:00"
+        },
+        "PUB_DAHourlyOntarioZonalPrice_20260919.xml": {
+          "sha256": "e3ab17687c76e28efab5260791e5e6422a594f0c1969c6ab14f5e9f368c4a185",
+          "mtime": "",
+          "size": "",
+          "rows": 24,
+          "parsed_at": "2026-09-29T23:46:47.658944+00:00"
+        },
+        "PUB_DAHourlyOntarioZonalPrice_20260920.xml": {
+          "sha256": "a882fe80a40e3f727d320fa194472acf2b444f0506809d239d2180f3fcfcef4e",
+          "mtime": "",
+          "size": "",
+          "rows": 24,
+          "parsed_at": "2026-09-29T23:46:50.768458+00:00"
+        },
+        "PUB_DAHourlyOntarioZonalPrice_20260921.xml": {
+          "sha256": "27bc08bba4953beb29bb8262c722a1c5452f331e0272a4a90dac6ab80281fca8",
+          "mtime": "",
+          "size": "",
+          "rows": 24,
+          "parsed_at": "2026-09-29T23:46:51.406938+00:00"
+        },
+        "PUB_DAHourlyOntarioZonalPrice_20260922.xml": {
+          "sha256": "b8a1b256dc9d8a8425aadf57b242fa8f2ebd7ed69844e261c534a6278d29a8e2",
+          "mtime": "",
+          "size": "",
+          "rows": 24,
+          "parsed_at": "2026-09-29T23:46:52.218666+00:00"
+        },
+        "PUB_DAHourlyOntarioZonalPrice_20260923.xml": {
+          "sha256": "21c3b7fbced2ce15ff6f4ecaeb143265df7c08dc97e437c9841f04ba29eefbef",
+          "mtime": "",
+          "size": "",
+          "rows": 24,
+          "parsed_at": "2026-09-29T23:46:52.811143+00:00"
+        },
+        "PUB_DAHourlyOntarioZonalPrice_20260924.xml": {
+          "sha256": "1625cbb65ee77236e72841e37fc083fba9bb8a9a7c54415c55035a41321a814a",
+          "mtime": "",
+          "size": "",
+          "rows": 24,
+          "parsed_at": "2026-09-29T23:46:55.884875+00:00"
+        },
+        "PUB_DAHourlyOntarioZonalPrice_20260925.xml": {
+          "sha256": "60db4a23335717919a848e771a84afc608965c328d8bf812184271a0bdebae49",
+          "mtime": "",
+          "size": "",
+          "rows": 24,
+          "parsed_at": "2026-09-29T23:46:56.408373+00:00"
+        },
+        "PUB_DAHourlyOntarioZonalPrice_20260926.xml": {
+          "sha256": "7bd6bf066a168357ceb35153ff25763a9ddbedcace41684e3717eb97d3ae6a49",
+          "mtime": "",
+          "size": "",
+          "rows": 24,
+          "parsed_at": "2026-09-29T23:46:56.961665+00:00"
+        },
+        "PUB_DAHourlyOntarioZonalPrice_20260927.xml": {
+          "sha256": "21c7554490c171cac2f95dc7742bba563c3733a150952b4b946c5cd4501064da",
+          "mtime": "",
+          "size": "",
+          "rows": 24,
+          "parsed_at": "2026-09-29T23:46:59.836877+00:00"
+        },
+        "PUB_DAHourlyOntarioZonalPrice_20260928.xml": {
+          "sha256": "34d1bdb955d3fc6f986acfa518c7de87d28f01511740259ab1dc53f84bfed8a1",
+          "mtime": "",
+          "size": "",
+          "rows": 24,
+          "parsed_at": "2026-09-29T23:47:00.443987+00:00"
+        },
+        "PUB_DAHourlyOntarioZonalPrice_20260929.xml": {
+          "sha256": "72f6ccfc9aef08f0fb1a7caee3cb430c515a3d9f929c2a21c580ad65d6fdb0d3",
+          "mtime": "",
+          "size": "",
+          "rows": 24,
+          "parsed_at": "2026-09-29T23:47:01.507138+00:00"
+        },
+        "PUB_DAHourlyOntarioZonalPrice_20260930.xml": {
+          "sha256": "942cce23a20816dd2b1148bfa3385bb3f75a8f08047b86fdab5f9b72678f35b7",
+          "mtime": "",
+          "size": "",
+          "rows": 24,
+          "parsed_at": "2026-09-29T23:47:04.941178+00:00"
+        }
+      },
+      "updated_at": "2026-09-29T23:51:05.773063+00:00"
+    },
+    "lfda": {
+      "files": {
+        "PUB_HourlyLFDA.csv": {
+          "sha256": "27da4fe5b544f0bd3d6cecd091df4f8b93884f47d3e70fc0b03d62f889f6ca06",
+          "mtime": "",
+          "size": "",
+          "rows": 6192,
+          "parsed_at": "2026-09-29T23:41:36.711819+00:00"
+        },
+        "PUB_HourlyLFDA_2026.csv": {
+          "sha256": "27da4fe5b544f0bd3d6cecd091df4f8b93884f47d3e70fc0b03d62f889f6ca06",
+          "mtime": "",
+          "size": "",
+          "rows": 6192,
+          "parsed_at": "2026-09-29T23:41:42.132733+00:00"
+        },
+        "PUB_HourlyLFDA_2025.csv": {
+          "sha256": "2454e4689c6eb7536f0e845ae3ea778ef9e0936ae5099c663b44611a329a6747",
+          "mtime": "",
+          "size": "",
+          "rows": 5808,
+          "parsed_at": "2026-09-29T23:47:44.882100+00:00"
+        }
+      },
+      "updated_at": "2026-09-29T23:51:06.320616+00:00"
+    },
+    "da_lmp": {
+      "files": {
+        "PUB_DAHourlyEnergyLMP_20260701.csv": {
+          "sha256": "5ee250fa3155a403c714413b8905a358b9626df74fc8b08fd515535fca299c60",
+          "mtime": "",
+          "size": "",
+          "rows": 25104,
+          "parsed_at": "2026-09-29T23:51:22.642016+00:00"
+        },
+        "PUB_DAHourlyEnergyLMP_20260702.csv": {
+          "sha256": "cd7635c8c9c7aeae06f5298d950540a2fc60d9aec32b6f9eb2d6601869c7ab6d",
+          "mtime": "",
+          "size": "",
+          "rows": 25104,
+          "parsed_at": "2026-09-29T23:51:24.180315+00:00"
+        },
+        "PUB_DAHourlyEnergyLMP_20260703.csv": {
+          "sha256": "cee9ed9fc9e521bae00a4f549c4934d3523e8217e6398cc1f78ec154afc4b485",
+          "mtime": "",
+          "size": "",
+          "rows": 25104,
+          "parsed_at": "2026-09-29T23:51:27.378595+00:00"
+        },
+        "PUB_DAHourlyEnergyLMP_20260704.csv": {
+          "sha256": "22485e2bd3cb23860910dcaa2b1fd3f7e6417eff8ffc19d98272c88f1193ca39",
+          "mtime": "",
+          "size": "",
+          "rows": 25104,
+          "parsed_at": "2026-09-29T23:51:29.557393+00:00"
+        },
+        "PUB_DAHourlyEnergyLMP_20260705.csv": {
+          "sha256": "506a0bb31d65768680c22d338d0d233ba1015babe853c8d0220a777161a9ed11",
+          "mtime": "",
+          "size": "",
+          "rows": 25104,
+          "parsed_at": "2026-09-29T23:51:32.225754+00:00"
+        },
+        "PUB_DAHourlyEnergyLMP_20260706.csv": {
+          "sha256": "8da39cf337f55e70c69df8b1a7c6228f01190260f9305c6934aa3c7d5528a0d2",
+          "mtime": "",
+          "size": "",
+          "rows": 25104,
+          "parsed_at": "2026-09-29T23:51:33.758872+00:00"
+        },
+        "PUB_DAHourlyEnergyLMP_20260707.csv": {
+          "sha256": "d9fb8a446378a539c3329d4ede694486bc488c1876ec0ee8b21c5db66cc350c1",
+          "mtime": "",
+          "size": "",
+          "rows": 25104,
+          "parsed_at": "2026-09-29T23:51:38.647241+00:00"
+        },
+        "PUB_DAHourlyEnergyLMP_20260708.csv": {
+          "sha256": "cc2d380021237aa7b2e6311755852f098ff77fb7bff2b7136d8925772f1a23c7",
+          "mtime": "",
+          "size": "",
+          "rows": 25104,
+          "parsed_at": "2026-09-29T23:51:42.217165+00:00"
+        },
+        "PUB_DAHourlyEnergyLMP_20260709.csv": {
+          "sha256": "bd660e6182b9590df497836144d51b579ed027a87d4949304293d18abcd5381c",
+          "mtime": "",
+          "size": "",
+          "rows": 25104,
+          "parsed_at": "2026-09-29T23:51:45.219215+00:00"
+        },
+        "PUB_DAHourlyEnergyLMP_20260710.csv": {
+          "sha256": "da0588e7853d771dd83c1cbe8a36a26be1b9c8a8307c60424fe4a30097960f3a",
+          "mtime": "",
+          "size": "",
+          "rows": 25104,
+          "parsed_at": "2026-09-29T23:51:47.330244+00:00"
+        },
+        "PUB_DAHourlyEnergyLMP_20260711.csv": {
+          "sha256": "111f4783499e7d78ed7448b299fe1dd0049fd81460f0c375ab497efb4f102713",
+          "mtime": "",
+          "size": "",
+          "rows": 25104,
+          "parsed_at": "2026-09-29T23:51:48.779886+00:00"
+        },
+        "PUB_DAHourlyEnergyLMP_20260712.csv": {
+          "sha256": "e17fdf0b64f6961ae5c89277aa49939df7110fe9a87e7c61fc0d316ee5d428bc",
+          "mtime": "",
+          "size": "",
+          "rows": 25104,
+          "parsed_at": "2026-09-29T23:51:55.167880+00:00"
+        },
+        "PUB_DAHourlyEnergyLMP_20260713.csv": {
+          "sha256": "c8f27dfc0ec070e1c582d9b7ba3dfc098bffef0b71ca3f0d066b89724160b224",
+          "mtime": "",
+          "size": "",
+          "rows": 25104,
+          "parsed_at": "2026-09-29T23:51:57.948918+00:00"
+        },
+        "PUB_DAHourlyEnergyLMP_20260714.csv": {
+          "sha256": "6891b9da392320c944d3af514f6c274d079d4cc5419737cd10de4b7edb4c8a32",
+          "mtime": "",
+          "size": "",
+          "rows": 25104,
+          "parsed_at": "2026-09-29T23:52:01.415999+00:00"
+        },
+        "PUB_DAHourlyEnergyLMP_20260715.csv": {
+          "sha256": "337a9256eef17b3abdb1a38d0f5379428bb3f666a393dd610119e0a606c6a764",
+          "mtime": "",
+          "size": "",
+          "rows": 25104,
+          "parsed_at": "2026-09-29T23:52:04.002932+00:00"
+        },
+        "PUB_DAHourlyEnergyLMP_20260716.csv": {
+          "sha256": "553a041130a39b286e5295d7ae9c8ca031f1f654923c3cf2117ac8016d04eed4",
+          "mtime": "",
+          "size": "",
+          "rows": 25104,
+          "parsed_at": "2026-09-29T23:52:06.326169+00:00"
+        },
+        "PUB_DAHourlyEnergyLMP_20260717.csv": {
+          "sha256": "3624facb06a01304ef5ea8ba3ff8da8b74161fc9aea9c4dd2d67b59fa73f24af",
+          "mtime": "",
+          "size": "",
+          "rows": 25104,
+          "parsed_at": "2026-09-29T23:52:09.087540+00:00"
+        },
+        "PUB_DAHourlyEnergyLMP_20260718.csv": {
+          "sha256": "a066bc6aa99a6a609ffd865e0724f496d4993df511390e93befa86ca05ea7e57",
+          "mtime": "",
+          "size": "",
+          "rows": 25104,
+          "parsed_at": "2026-09-29T23:52:13.293635+00:00"
+        },
+        "PUB_DAHourlyEnergyLMP_20260719.csv": {
+          "sha256": "270e3fcfe6a178c1de50586dabe9ce5996c71765895ab0baa9e549fee8fea2d3",
+          "mtime": "",
+          "size": "",
+          "rows": 25104,
+          "parsed_at": "2026-09-29T23:52:17.281454+00:00"
+        },
+        "PUB_DAHourlyEnergyLMP_20260720.csv": {
+          "sha256": "f359c9810222bd57445f32e88c6620c2be1c730df402f655d05964acba21f46b",
+          "mtime": "",
+          "size": "",
+          "rows": 25104,
+          "parsed_at": "2026-09-29T23:52:19.419894+00:00"
+        },
+        "PUB_DAHourlyEnergyLMP_20260721.csv": {
+          "sha256": "4f98bbcf35be9aaa80f7babfad361d7e1c47b5de18e2b09a6538a0cd90e4ded8",
+          "mtime": "",
+          "size": "",
+          "rows": 25104,
+          "parsed_at": "2026-09-29T23:52:22.407937+00:00"
+        },
+        "PUB_DAHourlyEnergyLMP_20260722.csv": {
+          "sha256": "dfaa4d42fcbb931e1928fa1f39e6762882789f6ba98c03ee27188bd971232b9f",
+          "mtime": "",
+          "size": "",
+          "rows": 25104,
+          "parsed_at": "2026-09-29T23:52:25.356618+00:00"
+        },
+        "PUB_DAHourlyEnergyLMP_20260723.csv": {
+          "sha256": "3fa19bef6004d371f9892d921f3abe6715f16d93bdc674e053b90e6539a277a1",
+          "mtime": "",
+          "size": "",
+          "rows": 25104,
+          "parsed_at": "2026-09-29T23:52:28.864167+00:00"
+        },
+        "PUB_DAHourlyEnergyLMP_20260724.csv": {
+          "sha256": "8279d2f58726fe9981b647ce37e922240c9131d4c1e6878c63b41c94f36ef176",
+          "mtime": "",
+          "size": "",
+          "rows": 25104,
+          "parsed_at": "2026-09-29T23:52:30.588658+00:00"
+        },
+        "PUB_DAHourlyEnergyLMP_20260725.csv": {
+          "sha256": "c8a61afa3be23d5c026ecac1fa7abe63b65e2680a7507daae83eba70c5108720",
+          "mtime": "",
+          "size": "",
+          "rows": 25104,
+          "parsed_at": "2026-09-29T23:52:33.257803+00:00"
+        },
+        "PUB_DAHourlyEnergyLMP_20260726.csv": {
+          "sha256": "e9a1cd4651a27d13d02bdf12e60079bb7542f69c6dbcb50298be305e19d5cdf1",
+          "mtime": "",
+          "size": "",
+          "rows": 25104,
+          "parsed_at": "2026-09-29T23:52:36.506000+00:00"
+        },
+        "PUB_DAHourlyEnergyLMP_20260727.csv": {
+          "sha256": "2d6c5b91159b5658209bafe18a2d58ec50635967db94d547d7725a1afff0180b",
+          "mtime": "",
+          "size": "",
+          "rows": 25104,
+          "parsed_at": "2026-09-29T23:52:39.144109+00:00"
+        },
+        "PUB_DAHourlyEnergyLMP_20260728.csv": {
+          "sha256": "9329e5b57c7298a332ce6ad30908ab9349ab36b2467926dcc9a3548be8bbce55",
+          "mtime": "",
+          "size": "",
+          "rows": 25104,
+          "parsed_at": "2026-09-29T23:52:43.307098+00:00"
+        },
+        "PUB_DAHourlyEnergyLMP_20260729.csv": {
+          "sha256": "bfc0d23db94dc5bf1fc224f35793741cee1429302ae29e7cd54034e7152d1a75",
+          "mtime": "",
+          "size": "",
+          "rows": 25104,
+          "parsed_at": "2026-09-29T23:52:45.392144+00:00"
+        },
+        "PUB_DAHourlyEnergyLMP_20260730.csv": {
+          "sha256": "fb4227a8a6ce19010060179b2da6a58f3050cf57e676031f66ba9a5c15ef8910",
+          "mtime": "",
+          "size": "",
+          "rows": 25104,
+          "parsed_at": "2026-09-29T23:52:55.547075+00:00"
+        },
+        "PUB_DAHourlyEnergyLMP_20260731.csv": {
+          "sha256": "4314b29371988d794548a3ec438fbd756e6e0d1bfcab40854e8ba65aadc2557c",
+          "mtime": "",
+          "size": "",
+          "rows": 25104,
+          "parsed_at": "2026-09-29T23:52:59.177774+00:00"
+        },
+        "PUB_DAHourlyEnergyLMP_20260801.csv": {
+          "sha256": "6cf150dea74ae66161faf3a16100ca436066fa2487948c1495af424a0109ec53",
+          "mtime": "",
+          "size": "",
+          "rows": 25104,
+          "parsed_at": "2026-09-29T23:53:01.411157+00:00"
+        },
+        "PUB_DAHourlyEnergyLMP_20260802.csv": {
+          "sha256": "02dbc40a6fd6a340ac432271c74076ace88436b9d84f9c89787883be7c9a6a2e",
+          "mtime": "",
+          "size": "",
+          "rows": 25104,
+          "parsed_at": "2026-09-29T23:53:05.507471+00:00"
+        },
+        "PUB_DAHourlyEnergyLMP_20260803.csv": {
+          "sha256": "b07f08256ed9deb31232c271923c43dcb2033b3ad7761646dedf6b6aca63fe66",
+          "mtime": "",
+          "size": "",
+          "rows": 25104,
+          "parsed_at": "2026-09-29T23:53:07.617799+00:00"
+        },
+        "PUB_DAHourlyEnergyLMP_20260804.csv": {
+          "sha256": "1235e8785862bed45a5eb6124923b7077d2ade34617ce055e5e38bef9291e37d",
+          "mtime": "",
+          "size": "",
+          "rows": 25104,
+          "parsed_at": "2026-09-29T23:53:09.782974+00:00"
+        },
+        "PUB_DAHourlyEnergyLMP_20260805.csv": {
+          "sha256": "7ca4343d01fe3d6979887410eec2df2d023c2f8ec447acb46db219f6c7ad8b53",
+          "mtime": "",
+          "size": "",
+          "rows": 25104,
+          "parsed_at": "2026-09-29T23:53:13.822902+00:00"
+        },
+        "PUB_DAHourlyEnergyLMP_20260806.csv": {
+          "sha256": "76739b882bb7f4dd761be1f4da5e41e5788a1fc5dddb6a5484cacdcf69bd4d48",
+          "mtime": "",
+          "size": "",
+          "rows": 25104,
+          "parsed_at": "2026-09-29T23:53:16.006760+00:00"
+        },
+        "PUB_DAHourlyEnergyLMP_20260809.csv": {
+          "sha256": "f49725f8bd49623b7eccc8b4fa86ba738e52c88aac087aba0c881f62808a5e52",
+          "mtime": "",
+          "size": "",
+          "rows": 25104,
+          "parsed_at": "2026-09-29T23:53:54.790884+00:00"
+        },
+        "PUB_DAHourlyEnergyLMP_20260810.csv": {
+          "sha256": "5e61ade19374cfd150869b9514277840d761d84196cfdfe98805ed61cfc2a723",
+          "mtime": "",
+          "size": "",
+          "rows": 25104,
+          "parsed_at": "2026-09-29T23:53:57.356081+00:00"
+        },
+        "PUB_DAHourlyEnergyLMP_20260811.csv": {
+          "sha256": "44faccd74d7e8cc6abdb673314f5950c830e3403685863e700d36af448c5eac1",
+          "mtime": "",
+          "size": "",
+          "rows": 25104,
+          "parsed_at": "2026-09-29T23:53:58.647751+00:00"
+        },
+        "PUB_DAHourlyEnergyLMP_20260812.csv": {
+          "sha256": "30c876638cb87ab7f965c5c5879a591bb2285350f35ea006d4d0df0d7c6718e3",
+          "mtime": "",
+          "size": "",
+          "rows": 25104,
+          "parsed_at": "2026-09-29T23:54:01.423778+00:00"
+        },
+        "PUB_DAHourlyEnergyLMP_20260813.csv": {
+          "sha256": "308fc570d6c4265904ccaf6f744165f2b1c189b9c24e683a1248ac9925b2cb72",
+          "mtime": "",
+          "size": "",
+          "rows": 25104,
+          "parsed_at": "2026-09-29T23:54:04.698916+00:00"
+        },
+        "PUB_DAHourlyEnergyLMP_20260814.csv": {
+          "sha256": "e335a78f107ff277768bd95a048863c7b36f990b1cfb6193df95e10522625d32",
+          "mtime": "",
+          "size": "",
+          "rows": 25104,
+          "parsed_at": "2026-09-29T23:54:08.304861+00:00"
+        },
+        "PUB_DAHourlyEnergyLMP_20260815.csv": {
+          "sha256": "fa2d23567b43cc668d8c99ab830b082354a23fa0a0a7a7c3d9c31afe1217fff3",
+          "mtime": "",
+          "size": "",
+          "rows": 25104,
+          "parsed_at": "2026-09-29T23:54:10.816288+00:00"
+        },
+        "PUB_DAHourlyEnergyLMP_20260816.csv": {
+          "sha256": "afcefa574d8ffad1eaae1c7a8928c035eede8b126c38517c02412c96aa6be70e",
+          "mtime": "",
+          "size": "",
+          "rows": 25104,
+          "parsed_at": "2026-09-29T23:54:13.536717+00:00"
+        },
+        "PUB_DAHourlyEnergyLMP_20260817.csv": {
+          "sha256": "a02efacd63424f4b15d991e97eb0fc34e58b4f63e6afb14d067078e3d5450d05",
+          "mtime": "",
+          "size": "",
+          "rows": 25104,
+          "parsed_at": "2026-09-29T23:54:16.447701+00:00"
+        },
+        "PUB_DAHourlyEnergyLMP_20260818.csv": {
+          "sha256": "173acd8110c5d905267033b31ea686291cc4f792588102c2c1c80b3de7b46cc3",
+          "mtime": "",
+          "size": "",
+          "rows": 25104,
+          "parsed_at": "2026-09-29T23:54:18.395578+00:00"
+        },
+        "PUB_DAHourlyEnergyLMP_20260820.csv": {
+          "sha256": "5585cab7bc8782530b89be933010efaedc8e2d2da1bfecad1e874b26473959e4",
+          "mtime": "",
+          "size": "",
+          "rows": 25104,
+          "parsed_at": "2026-09-29T23:54:38.521608+00:00"
+        },
+        "PUB_DAHourlyEnergyLMP_20260821.csv": {
+          "sha256": "e1f2d7cb6fb48c15adcf1eb802bb6f8d7786bd03593a3dd0dc1a38444d6ed2b2",
+          "mtime": "",
+          "size": "",
+          "rows": 25104,
+          "parsed_at": "2026-09-29T23:54:40.677259+00:00"
+        },
+        "PUB_DAHourlyEnergyLMP_20260822.csv": {
+          "sha256": "9663780a9f040a0cc4d9a52f891e602fee1ed5e42a66e74898ac0300ca01713c",
+          "mtime": "",
+          "size": "",
+          "rows": 25104,
+          "parsed_at": "2026-09-29T23:54:48.600645+00:00"
+        },
+        "PUB_DAHourlyEnergyLMP_20260823.csv": {
+          "sha256": "ffc30e1861a1b3e259982558007a0b079094352a5912f4d95a3e404a42642221",
+          "mtime": "",
+          "size": "",
+          "rows": 25104,
+          "parsed_at": "2026-09-29T23:54:52.112293+00:00"
+        },
+        "PUB_DAHourlyEnergyLMP_20260824.csv": {
+          "sha256": "00e3ee46cde30c06480dfac414a948e6915ddbf5d2fdd29ec54a18772b968e40",
+          "mtime": "",
+          "size": "",
+          "rows": 25104,
+          "parsed_at": "2026-09-29T23:54:54.061331+00:00"
+        },
+        "PUB_DAHourlyEnergyLMP_20260825.csv": {
+          "sha256": "f3676a57941c0c67f733b8fb3b4467affb2d65b448b9c4b9a42bd9c512e89a0f",
+          "mtime": "",
+          "size": "",
+          "rows": 25104,
+          "parsed_at": "2026-09-29T23:54:55.975391+00:00"
+        },
+        "PUB_DAHourlyEnergyLMP_20260827.csv": {
+          "sha256": "d0c604cbce3010b4774daa5d9411c2c78cd748e36fb5291e20ebb023f58cc25b",
+          "mtime": "",
+          "size": "",
+          "rows": 25104,
+          "parsed_at": "2026-09-29T23:55:16.080501+00:00"
+        },
+        "PUB_DAHourlyEnergyLMP_20260828.csv": {
+          "sha256": "f6b2ee54d1de4d4916fdd37fb94b89b5e2ef49bb99f4712a23602018f049f42f",
+          "mtime": "",
+          "size": "",
+          "rows": 25104,
+          "parsed_at": "2026-09-29T23:55:29.508926+00:00"
+        },
+        "PUB_DAHourlyEnergyLMP_20260829.csv": {
+          "sha256": "d11af7f431b731f427ad1dc272dfd07bf82bb4186e8a3458af8871c58354f0ed",
+          "mtime": "",
+          "size": "",
+          "rows": 25104,
+          "parsed_at": "2026-09-29T23:55:32.580530+00:00"
+        },
+        "PUB_DAHourlyEnergyLMP_20260830.csv": {
+          "sha256": "a31989a0757899bc6f0f5b94e51158d94b4df0a86538b9b4ace1138f91389cbb",
+          "mtime": "",
+          "size": "",
+          "rows": 25104,
+          "parsed_at": "2026-09-29T23:55:36.115770+00:00"
+        },
+        "PUB_DAHourlyEnergyLMP_20260831.csv": {
+          "sha256": "4de1976dd022f575b08594c5d25b5b6d2102c478953a028cc9d71a6997a75dc0",
+          "mtime": "",
+          "size": "",
+          "rows": 25104,
+          "parsed_at": "2026-09-29T23:55:37.909551+00:00"
+        },
+        "PUB_DAHourlyEnergyLMP_20260901.csv": {
+          "sha256": "ffca411754ce2e6e6476f7b4f801714c4fca743f09f5fbc76b8df633015fe5f2",
+          "mtime": "",
+          "size": "",
+          "rows": 25104,
+          "parsed_at": "2026-09-29T23:55:40.479392+00:00"
+        },
+        "PUB_DAHourlyEnergyLMP_20260902.csv": {
+          "sha256": "7b3a54912aeb33f65ccd43a998a2d3dc31472f44ad259e0540e0b381896d7c6b",
+          "mtime": "",
+          "size": "",
+          "rows": 25104,
+          "parsed_at": "2026-09-29T23:55:41.993266+00:00"
+        },
+        "PUB_DAHourlyEnergyLMP_20260903.csv": {
+          "sha256": "6703e59a6021c1dae1ad0a5691822b96c63fec77d8c47d35b7cf5ffe49b84603",
+          "mtime": "",
+          "size": "",
+          "rows": 25104,
+          "parsed_at": "2026-09-29T23:55:45.104268+00:00"
+        },
+        "PUB_DAHourlyEnergyLMP_20260904.csv": {
+          "sha256": "0850692eba90673ebf6997a153fd2df0be2725426fe13c2bb53699758bf1256c",
+          "mtime": "",
+          "size": "",
+          "rows": 25104,
+          "parsed_at": "2026-09-29T23:55:47.734813+00:00"
+        },
+        "PUB_DAHourlyEnergyLMP_20260905.csv": {
+          "sha256": "8873152935ce34ea337d954ef08307dedd335092fb26954b4941b8ec23e8d776",
+          "mtime": "",
+          "size": "",
+          "rows": 25104,
+          "parsed_at": "2026-09-29T23:55:51.160091+00:00"
+        },
+        "PUB_DAHourlyEnergyLMP_20260906.csv": {
+          "sha256": "2d8600688bd550f2be8a0ff85868060df42aaf4617af764eadb047ae07dd754c",
+          "mtime": "",
+          "size": "",
+          "rows": 25104,
+          "parsed_at": "2026-09-29T23:55:53.647970+00:00"
+        },
+        "PUB_DAHourlyEnergyLMP_20260907.csv": {
+          "sha256": "2764ced93a515de64c26e894dcb6c79f32eeb54b663651eff0dc33ee2d48f82f",
+          "mtime": "",
+          "size": "",
+          "rows": 25104,
+          "parsed_at": "2026-09-29T23:55:55.853106+00:00"
+        },
+        "PUB_DAHourlyEnergyLMP_20260908.csv": {
+          "sha256": "0894ea16e30c76611b9e4f820f7b0f88630d81ddcf6f438e8f5d8e6fa15725ef",
+          "mtime": "",
+          "size": "",
+          "rows": 25104,
+          "parsed_at": "2026-09-29T23:55:59.288087+00:00"
+        },
+        "PUB_DAHourlyEnergyLMP_20260909.csv": {
+          "sha256": "0236134c62a2781477b4b7f0f047b8ef728ff561a72c0f0ccdf7e77d41bf05b9",
+          "mtime": "",
+          "size": "",
+          "rows": 25080,
+          "parsed_at": "2026-09-29T23:56:02.333746+00:00"
+        },
+        "PUB_DAHourlyEnergyLMP_20260911.csv": {
+          "sha256": "52396f37dc6b57f09bcf8477f855da2c36e7e22019870bfc249a521671e0136c",
+          "mtime": "",
+          "size": "",
+          "rows": 25296,
+          "parsed_at": "2026-09-29T23:56:23.271374+00:00"
+        },
+        "PUB_DAHourlyEnergyLMP_20260912.csv": {
+          "sha256": "a2512314374f1df055b2473c0776cad9db043c557c324ee77e834d53bff018bc",
+          "mtime": "",
+          "size": "",
+          "rows": 25296,
+          "parsed_at": "2026-09-29T23:56:24.802644+00:00"
+        },
+        "PUB_DAHourlyEnergyLMP_20260914.csv": {
+          "sha256": "4e712986ef0aa1e9e3e4c4e8ecaad12d220142ebf1eeeed9a1d01bd4b55076d4",
+          "mtime": "",
+          "size": "",
+          "rows": 25296,
+          "parsed_at": "2026-09-29T23:56:43.203866+00:00"
+        },
+        "PUB_DAHourlyEnergyLMP_20260915.csv": {
+          "sha256": "53c77ea5ef9327a4a1436bac505f32c9bc5ecc3624eebe0640ca8bdd576dbdef",
+          "mtime": "",
+          "size": "",
+          "rows": 25296,
+          "parsed_at": "2026-09-29T23:56:53.311693+00:00"
+        },
+        "PUB_DAHourlyEnergyLMP_20260916.csv": {
+          "sha256": "05e6a9c4e0e49370083e0658a93286da9c32f238c87d74dfc9ab1b42a7e94d4f",
+          "mtime": "",
+          "size": "",
+          "rows": 25296,
+          "parsed_at": "2026-09-29T23:56:57.307111+00:00"
+        },
+        "PUB_DAHourlyEnergyLMP_20260917.csv": {
+          "sha256": "97fffcdbe556cab343998894610f8e9b5a939ef3cf9e092017c52fb0652818c8",
+          "mtime": "",
+          "size": "",
+          "rows": 25296,
+          "parsed_at": "2026-09-29T23:57:00.876044+00:00"
+        },
+        "PUB_DAHourlyEnergyLMP_20260918.csv": {
+          "sha256": "caf6a7d5c0efbba8ec5f7f68723363109ed378910dec3e659f82e3b3d28d45ec",
+          "mtime": "",
+          "size": "",
+          "rows": 25296,
+          "parsed_at": "2026-09-29T23:57:04.009142+00:00"
+        },
+        "PUB_DAHourlyEnergyLMP_20260919.csv": {
+          "sha256": "c5b4db20263ab7a2801e4f9bd51fb24b332835ccfc0c6643b4f1f5aaeaafb4cd",
+          "mtime": "",
+          "size": "",
+          "rows": 25296,
+          "parsed_at": "2026-09-29T23:57:07.471347+00:00"
+        },
+        "PUB_DAHourlyEnergyLMP_20260920.csv": {
+          "sha256": "6e4daf1a63153118d9891b639f735f353662596c9f546a48fbfb760711498e06",
+          "mtime": "",
+          "size": "",
+          "rows": 25296,
+          "parsed_at": "2026-09-29T23:57:19.661399+00:00"
+        },
+        "PUB_DAHourlyEnergyLMP_20260921.csv": {
+          "sha256": "fe7efe928af82bcded61687ee1f4ff8629ba13935a925451604c7701085d3503",
+          "mtime": "",
+          "size": "",
+          "rows": 25296,
+          "parsed_at": "2026-09-29T23:57:25.002414+00:00"
+        },
+        "PUB_DAHourlyEnergyLMP_20260924.csv": {
+          "sha256": "b66425bdf50bad94f158b3c31d8425543388dd7251c62fe2785ed1e8db6f85a0",
+          "mtime": "",
+          "size": "",
+          "rows": 25296,
+          "parsed_at": "2026-09-29T23:57:51.181846+00:00"
+        },
+        "PUB_DAHourlyEnergyLMP_20260925.csv": {
+          "sha256": "85542d6aef969e1a38a9f619c971e213c8203259931c076ecf4312193c041a6a",
+          "mtime": "",
+          "size": "",
+          "rows": 25296,
+          "parsed_at": "2026-09-29T23:57:52.665206+00:00"
+        },
+        "PUB_DAHourlyEnergyLMP_20260926.csv": {
+          "sha256": "be5728a542af2ecdd0661c6b50e26d0f325eb5cfe932c3c838402ac4a82516af",
+          "mtime": "",
+          "size": "",
+          "rows": 25296,
+          "parsed_at": "2026-09-29T23:57:53.985316+00:00"
+        },
+        "PUB_DAHourlyEnergyLMP_20260927.csv": {
+          "sha256": "7ad29e46a459965dd7c74b886b792433f85cd53342eccb9ff419f6d4ea73f8fd",
+          "mtime": "",
+          "size": "",
+          "rows": 25296,
+          "parsed_at": "2026-09-29T23:57:56.091588+00:00"
+        },
+        "PUB_DAHourlyEnergyLMP_20260928.csv": {
+          "sha256": "6f3582d2a35bbb1003a938a8471a3d223a70b37933412866e555fb49d2aee64d",
+          "mtime": "",
+          "size": "",
+          "rows": 25296,
+          "parsed_at": "2026-09-29T23:57:58.134799+00:00"
+        },
+        "PUB_DAHourlyEnergyLMP_20260930.csv": {
+          "sha256": "9a36a49ec24855e49a316457fbb4059c8621685328795cd6da264a70c7dbde70",
+          "mtime": "",
+          "size": "",
+          "rows": 25296,
+          "parsed_at": "2026-09-29T23:58:12.000183+00:00"
+        }
+      },
+      "updated_at": "2026-09-29T23:58:12.194838+00:00"
+    },
+    "fuelmix": {
+      "files": {
+        "PUB_GenOutputbyFuelHourly.xml": {
+          "sha256": "c43ee59b9363cd91dc9027443fead2053584e07d9cfa8ee9bc96021c0d240539",
+          "mtime": "",
+          "size": "",
+          "rows": 6504,
+          "parsed_at": "2026-09-29T23:47:57.590372+00:00"
+        },
+        "PUB_GenOutputbyFuelHourly_2015.xml": {
+          "sha256": "828583ed01a9928cdaa4e99abe3c1f9a346a533d9bc3bb6376702d4e7207944c",
+          "mtime": "",
+          "size": "",
+          "rows": 8760,
+          "parsed_at": "2026-09-29T23:47:58.594644+00:00"
+        },
+        "PUB_GenOutputbyFuelHourly_2016.xml": {
+          "sha256": "301254dd51f69ffe087fd1eae0148dfd62f1e108f889865c19f8a8b774cabc78",
+          "mtime": "",
+          "size": "",
+          "rows": 8784,
+          "parsed_at": "2026-09-29T23:48:04.070528+00:00"
+        },
+        "PUB_GenOutputbyFuelHourly_2017.xml": {
+          "sha256": "14cc0175bb6360e3fa0c5206b6bbb34b0343603ea2c35e1ee80409efb0c691fd",
+          "mtime": "",
+          "size": "",
+          "rows": 8760,
+          "parsed_at": "2026-09-29T23:48:07.967254+00:00"
+        },
+        "PUB_GenOutputbyFuelHourly_2018.xml": {
+          "sha256": "13f14e61492ba687b585d773d321ff4e7678122b21f1bf3f788773190b0e5448",
+          "mtime": "",
+          "size": "",
+          "rows": 8760,
+          "parsed_at": "2026-09-29T23:48:16.165637+00:00"
+        },
+        "PUB_GenOutputbyFuelHourly_2019.xml": {
+          "sha256": "b92c688f4604cb3a19541d9ab24aebca581980dec753d0088e99693e79fcf676",
+          "mtime": "",
+          "size": "",
+          "rows": 8760,
+          "parsed_at": "2026-09-29T23:48:24.771126+00:00"
+        },
+        "PUB_GenOutputbyFuelHourly_2021.xml": {
+          "sha256": "8600b3727b69fb78c46fa6038cb5f3f41a8335cc5cff1e177eff7ecad428b038",
+          "mtime": "",
+          "size": "",
+          "rows": 8760,
+          "parsed_at": "2026-09-29T23:48:51.775930+00:00"
+        },
+        "PUB_GenOutputbyFuelHourly_2022.xml": {
+          "sha256": "9ee290833ff35638e39a3e016ab36dcf1759e737ad9f1234a0aa187255fcafe6",
+          "mtime": "",
+          "size": "",
+          "rows": 8760,
+          "parsed_at": "2026-09-29T23:48:59.098842+00:00"
+        },
+        "PUB_GenOutputbyFuelHourly_2023.xml": {
+          "sha256": "f09710268c9b6b561f10ec794c9f87c0d1004bd1a43e91d4f32d7e511b8600a1",
+          "mtime": "",
+          "size": "",
+          "rows": 8760,
+          "parsed_at": "2026-09-29T23:49:08.830192+00:00"
+        },
+        "PUB_GenOutputbyFuelHourly_2025.xml": {
+          "sha256": "a41cca8cc7a872257dfe20e4e8dc07f9f42bc16d1e9a6b88bae31bc6cc1ae672",
+          "mtime": "",
+          "size": "",
+          "rows": 8760,
+          "parsed_at": "2026-09-29T23:49:39.519333+00:00"
+        },
+        "PUB_GenOutputbyFuelHourly_2026.xml": {
+          "sha256": "c43ee59b9363cd91dc9027443fead2053584e07d9cfa8ee9bc96021c0d240539",
+          "mtime": "",
+          "size": "",
+          "rows": 6504,
+          "parsed_at": "2026-09-29T23:49:43.570574+00:00"
+        },
+        "PUB_GenOutputbyFuelHourly_2020.xml": {
+          "sha256": "30ea627115c5342c8b3a6f3234bdbdaf6ffaf3735de64b5e71e5f6154feced52",
+          "mtime": "",
+          "size": "",
+          "rows": 8784,
+          "parsed_at": "2026-09-29T23:58:27.299383+00:00"
+        },
+        "PUB_GenOutputbyFuelHourly_2024.xml": {
+          "sha256": "16cfd15b7f5b1c01a4d8cb164d138cf7b26a709510af21d579e64f31bef0bd22",
+          "mtime": "",
+          "size": "",
+          "rows": 8784,
+          "parsed_at": "2026-09-29T23:58:28.372984+00:00"
+        }
+      },
+      "updated_at": "2026-09-29T23:58:28.989250+00:00"
+    }
+  }
+}

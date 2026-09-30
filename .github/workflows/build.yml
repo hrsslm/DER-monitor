@@ -1,0 +1,91 @@
+# DER monitor: site build (charts + dashboard page).
+#
+# Separate from collect.yml, which stays data-only. Triggered after a
+# successful collection run, by push to code/content paths, or manually.
+#
+# Rebuilds the derived processed files whose inputs are committed
+# (process_value, process_zones, process_node_signal), regenerates the
+# four chart pages, renders docs/index.html, then commits docs/ only
+# when something changed.
+#
+# process_adoption.py is intentionally NOT re-run here: it reads the OEB
+# RRR tables and the IESO contract workbook from git-ignored data/raw/,
+# fetched manually at phase time. Its committed outputs do not change
+# with daily collection.
+#
+# Publishing is via GitHub Pages "Deploy from a branch: main, /docs"
+# (no separate Pages deployment workflow).
+
+name: build-site
+
+on:
+  workflow_run:
+    workflows: ["collect-price-history"]
+    types: [completed]
+  workflow_dispatch:
+  push:
+    paths:
+      - "src/**"
+      - "content/**"
+      - "templates/**"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: der-monitor-data
+  cancel-in-progress: false
+
+jobs:
+  build:
+    # workflow_run fires for every collect completion; build only on success.
+    if: ${{ github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          # For workflow_run, take the branch head so the just-collected
+          # data commit is included (head_sha predates it).
+          ref: ${{ github.event.workflow_run.head_branch || github.ref_name }}
+
+      - name: Set up Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: "pip"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Rebuild derived outputs
+        run: |
+          set -euo pipefail
+          python -u src/process_value.py
+          python -u src/process_zones.py
+          python -u src/process_node_signal.py
+
+      - name: Rebuild charts
+        run: python -u src/make_charts.py
+
+      - name: Render dashboard
+        run: python -u src/render_dashboard.py
+
+      - name: Commit rebuilt site
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add docs
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "build: regenerate site ($(date -u +%Y-%m-%d))"
+            # collect.yml also commits to main: rebase onto it first,
+            # and retry the push once if a collect commit raced us.
+            git pull --rebase
+            git push || { git pull --rebase && git push; }
+          fi

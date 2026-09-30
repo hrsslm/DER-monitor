@@ -1,0 +1,8 @@
+# Downloaded raw upstream files: disposable scratch, never committed.
+data/raw/
+# Python artefacts
+__pycache__/
+*.pyc
+.venv/
+# Local test / scratch outputs
+/tmp/

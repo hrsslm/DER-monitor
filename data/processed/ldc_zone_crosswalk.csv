@@ -1,0 +1,61 @@
+ldc_id,ldc_name,zone_name,weight,n_nodes,method
+ED-2001-0090,Attawapiskat Power Corporation,NORTHEAST,1.0,1,in_polygon_zoned_nodes
+ED-2002-0497,Toronto Hydro-Electric System Limited,TORONTO,1.0,38,in_polygon_zoned_nodes
+ED-2002-0513,Festival Hydro Inc.,SOUTHWEST,1.0,2,in_polygon_zoned_nodes
+ED-2002-0514,Sioux Lookout Hydro Inc.,NORTHWEST,1.0,1,in_polygon_zoned_nodes
+ED-2002-0515,Westario Power Inc.,SOUTHWEST,1.0,1,in_polygon_zoned_nodes
+ED-2002-0516,ERTH Power Corporation,SOUTHWEST,1.0,4,in_polygon_zoned_nodes
+ED-2002-0517,Bluewater Power Distribution Corporation,WEST,0.6666666666666666,2,in_polygon_zoned_nodes
+ED-2002-0517,Bluewater Power Distribution Corporation,SOUTHWEST,0.3333333333333333,1,in_polygon_zoned_nodes
+ED-2002-0518,EPCOR Electricity Distribution Ontario Inc.,ESSA,1.0,1,in_polygon_zoned_nodes
+ED-2002-0527,ENWIN Utilities Ltd.,WEST,0.8,4,in_polygon_zoned_nodes
+ED-2002-0527,ENWIN Utilities Ltd.,NORTHEAST,0.2,1,in_polygon_zoned_nodes
+ED-2002-0533,Hearst Power Distribution Company Limited,NORTHEAST,1.0,1,in_polygon_zoned_nodes
+ED-2002-0546,PUC Distribution Inc.,NORTHEAST,0.9166666666666666,11,in_polygon_zoned_nodes
+ED-2002-0546,PUC Distribution Inc.,SOUTHWEST,0.08333333333333333,1,in_polygon_zoned_nodes
+ED-2002-0547,Niagara-On-The-Lake Hydro Inc.,NIAGARA,1.0,11,in_polygon_zoned_nodes
+ED-2002-0552,Halton Hills Hydro Inc.,SOUTHWEST,1.0,4,in_polygon_zoned_nodes
+ED-2002-0556,Hydro Ottawa Limited,OTTAWA,0.9459459459459459,35,in_polygon_zoned_nodes
+ED-2002-0556,Hydro Ottawa Limited,EAST,0.05405405405405406,2,in_polygon_zoned_nodes
+ED-2002-0557,London Hydro Inc.,WEST,1.0,6,in_polygon_zoned_nodes
+ED-2002-0559,Greater Sudbury Hydro Inc.,NORTHEAST,1.0,2,in_polygon_zoned_nodes
+ED-2002-0560,Oshawa PUC Networks Inc.,TORONTO,1.0,1,in_polygon_zoned_nodes
+ED-2002-0563,Entegrus Powerlines Inc.,WEST,1.0,2,in_polygon_zoned_nodes
+ED-2002-0572,Canadian Niagara Power Inc.,NIAGARA,0.5,1,in_polygon_zoned_nodes
+ED-2002-0572,Canadian Niagara Power Inc.,NORTHEAST,0.5,1,in_polygon_zoned_nodes
+ED-2003-0001,Atikokan Hydro Inc.,NORTHWEST,1.0,2,in_polygon_zoned_nodes
+ED-2003-0002,Welland Hydro-Electric System Corp.,NIAGARA,1.0,2,in_polygon_zoned_nodes
+ED-2003-0004,Burlington Hydro Inc.,SOUTHWEST,1.0,1,in_polygon_zoned_nodes
+ED-2003-0014,Milton Hydro Distribution Inc.,SOUTHWEST,1.0,2,in_polygon_zoned_nodes
+ED-2003-0018,Northern Ontario Wires Inc.,NORTHEAST,1.0,4,in_polygon_zoned_nodes
+ED-2003-0024,North Bay Hydro Distribution Limited,NORTHEAST,1.0,3,in_polygon_zoned_nodes
+ED-2003-0026,Tillsonburg Hydro Inc.,WEST,1.0,1,in_polygon_zoned_nodes
+ED-2003-0037,Hydro One Remote Communities Inc.,NORTHEAST,1.0,6,in_polygon_zoned_nodes
+ED-2003-0043,Hydro One Networks Inc.,EAST,0.21818181818181817,60,in_polygon_zoned_nodes
+ED-2003-0043,Hydro One Networks Inc.,NORTHEAST,0.18181818181818182,50,in_polygon_zoned_nodes
+ED-2003-0043,Hydro One Networks Inc.,NORTHWEST,0.15272727272727274,42,in_polygon_zoned_nodes
+ED-2003-0043,Hydro One Networks Inc.,SOUTHWEST,0.13454545454545455,37,in_polygon_zoned_nodes
+ED-2003-0043,Hydro One Networks Inc.,WEST,0.11636363636363636,32,in_polygon_zoned_nodes
+ED-2003-0043,Hydro One Networks Inc.,ESSA,0.08,22,in_polygon_zoned_nodes
+ED-2003-0043,Hydro One Networks Inc.,OTTAWA,0.05454545454545454,15,in_polygon_zoned_nodes
+ED-2003-0043,Hydro One Networks Inc.,BRUCE,0.02909090909090909,8,in_polygon_zoned_nodes
+ED-2003-0043,Hydro One Networks Inc.,NIAGARA,0.025454545454545455,7,in_polygon_zoned_nodes
+ED-2003-0043,Hydro One Networks Inc.,TORONTO,0.007272727272727273,2,in_polygon_zoned_nodes
+ED-2003-0057,Kingston Hydro Corporation,EAST,1.0,1,in_polygon_zoned_nodes
+ED-2003-0081,Kashechewan Power Corporation,NORTHEAST,1.0,1,in_polygon_zoned_nodes
+ED-2003-0135,Oakville Hydro Electricity Distribution Inc.,SOUTHWEST,1.0,2,in_polygon_zoned_nodes
+ED-2004-0405,Cornwall Street Railway Light and Power Company Limited,EAST,1.0,1,in_polygon_zoned_nodes
+ED-2007-0624,Newmarket-Tay Power Distribution Ltd.,ESSA,1.0,2,in_polygon_zoned_nodes
+ED-2007-0749,Niagara Peninsula Energy Inc.,NIAGARA,0.9411764705882353,16,in_polygon_zoned_nodes
+ED-2007-0749,Niagara Peninsula Energy Inc.,SOUTHWEST,0.058823529411764705,1,in_polygon_zoned_nodes
+ED-2009-0072,Algoma Power Inc.,NORTHEAST,1.0,9,in_polygon_zoned_nodes
+ED-2016-0360,Alectra Utilities Corporation,SOUTHWEST,0.49019607843137253,25,in_polygon_zoned_nodes
+ED-2016-0360,Alectra Utilities Corporation,TORONTO,0.3137254901960784,16,in_polygon_zoned_nodes
+ED-2016-0360,Alectra Utilities Corporation,NIAGARA,0.11764705882352941,6,in_polygon_zoned_nodes
+ED-2016-0360,Alectra Utilities Corporation,ESSA,0.0392156862745098,2,in_polygon_zoned_nodes
+ED-2016-0360,Alectra Utilities Corporation,NORTHWEST,0.0196078431372549,1,in_polygon_zoned_nodes
+ED-2016-0360,Alectra Utilities Corporation,OTTAWA,0.0196078431372549,1,in_polygon_zoned_nodes
+ED-2018-0233,Synergy North Corporation,NORTHWEST,1.0,2,in_polygon_zoned_nodes
+ED-2019-0128,Elexicon Energy Inc.,TORONTO,1.0,31,in_polygon_zoned_nodes
+ED-2021-0280,GrandBridge Energy Inc. (Formerly Energy+ Inc.) | GrandBridge Energy Inc. (Formerly Brantford Power Inc.),SOUTHWEST,1.0,5,in_polygon_zoned_nodes
+ED-2022-0006,Enova Power Corp.,SOUTHWEST,1.0,7,in_polygon_zoned_nodes

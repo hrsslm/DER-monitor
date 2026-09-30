@@ -1,0 +1,9 @@
+fuel_type,oeb_embedded_capacity_mw,ieso_dx_contracted_mw,contract_over_oeb_ratio,discrepancy_over_20pct,note
+Solar,2269.6,1912.2,0.843,False,sources are different universes (OEB: distributor-connected embedded; IESO: contracted Dx); never blended
+Wind,640.7,628.2,0.981,False,sources are different universes (OEB: distributor-connected embedded; IESO: contracted Dx); never blended
+Water,507.0,343.4,0.677,True,sources are different universes (OEB: distributor-connected embedded; IESO: contracted Dx); never blended
+Biomass,150.1,102.6,0.683,True,sources are different universes (OEB: distributor-connected embedded; IESO: contracted Dx); never blended
+Fossil Fuel,494.2,294.1,0.595,True,sources are different universes (OEB: distributor-connected embedded; IESO: contracted Dx); never blended
+Exporting Storage,26.0,43.0,1.65,True,sources are different universes (OEB: distributor-connected embedded; IESO: contracted Dx); never blended
+Non-Exporting Storage,116.2,0.0,0.0,True,sources are different universes (OEB: distributor-connected embedded; IESO: contracted Dx); never blended
+Other,295.9,24.2,0.082,True,sources are different universes (OEB: distributor-connected embedded; IESO: contracted Dx); never blended

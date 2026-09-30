@@ -1,0 +1,59 @@
+licence_no,utility_name,data_year,vintage,rrr_name,match_type,reported,multi_zone,customers,netmetered_customers,netmetered_capacity_mw,embedded_facilities,embedded_capacity_mw,total_der_capacity_mw,capacity_per_1000_customers_mw,solar_facilities,solar_capacity_mw,wind_facilities,wind_capacity_mw,water_facilities,water_capacity_mw,biomass_facilities,biomass_capacity_mw,fossil_fuel_facilities,fossil_fuel_capacity_mw,exporting_storage_facilities,exporting_storage_capacity_mw,non_exporting_storage_facilities,non_exporting_storage_capacity_mw,other_facilities,other_capacity_mw
+ED-2001-0090,Attawapiskat Power Corporation,2024,2024-2,,unmatched,False,False,,,,,,,,,,,,,,,,,,,,,,,
+ED-2002-0493,Cooperative Hydro Embrun Inc.,2024,2024-2,Cooperative Hydro Embrun Inc.,exact_current,True,False,2705,6,0.06,6,0.06,0.12,0.0444,6,0.06,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0
+ED-2002-0497,Toronto Hydro-Electric System Limited,2024,2024-2,Toronto Hydro-Electric System Limited,exact_current,True,False,795394,807,20.12,2118,303.29,323.409,0.4066,1967,99.97,2,0.753,0,0.0,2,5.2,0,0.0,0,0.0,28,21.642,119,175.724
+ED-2002-0499,Essex Powerlines Corporation,2024,2024-2,Essex Powerlines Corporation,exact_current,True,False,31543,17,0.238,212,61.194,61.432,1.9476,204,20.07,2,19.8,0,0.0,0,0.0,6,21.324,0,0.0,0,0.0,0,0.0
+ED-2002-0500,Orangeville Hydro Limited,2024,2024-2,Orangeville Hydro Limited,exact_current,True,False,13021,7,0.117,42,1.936,2.053,0.1577,42,1.936,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0
+ED-2002-0511,Wellington North Power Inc.,2024,2024-2,Wellington North Power Inc.,exact_current,True,False,4388,7,0.185,23,0.315,0.5,0.1139,23,0.315,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0
+ED-2002-0513,Festival Hydro Inc.,2024,2024-2,Festival Hydro Inc.,exact_current,True,False,22581,46,0.904,104,22.902,23.806,1.0543,104,22.902,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0
+ED-2002-0514,Sioux Lookout Hydro Inc.,2024,2024-2,Sioux Lookout Hydro Inc.,exact_current,True,False,2973,2,0.019,8,0.061,0.08,0.0269,8,0.061,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0
+ED-2002-0515,Westario Power Inc.,2024,2024-2,Westario Power Inc.,exact_current,True,False,24829,50,0.492,79,2.227,2.719,0.1095,79,2.227,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0
+ED-2002-0516,ERTH Power Corporation,2024,2024-2,ERTH Power Corporation,exact_current,True,False,24958,25,0.631,108,39.963,40.594,1.6265,101,23.444,0,0.0,0,0.0,0,0.0,2,3.35,1,1.8,3,6.237,1,5.132
+ED-2002-0517,Bluewater Power Distribution Corporation,2024,2024-2,Bluewater Power Distribution Corporation,exact_current,True,False,37404,38,0.302,214,87.079,87.381,2.3361,213,83.879,0,0.0,0,0.0,1,3.2,0,0.0,0,0.0,0,0.0,0,0.0
+ED-2002-0518,EPCOR Electricity Distribution Ontario Inc.,2024,2024-2,EPCOR Electricity Distribution Ontario Inc.,exact_current,True,False,19052,18,0.335,79,1.35,1.685,0.0885,79,1.35,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0
+ED-2002-0520,InnPower Corporation,2024,2024-2,InnPower Corporation,exact_current,True,False,23505,26,0.233,139,2.676,2.908,0.1237,139,2.676,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0
+ED-2002-0527,ENWIN Utilities Ltd.,2024,2024-2,ENWIN Utilities Ltd.,exact_current,True,False,92004,49,1.779,792,40.245,42.024,0.4568,781,21.652,1,0.001,0,0.0,0,0.0,9,14.592,0,0.0,1,4.0,0,0.0
+ED-2002-0533,Hearst Power Distribution Company Limited,2024,2024-2,Hearst Power Distribution Company Limited,exact_current,True,False,2680,6,0.077,49,10.48,10.557,3.9392,49,10.48,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0
+ED-2002-0540,Lakeland Power Distribution Ltd.,2024,2024-2,Lakeland Power Distribution Ltd.,exact_current,True,False,14773,19,0.362,68,13.401,13.763,0.9316,62,1.528,0,0.0,6,11.873,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0
+ED-2002-0542,Hydro 2000 Inc.,2024,2024-2,Hydro 2000 Inc.,exact_current,True,False,1280,1,0.01,5,0.048,0.058,0.0456,5,0.048,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0
+ED-2002-0544,Wasaga Distribution Inc.,2024,2024-2,Wasaga Distribution Inc.,exact_current,True,False,15675,18,0.152,47,1.36,1.512,0.0965,47,1.36,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0
+ED-2002-0546,PUC Distribution Inc.,2024,2024-2,PUC Distribution Inc.,exact_current,True,False,34142,17,0.117,126,62.946,63.063,1.8471,126,62.946,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0
+ED-2002-0547,Niagara-On-The-Lake Hydro Inc.,2024,2024-2,Niagara-on-the-Lake Hydro Inc.,exact_current,True,False,10083,21,1.053,157,5.105,6.157,0.6107,155,2.57,0,0.0,1,2.2,1,0.335,0,0.0,0,0.0,0,0.0,0,0.0
+ED-2002-0552,Halton Hills Hydro Inc.,2024,2024-2,Halton Hills Hydro Inc.,exact_current,True,False,23128,82,0.95,191,5.533,6.483,0.2803,191,5.533,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0
+ED-2002-0554,Grimsby Power Incorporated,2024,2024-2,Grimsby Power Incorporated,exact_current,True,False,11945,14,0.137,36,2.18,2.317,0.194,35,1.121,0,0.0,0,0.0,1,1.059,0,0.0,0,0.0,0,0.0,0,0.0
+ED-2002-0556,Hydro Ottawa Limited,2024,2024-2,Hydro Ottawa Limited,exact_current,True,False,371749,552,10.34,1039,158.848,169.188,0.4551,992,35.489,0,0.0,21,88.18,3,0.833,18,32.524,5,1.822,0,0.0,0,0.0
+ED-2002-0557,London Hydro Inc.,2024,2024-2,London Hydro Inc.,exact_current,True,False,168224,137,5.749,371,108.627,114.376,0.6799,354,15.36,0,0.0,1,0.675,2,3.81,10,78.862,0,0.0,3,8.195,1,1.725
+ED-2002-0559,Greater Sudbury Hydro Inc.,2024,2024-2,Greater Sudbury Hydro Inc.,exact_current,True,False,48230,49,0.929,81,14.045,14.973,0.3105,77,0.833,1,0.012,0,0.0,1,1.6,2,11.6,0,0.0,0,0.0,0,0.0
+ED-2002-0560,Oshawa PUC Networks Inc.,2024,2024-2,Oshawa PUC Networks Inc.,exact_current,True,False,62880,85,1.589,334,9.651,11.24,0.1788,329,3.552,0,0.0,0,0.0,0,0.0,4,5.599,0,0.0,1,0.5,0,0.0
+ED-2002-0563,Entegrus Powerlines Inc.,2024,2024-2,Entegrus Powerlines Inc.,exact_current,True,False,63483,51,1.002,272,30.018,31.02,0.4886,266,18.901,0,0.0,0,0.0,1,0.25,5,10.867,0,0.0,0,0.0,0,0.0
+ED-2002-0572,Canadian Niagara Power Inc.,2024,2024-2,Canadian Niagara Power Inc.,exact_current,True,False,30920,54,0.923,201,12.099,13.022,0.4212,195,2.999,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,1,3.2,5,5.9
+ED-2002-0577,Renfrew Hydro Inc.,2024,2024-2,Renfrew Hydro Inc.,exact_current,True,False,4418,2,0.243,22,7.201,7.444,1.6849,18,1.248,1,0.003,3,5.95,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0
+ED-2003-0001,Atikokan Hydro Inc.,2024,2024-2,Atikokan Hydro Inc.,exact_current,True,False,1620,0,0.0,13,0.109,0.109,0.067,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,13,0.109
+ED-2003-0002,Welland Hydro-Electric System Corp.,2024,2024-2,Welland Hydro-Electric System Corp.,exact_current,True,False,26253,13,0.138,118,18.077,18.215,0.6938,115,14.176,0,0.0,0,0.0,0,0.0,1,3.828,0,0.0,0,0.0,2,0.073
+ED-2003-0003,Rideau St. Lawrence Distribution Inc.,2024,2024-2,Rideau St. Lawrence Distribution Inc.,exact_current,True,False,6074,8,0.077,7,0.059,0.136,0.0223,7,0.059,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0
+ED-2003-0004,Burlington Hydro Inc.,2024,2024-2,Burlington Hydro Inc.,exact_current,True,False,69561,113,1.639,228,7.85,9.489,0.1364,224,7.56,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,4,0.29
+ED-2003-0014,Milton Hydro Distribution Inc.,2024,2024-2,Milton Hydro Distribution Inc.,exact_current,True,False,44067,95,3.911,360,21.729,25.639,0.5818,357,7.299,0,0.0,0,0.0,0,0.0,2,14.42,0,0.0,1,0.01,0,0.0
+ED-2003-0015,E.L.K. Energy Inc.,2024,2024-2,E.L.K. Energy Inc.,exact_current,True,False,12742,9,0.085,154,3.805,3.889,0.3053,154,3.805,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0
+ED-2003-0018,Northern Ontario Wires Inc.,2024,2024-2,Northern Ontario Wires Inc.,exact_current,True,False,5952,0,0.0,15,0.135,0.135,0.0227,15,0.135,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0
+ED-2003-0024,North Bay Hydro Distribution Limited,2024,2024-2,North Bay Hydro Distribution Limited,exact_current,True,False,27852,19,0.225,64,3.162,3.387,0.1216,63,1.562,0,0.0,0,0.0,1,1.6,0,0.0,0,0.0,0,0.0,0,0.0
+ED-2003-0026,Tillsonburg Hydro Inc.,2024,2024-2,Tillsonburg Hydro Inc.,exact_current,True,False,8553,11,0.3,20,1.126,1.426,0.1667,20,1.126,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0
+ED-2003-0027,Hydro Hawkesbury Inc.,2024,2024-2,Hydro Hawkesbury Inc.,exact_current,True,False,5656,0,0.0,8,0.137,0.137,0.0241,8,0.137,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0
+ED-2003-0028,Fort Frances Power Corporation,2024,2024-2,Fort Frances Power Corporation,exact_current,True,False,3745,0,0.0,14,0.22,0.22,0.0587,14,0.22,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0
+ED-2003-0033,Ottawa River Power Corporation,2024,2024-2,Ottawa River Power Corporation,exact_current,True,False,11775,4,0.04,41,6.076,6.116,0.5194,39,0.358,0,0.0,2,5.718,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0
+ED-2003-0037,Hydro One Remote Communities Inc.,2024,2024-2,,unmatched,False,False,,,,,,,,,,,,,,,,,,,,,,,
+ED-2003-0043,Hydro One Networks Inc.,2024,2024-2,Hydro One Networks Inc.,exact_current,True,True,1477463,4062,64.073,16124,2756.701,2820.774,1.9092,15813,1469.667,65,606.78,112,373.645,57,100.636,27,87.945,2,2.045,16,31.199,32,84.784
+ED-2003-0057,Kingston Hydro Corporation,2024,2024-2,Kingston Hydro Corporation,exact_current,True,False,28423,39,0.919,169,16.939,17.858,0.6283,168,1.939,0,0.0,0,0.0,0,0.0,1,15.0,0,0.0,0,0.0,0,0.0
+ED-2003-0079,Fort Albany Power Corporation,2024,2024-2,,unmatched,False,False,,,,,,,,,,,,,,,,,,,,,,,
+ED-2003-0081,Kashechewan Power Corporation,2024,2024-2,,unmatched,False,False,,,,,,,,,,,,,,,,,,,,,,,
+ED-2003-0135,Oakville Hydro Electricity Distribution Inc.,2024,2024-2,Oakville Hydro Electricity Distribution Inc.,exact_current,True,False,78367,42,0.359,126,6.896,7.255,0.0926,126,6.896,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0
+ED-2004-0405,Cornwall Street Railway Light and Power Company Limited,2024,2024-2,,unmatched,False,False,,,,,,,,,,,,,,,,,,,,,,,
+ED-2007-0624,Newmarket-Tay Power Distribution Ltd.,2024,2024-2,Newmarket-Tay Power Distribution Ltd.,exact_current,True,False,45039,38,0.337,216,10.137,10.475,0.2326,214,4.138,0,0.0,0,0.0,0,0.0,1,0.999,1,5.0,0,0.0,0,0.0
+ED-2007-0749,Niagara Peninsula Energy Inc.,2024,2024-2,Niagara Peninsula Energy Inc.,exact_current,True,False,59168,115,1.359,470,20.284,21.643,0.3658,467,7.553,1,9.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,2,3.731
+ED-2009-0072,Algoma Power Inc.,2024,2024-2,Algoma Power Inc.,exact_current,True,False,12510,20,0.126,132,1.532,1.658,0.1326,132,1.532,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0
+ED-2016-0360,Alectra Utilities Corporation,2024,2024-2,Alectra Utilities Corporation,exact_current,True,False,1086177,1164,24.559,5574,342.177,366.736,0.3376,5472,154.693,4,0.304,4,17.7,2,1.002,71,141.592,0,0.0,16,18.48,5,8.406
+ED-2018-0233,Synergy North Corporation,2024,2024-2,Synergy North Corporation,exact_current,True,False,57373,29,0.361,247,28.039,28.4,0.495,243,20.189,0,0.0,0,0.0,2,3.8,2,4.05,0,0.0,0,0.0,0,0.0
+ED-2019-0128,Elexicon Energy Inc.,2024,2024-2,Elexicon Energy Inc.,exact_current,True,False,179017,158,3.172,582,38.24,41.412,0.2313,580,34.045,1,4.0,0,0.0,1,0.195,0,0.0,0,0.0,0,0.0,0,0.0
+ED-2021-0280,GrandBridge Energy Inc. (Formerly Energy+ Inc.) | GrandBridge Energy Inc. (Formerly Brantford Power Inc.),2024,2024-2,GrandBridge Energy Inc.; GrandBridge Energy Inc.,parenthetical_stripped,True,False,230638,310,8.85,1670,138.168,147.018,0.6374,1638,56.938,0,0.0,0,0.0,4,17.4,20,43.84,0,0.0,8,19.99,0,0.0
+ED-2022-0006,Enova Power Corp.,2024,2024-2,Enova Power Corp.,exact_current,True,False,163409,448,7.295,1493,66.474,73.768,0.4514,1458,25.336,1,0.035,0,0.0,3,9.2,5,3.77,8,15.382,2,2.75,16,10.002
+ED-2023-0202,Centre Wellington Hydro Ltd.,2024,2024-2,Centre Wellington Hydro Ltd.,exact_current,True,False,7553,38,0.346,38,1.888,2.234,0.2958,36,0.788,0,0.0,2,1.1,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0
+ED-2023-0262,Lakefront Utilities Inc.,2024,2024-2,Lakefront Utilities Inc.,exact_current,True,False,11371,17,1.2,54,4.971,6.171,0.5427,54,4.971,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0

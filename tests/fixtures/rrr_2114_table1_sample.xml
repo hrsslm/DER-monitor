@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataroot xmlns:od="urn:schemas-microsoft-com:officedata">
+<tab1>
+<Current_Company_Name>Alectra Utilities Corporation</Current_Company_Name>
+<Historical_Company_Name>Guelph Hydro Electric Systems Inc.</Historical_Company_Name>
+<Year>2016</Year>
+<Renewable_Energy_Type>Solar</Renewable_Energy_Type>
+<No_of_Net-Metered_Generators>4</No_of_Net-Metered_Generators>
+<Renewable_Generation_Installed_Capacity_kW>37</Renewable_Generation_Installed_Capacity_kW>
+<Cumulative_Installed_Capacity_kW>37</Cumulative_Installed_Capacity_kW>
+<Override>Not applicable</Override>
+</tab1>
+<tab1>
+<Current_Company_Name>Alectra Utilities Corporation</Current_Company_Name>
+<Historical_Company_Name>Guelph Hydro Electric Systems Inc.</Historical_Company_Name>
+<Year>2016</Year>
+<Renewable_Energy_Type>Water</Renewable_Energy_Type>
+<Cumulative_Installed_Capacity_kW>0</Cumulative_Installed_Capacity_kW>
+<Override>Not applicable</Override>
+</tab1>
+<tab1>
+<Current_Company_Name>Alectra Utilities Corporation</Current_Company_Name>
+<Historical_Company_Name>Guelph Hydro Electric Systems Inc.</Historical_Company_Name>
+<Year>2016</Year>
+<Renewable_Energy_Type>Wind</Renewable_Energy_Type>
+<Cumulative_Installed_Capacity_kW>0</Cumulative_Installed_Capacity_kW>
+<Override>Not applicable</Override>
+</tab1>
+<tab1>
+<Current_Company_Name>Alectra Utilities Corporation</Current_Company_Name>
+<Historical_Company_Name>Guelph Hydro Electric Systems Inc.</Historical_Company_Name>
+<Year>2017</Year>
+<Renewable_Energy_Type>Biomass</Renewable_Energy_Type>
+<Cumulative_Installed_Capacity_kW>0</Cumulative_Installed_Capacity_kW>
+<Override>Not applicable</Override>
+</tab1>
+<tab1>
+<Current_Company_Name>Alectra Utilities Corporation</Current_Company_Name>
+<Historical_Company_Name>Guelph Hydro Electric Systems Inc.</Historical_Company_Name>
+<Year>2017</Year>
+<Renewable_Energy_Type>Solar</Renewable_Energy_Type>
+<No_of_Net-Metered_Generators>9</No_of_Net-Metered_Generators>
+<Renewable_Generation_Installed_Capacity_kW>124</Renewable_Generation_Installed_Capacity_kW>
+<Electrical_Energy_Storage_Installed_Capacity_kW>8</Electrical_Energy_Storage_Installed_Capacity_kW>
+<Cumulative_Installed_Capacity_kW>132</Cumulative_Installed_Capacity_kW>
+<Override>Not applicable</Override>
+</tab1>
+<tab1>
+<Current_Company_Name>Alectra Utilities Corporation</Current_Company_Name>
+<Historical_Company_Name>Guelph Hydro Electric Systems Inc.</Historical_Company_Name>
+<Year>2017</Year>
+<Renewable_Energy_Type>Water</Renewable_Energy_Type>
+<Cumulative_Installed_Capacity_kW>0</Cumulative_Installed_Capacity_kW>
+<Override>Not applicable</Override>
+</tab1>
+<tab1>
+<Current_Company_Name>Alectra Utilities Corporation</Current_Company_Name>
+<Historical_Company_Name>Guelph Hydro Electric Systems Inc.</Historical_Company_Name>
+<Year>2017</Year>
+<Renewable_Energy_Type>Wind</Renewable_Energy_Type>
+<Cumulative_Installed_Capacity_kW>0</Cumulative_Installed_Capacity_kW>
+<Override>Not applicable</Override>
+</tab1>
+<tab1>
+<Current_Company_Name>Alectra Utilities Corporation</Current_Company_Name>
+<Historical_Company_Name>Guelph Hydro Electric Systems Inc.</Historical_Company_Name>
+<Year>2018</Year>
+<Renewable_Energy_Type>Biomass</Renewable_Energy_Type>
+<Cumulative_Installed_Capacity_kW>0</Cumulative_Installed_Capacity_kW>
+<Override>Not applicable</Override>
+</tab1>
+<tab1>
+<Current_Company_Name>Alectra Utilities Corporation</Current_Company_Name>
+<Historical_Company_Name>Guelph Hydro Electric Systems Inc.</Historical_Company_Name>
+<Year>2018</Year>
+<Renewable_Energy_Type>Solar</Renewable_Energy_Type>
+<No_of_Net-Metered_Generators>11</No_of_Net-Metered_Generators>
+<Renewable_Generation_Installed_Capacity_kW>318.8</Renewable_Generation_Installed_Capacity_kW>
+<Electrical_Energy_Storage_Installed_Capacity_kW>8</Electrical_Energy_Storage_Installed_Capacity_kW>
+<Cumulative_Installed_Capacity_kW>326.8</Cumulative_Installed_Capacity_kW>
+<Override>Not applicable</Override>
+</tab1>
+<tab1>
+<Current_Company_Name>Alectra Utilities Corporation</Current_Company_Name>
+<Historical_Company_Name>Guelph Hydro Electric Systems Inc.</Historical_Company_Name>
+<Year>2018</Year>
+<Renewable_Energy_Type>Water</Renewable_Energy_Type>
+<Cumulative_Installed_Capacity_kW>0</Cumulative_Installed_Capacity_kW>
+<Override>Not applicable</Override>
+</tab1>
+<tab1>
+<Current_Company_Name>Alectra Utilities Corporation</Current_Company_Name>
+<Historical_Company_Name>Guelph Hydro Electric Systems Inc.</Historical_Company_Name>
+<Year>2018</Year>
+<Renewable_Energy_Type>Wind</Renewable_Energy_Type>
+<Cumulative_Installed_Capacity_kW>0</Cumulative_Installed_Capacity_kW>
+<Override>Not applicable</Override>
+</tab1>
+<tab1>
+<Current_Company_Name>Alectra Utilities Corporation</Current_Company_Name>
+<Historical_Company_Name>Horizon Utilities Corporation</Historical_Company_Name>
+<Year>2015</Year>
+<Renewable_Energy_Type>Biomass</Renewable_Energy_Type>
+<No_of_Net-Metered_Generators>0</No_of_Net-Metered_Generators>
+<Renewable_Generation_Installed_Capacity_kW>0</Renewable_Generation_Installed_Capacity_kW>
+<Cumulative_Installed_Capacity_kW>0</Cumulative_Installed_Capacity_kW>
+<Override>Not applicable</Override>
+</tab1>
+<tab1>
+<Current_Company_Name>Alectra Utilities Corporation</Current_Company_Name>
+<Historical_Company_Name>Horizon Utilities Corporation</Historical_Company_Name>
+<Year>2015</Year>
+<Renewable_Energy_Type>Solar</Renewable_Energy_Type>
+<No_of_Net-Metered_Generators>8</No_of_Net-Metered_Generators>
+<Renewable_Generation_Installed_Capacity_kW>18</Renewable_Generation_Installed_Capacity_kW>
+<Cumulative_Installed_Capacity_kW>18</Cumulative_Installed_Capacity_kW>
+<Override>Not applicable</Override>
+</tab1>
+<tab1>
+<Current_Company_Name>Alectra Utilities Corporation</Current_Company_Name>
+<Historical_Company_Name>Horizon Utilities Corporation</Historical_Company_Name>
+<Year>2015</Year>
+<Renewable_Energy_Type>Water</Renewable_Energy_Type>
+<No_of_Net-Metered_Generators>0</No_of_Net-Metered_Generators>
+<Renewable_Generation_Installed_Capacity_kW>0</Renewable_Generation_Installed_Capacity_kW>
+<Cumulative_Installed_Capacity_kW>0</Cumulative_Installed_Capacity_kW>
+<Override>Not applicable</Override>
+</tab1>
+<tab1>
+<Current_Company_Name>Alectra Utilities Corporation</Current_Company_Name>
+<Historical_Company_Name>Horizon Utilities Corporation</Historical_Company_Name>
+<Year>2015</Year>
+<Renewable_Energy_Type>Wind</Renewable_Energy_Type>
+<No_of_Net-Metered_Generators>2</No_of_Net-Metered_Generators>
+<Renewable_Generation_Installed_Capacity_kW>4</Renewable_Generation_Installed_Capacity_kW>
+<Cumulative_Installed_Capacity_kW>4</Cumulative_Installed_Capacity_kW>
+<Override>Not applicable</Override>
+</tab1>
+<tab1>
+<Current_Company_Name>Alectra Utilities Corporation</Current_Company_Name>
+<Historical_Company_Name>Horizon Utilities Corporation</Historical_Company_Name>
+<Year>2016</Year>
+<Renewable_Energy_Type>Biomass</Renewable_Energy_Type>
+<Cumulative_Installed_Capacity_kW>0</Cumulative_Installed_Capacity_kW>
+<Override>Not applicable</Override>
+</tab1>
+<tab1>
+<Current_Company_Name>Alectra Utilities Corporation</Current_Company_Name>
+<Historical_Company_Name>Horizon Utilities Corporation</Historical_Company_Name>
+<Year>2016</Year>
+<Renewable_Energy_Type>Solar</Renewable_Energy_Type>
+<No_of_Net-Metered_Generators>14</No_of_Net-Metered_Generators>
+<Renewable_Generation_Installed_Capacity_kW>57</Renewable_Generation_Installed_Capacity_kW>
+<Cumulative_Installed_Capacity_kW>57</Cumulative_Installed_Capacity_kW>
+<Override>Not applicable</Override>
+</tab1>
+<tab1>
+<Current_Company_Name>Alectra Utilities Corporation</Current_Company_Name>
+<Historical_Company_Name>Horizon Utilities Corporation</Historical_Company_Name>
+<Year>2016</Year>
+<Renewable_Energy_Type>Water</Renewable_Energy_Type>
+<Cumulative_Installed_Capacity_kW>0</Cumulative_Installed_Capacity_kW>
+<Override>Not applicable</Override>
+</tab1>
+<tab1>
+<Current_Company_Name>Alectra Utilities Corporation</Current_Company_Name>
+<Historical_Company_Name>Horizon Utilities Corporation</Historical_Company_Name>
+<Year>2016</Year>
+<Renewable_Energy_Type>Wind</Renewable_Energy_Type>
+<No_of_Net-Metered_Generators>2</No_of_Net-Metered_Generators>
+<Renewable_Generation_Installed_Capacity_kW>4</Renewable_Generation_Installed_Capacity_kW>
+<Cumulative_Installed_Capacity_kW>4</Cumulative_Installed_Capacity_kW>
+<Override>Not applicable</Override>
+</tab1>
+<tab1>
+<Current_Company_Name>Alectra Utilities Corporation</Current_Company_Name>
+<Historical_Company_Name>Hydro One Brampton Networks Inc.</Historical_Company_Name>
+<Year>2015</Year>
+<Renewable_Energy_Type>Biomass</Renewable_Energy_Type>
+<Cumulative_Installed_Capacity_kW>0</Cumulative_Installed_Capacity_kW>
+<Override>Not applicable</Override>
+</tab1>
+</dataroot>

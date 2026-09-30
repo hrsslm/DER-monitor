@@ -1,0 +1,1056 @@
+node,zone,zone_method,matched_station
+ABITIBISF-LT.AG_T1,,unassigned,
+ABKENORA-LT.AG,,unassigned,
+ABRASIVE-LT.T1_LF_DRA,,unassigned,
+ADAMSBLVD-LT.L1_LF,,unassigned,
+ADELAIDE-LT.AG_T1,,unassigned,
+AGIMAKDS-LT.TT_LF,NORTHWEST,capacity_auction_table,AGIMAK DS
+AGINCOURT-LT.LFBY,TORONTO,capacity_auction_table,AGINCOURT TS
+AGUASABON-LT.AG12,,unassigned,
+ALANBRG28KV-LT_H1,,unassigned,
+ALBION-LT.LFBJQY,OTTAWA,capacity_auction_table,ALBION TS
+ALCOCAN-LT.TT1_LF,,unassigned,
+ALEXANDER-LT.AG_T1,NORTHWEST,capacity_auction_table,ALEXANDER SS
+ALEXANDER-LT.AG_T2,NORTHWEST,capacity_auction_table,ALEXANDER SS
+ALEXANDER-LT.AG_T3,NORTHWEST,capacity_auction_table,ALEXANDER SS
+ALEXANDER-LT.AG_T4,NORTHWEST,capacity_auction_table,ALEXANDER SS
+ALGOMAEAF-LT.EAF1,NORTHEAST,capacity_auction_table,ALGOMA TS
+ALLANBURG-LT.DRCTENGY_DRA,NIAGARA,capacity_auction_table,ALLANBURG TS
+ALLANBURG-LT.ENERCORP_DRA,NIAGARA,capacity_auction_table,ALLANBURG TS
+ALLANBURG-LT.ENERNOC_DRA,NIAGARA,capacity_auction_table,ALLANBURG TS
+ALLANBURG-LT.ENPOWINC_DRA,NIAGARA,capacity_auction_table,ALLANBURG TS
+ALLANBURG-LT.NRGCS_DRA,NIAGARA,capacity_auction_table,ALLANBURG TS
+ALLANBURG-LT.NRSTORCI_DRA,NIAGARA,capacity_auction_table,ALLANBURG TS
+ALLANBURG-LT.RODANCI_DRA,NIAGARA,capacity_auction_table,ALLANBURG TS
+ALLANBURG-LT.VOLTUS_DRA,NIAGARA,capacity_auction_table,ALLANBURG TS
+ALLISTON-LT.LFT2,ESSA,capacity_auction_table,ALLISTON TS
+ALMONTE-LT.LFJQ,EAST,capacity_auction_table,ALMONTE TS
+ALMONTEBESS1-LT.BATT_LF1,EAST,capacity_auction_table,ALMONTE TS
+ALMONTEBESS1-LT.BATT_TG1,EAST,capacity_auction_table,ALMONTE TS
+ALMONTEBESS2-LT.BATT_LF2,EAST,capacity_auction_table,ALMONTE TS
+ALMONTEBESS2-LT.BATT_TG2,EAST,capacity_auction_table,ALMONTE TS
+AMARANTH-LT.AG_T1,,unassigned,
+AMARANTH-LT.AG_T2,,unassigned,
+AMARANTH-LT.FA11,,unassigned,
+AMHERSTCGS-LT.AG_T1,,unassigned,
+ANDREWS-LT.AG12,NORTHEAST,capacity_auction_table,ANDREWS TS
+ANDREWS-LT.G3,NORTHEAST,capacity_auction_table,ANDREWS TS
+APIROQFALLS-LT.AG4,,unassigned,
+ARDOCH-LT.T1_LF,EAST,capacity_auction_table,ARDOCH DS
+ARLEN-LT.T1_LF,SOUTHWEST,capacity_auction_table,ARLEN MTS
+ARLENBESS-LT.BATT_LF1,SOUTHWEST,capacity_auction_table,ARLEN MTS
+ARLENBESS-LT.BATT_LF2,SOUTHWEST,capacity_auction_table,ARLEN MTS
+ARLENBESS-LT.BATT_TG1,SOUTHWEST,capacity_auction_table,ARLEN MTS
+ARLENBESS-LT.BATT_TG2,SOUTHWEST,capacity_auction_table,ARLEN MTS
+ARMITAGE-LT.LFE,ESSA,capacity_auction_table,ARMITAGE TS
+ARMOW-LT.AG_T1T2,,unassigned,
+ARNPRIOR-LT.AG12,EAST,capacity_auction_table,ARNPRIOR TS
+ARNPRIOR-LT.TT1_LF,EAST,capacity_auction_table,ARNPRIOR TS
+ASITUBE-LT.T1_LF,NORTHEAST,capacity_auction_table,ASI TUBE TS
+ATIKOKAN-LT.G1,,unassigned,
+ATLANTIC-LT.LFBY,,unassigned,
+ATLASTEEL-LT.T23,,unassigned,
+ATTAWAPISKAT-LT.T3_LF,NORTHEAST,capacity_auction_table,ATTAWAPISKAT CTS
+AUBREYFALLS-LT.G1,,unassigned,
+AUBREYFALLS-LT.G2,,unassigned,
+AUXSAUBLE-LT.G1,,unassigned,
+AYLMER-LT.TT_LF,WEST,capacity_auction_table,AYLMER TS
+BALMERCTS-115.T1_LFA,NORTHWEST,capacity_auction_table,BALMER CTS
+BARRETT-LT.AG13,,unassigned,
+BARRETT-LT.AG24,,unassigned,
+BARRICK-LT.T1_LF,,unassigned,
+BARRIE-LT.LFEQ12,ESSA,capacity_auction_table,BARRIE TS
+BARWICK-LT.LFBY,NORTHWEST,capacity_auction_table,BARWICK TS
+BASIN-LT.TT1_LF,TORONTO,capacity_auction_table,BASIN TS
+BASINRSVC1-LT.BATT_LF,TORONTO,capacity_auction_table,BASIN TS
+BASINRSVC1-LT.BATT_TG,TORONTO,capacity_auction_table,BASIN TS
+BASINRSVC2-LT.BATT_LF,TORONTO,capacity_auction_table,BASIN TS
+BASINRSVC2-LT.BATT_TG,TORONTO,capacity_auction_table,BASIN TS
+BATCHAWANA-LT.T1_LF,NORTHEAST,capacity_auction_table,BATCHAWANA TS
+BATHURST-LT.LFBJQY,TORONTO,capacity_auction_table,BATHURST TS
+BATLEMTNGOLD-LT.T1_LF,,unassigned,
+BATTERSEA-LT.TT12_LF,EAST,capacity_auction_table,BATTERSEA DS
+BAYER-LT.LFBY,,unassigned,
+BEAMSVLE-LT_PENWEST,,unassigned,
+BEARDMORE-LT.T12,,unassigned,
+BEAVERTON-LT.LFJQ,ESSA,capacity_auction_table,BEAVERTON TS
+BECK1-LT.G1,NIAGARA,capacity_auction_table,BECK 1 SS
+BECK1-LT.G10,NIAGARA,capacity_auction_table,BECK 1 SS
+BECK1-LT.G2,NIAGARA,capacity_auction_table,BECK 1 SS
+BECK1-LT.G3,NIAGARA,capacity_auction_table,BECK 1 SS
+BECK1-LT.G4,NIAGARA,capacity_auction_table,BECK 1 SS
+BECK1-LT.G5,NIAGARA,capacity_auction_table,BECK 1 SS
+BECK1-LT.G6,NIAGARA,capacity_auction_table,BECK 1 SS
+BECK1-LT.G7,NIAGARA,capacity_auction_table,BECK 1 SS
+BECK1-LT.G8,NIAGARA,capacity_auction_table,BECK 1 SS
+BECK1-LT.G9,NIAGARA,capacity_auction_table,BECK 1 SS
+BECK2-LT.AG1112,NIAGARA,capacity_auction_table,BECK 2 TS
+BECK2-LT.AG1314,NIAGARA,capacity_auction_table,BECK 2 TS
+BECK2-LT.AG1516,NIAGARA,capacity_auction_table,BECK 2 TS
+BECK2-LT.AG1718,NIAGARA,capacity_auction_table,BECK 2 TS
+BECK2-LT.AG1920,NIAGARA,capacity_auction_table,BECK 2 TS
+BECK2-LT.AG2122,NIAGARA,capacity_auction_table,BECK 2 TS
+BECK2-LT.AG2324,NIAGARA,capacity_auction_table,BECK 2 TS
+BECK2-LT.AG2526,NIAGARA,capacity_auction_table,BECK 2 TS
+BECK2PGS-LT.APG123,NIAGARA,capacity_auction_table,BECK 2 TS
+BECK2PGS-LT.APG123_LF,NIAGARA,capacity_auction_table,BECK 2 TS
+BECK2PGS-LT.APG456,NIAGARA,capacity_auction_table,BECK 2 TS
+BECK2PGS-LT.APG456_LF,NIAGARA,capacity_auction_table,BECK 2 TS
+BELLCREEK-LT.TT_LF,NORTHEAST,capacity_auction_table,BELL CREEK CTS
+BELLCREEK-LT.TT_LF_DRA,NORTHEAST,capacity_auction_table,BELL CREEK CTS
+BELLERIVERTS-LT.LFBQ,WEST,capacity_auction_table,BELLE RIVER TS
+BELLERVRWF-LT.AG_T1,,unassigned,
+BELLEVLE-LT.LFBY,,unassigned,
+BERMONDSEY-LT.LFBJQY,TORONTO,capacity_auction_table,BERMONDSEY TS
+BILBERYCREEK-LT.T12,,unassigned,
+BIRCH-LT.T2_LF,NORTHWEST,capacity_auction_table,BIRCH TS
+BIRCHMNT-LT.G1,NORTHWEST,capacity_auction_table,BIRCH TS
+BIRMINGHAM-LT.ALIQ_LF1,SOUTHWEST,capacity_auction_table,BIRMINGHAM TS
+BIRMINGHAM-LT.ALIQ_LF2,SOUTHWEST,capacity_auction_table,BIRMINGHAM TS
+BIRMINGHAM-LT.LFBDKY1234,SOUTHWEST,capacity_auction_table,BIRMINGHAM TS
+BLAKEWF-LT.AG_T1,,unassigned,
+BLOOMSBURG-LT_LF,SOUTHWEST,capacity_auction_table,BLOOMSBURG MTS
+BORNISH-LT.AG_T1,,unassigned,
+BOWLAKEWF-LT.AG_1,,unassigned,
+BOWLAKEWF-LT.AG_2,,unassigned,
+BOWLAKEWF-LT.AG_3,,unassigned,
+BRAMALEA-LT.LFBY,TORONTO,capacity_auction_table,BRAMALEA TS
+BRAMALEA-LT.LFEZ,TORONTO,capacity_auction_table,BRAMALEA TS
+BRAMALEA-LT.LFJQ,TORONTO,capacity_auction_table,BRAMALEA TS
+BRANT-LT.TT13_LF,SOUTHWEST,capacity_auction_table,BRANT TS
+BRANTFORD-LT.LFYZ,SOUTHWEST,capacity_auction_table,BRANTFORD TS
+BRIDGMAN-LT.LFJ,TORONTO,capacity_auction_table,BRIDGMAN TS
+BRIDLEWOOD-LT.TT_LF,OTTAWA,capacity_auction_table,BRIDLEWOOD MTS
+BRIGHTONCGS-LT.AG1-1B,,unassigned,
+BRIGHTONCGS-LT.G1A,,unassigned,
+BROCKVLE-LT.LFBQ,,unassigned,
+BRONTE-LT.T7_LF,SOUTHWEST,capacity_auction_table,BRONTE TS
+BROWNHILL-LT.LFB,ESSA,capacity_auction_table,BROWN HILL TS
+BRUCE-LT.ENERCORP_DRA,,unassigned,
+BRUCE-LT.G1,,unassigned,
+BRUCE-LT.G2,,unassigned,
+BRUCE-LT.G3,,unassigned,
+BRUCE-LT.G4,,unassigned,
+BRUCE-LT.SG1,,unassigned,
+BRUCE-LT.SG2,,unassigned,
+BRUCE-LT.SG3,,unassigned,
+BRUCE-LT.SG4,,unassigned,
+BRUCE-LT.VOLTUS_DRA,,unassigned,
+BRUCEB-LT.G5,BRUCE,capacity_auction_table,BRUCE B SS
+BRUCEB-LT.G6,BRUCE,capacity_auction_table,BRUCE B SS
+BRUCEB-LT.G7,BRUCE,capacity_auction_table,BRUCE B SS
+BRUCEB-LT.G8,BRUCE,capacity_auction_table,BRUCE B SS
+BRUCEB-LT.SG5,BRUCE,capacity_auction_table,BRUCE B SS
+BRUCEB-LT.SG6,BRUCE,capacity_auction_table,BRUCE B SS
+BRUCEB-LT.SG7,BRUCE,capacity_auction_table,BRUCE B SS
+BRUCEB-LT.SG8,BRUCE,capacity_auction_table,BRUCE B SS
+BRUCEHWB-LT.T7_LF,,unassigned,
+BRUCE_GEN:PZ,,unassigned,
+BRUCE_SOUTHWEST_LOAD:PZ,,unassigned,
+BUCHANAN-230:LMP,WEST,capacity_auction_table,BUCHANAN TS
+BUCHANANDESN-LT.LFBY,WEST,capacity_auction_table,BUCHANAN TS
+BUNTING-LT.T3_LF,NIAGARA,capacity_auction_table,BUNTING TS
+BURLEIGH-LT.T1_LF,NORTHWEST,capacity_auction_table,BURLEIGH DS
+BURLNGTNDESN-LT.LFBJQY,,unassigned,
+BUROAK-LT.G3,,unassigned,
+BUTTONVLE-LT.LFQZ,,unassigned,
+CALEDONIA-LT_HALD,SOUTHWEST,capacity_auction_table,CALEDONIA TS
+CALMLAKE-LT.G1,,unassigned,
+CALSTOCKDS-LT.T1A_LF,NORTHEAST,capacity_auction_table,CALSTOCK DS
+CALSTOCKGS-LT.G1,NORTHEAST,capacity_auction_table,CALSTOCK DS
+CAMBRIAN-LT.TOTAL_LOAD,EAST,capacity_auction_table,CAMBRIAN MTS
+CAMBRIDGE1-LT.LFJZ,,unassigned,
+CAMERONFALLS-LT.AG17,,unassigned,
+CAMERONFALLS-LT.AG234,,unassigned,
+CAMERONFALLS-LT.AG56,,unassigned,
+CAMPBELL-LT.G_EASTVIEW,SOUTHWEST,capacity_auction_table,CAMPBELL TS
+CAMPBELL-LT.LFBEJQYZ,SOUTHWEST,capacity_auction_table,CAMPBELL TS
+CANYON-LT.AG145_A,,unassigned,
+CANYON-LT.G2_A,,unassigned,
+CANYON-LT.G3_A,,unassigned,
+CARDIFF-LT.LFBQ,TORONTO,capacity_auction_table,CARDIFF TS
+CARDINAL-115.T3_LF,,unassigned,
+CARDINAL-LT.AG12,,unassigned,
+CARIBOUFALLS-LT.AG123,,unassigned,
+CARLAW-LT.T1_LF,TORONTO,capacity_auction_table,CARLAW TS
+CARLING-LT.TT15_LF,OTTAWA,capacity_auction_table,CARLING TS
+CARLTON-LT.T1_LF,NIAGARA,capacity_auction_table,CARLTON TS
+CARMEUSELIME-LT.T1_LF,,unassigned,
+CARMICHAEL-LT.G1,,unassigned,
+CARMICHAEL-LT.G2,,unassigned,
+CARTERCGS-LT.AG12,,unassigned,
+CATLAKE-LT.T1_LF,,unassigned,
+CAVANAGH-LT.LFJQ,TORONTO,capacity_auction_table,CAVANAGH TS
+CECIL-LT.TT1_LF,TORONTO,capacity_auction_table,CECIL TS
+CEDAR-LT.TT1_LF,SOUTHWEST,capacity_auction_table,CEDAR TS
+CEDARPOINT-LT.AG_T1,SOUTHWEST,capacity_auction_table,CEDAR TS
+CENTRALIA-LT.TT_LF,SOUTHWEST,capacity_auction_table,CENTRALIA TS
+CENTREPOINT-LT.T12,OTTAWA,capacity_auction_table,CENTREPOINT MTS
+CHALKRIVER-LT.T1234,ESSA,capacity_auction_table,CHALK RIVER CTS
+CHAPLEAU-LT.T2_LF,NORTHEAST,capacity_auction_table,CHAPLEAU MTS
+CHAPLEAU-LT.TT_LF,NORTHEAST,capacity_auction_table,CHAPLEAU MTS
+CHARLES-LT.TT_LF,TORONTO,capacity_auction_table,CHARLES TS
+CHATHAM-LT.AESLNR1_DRA,WEST,capacity_auction_table,CHATHAM SS
+CHATHAM-LT.DRCTENGY_DRA,WEST,capacity_auction_table,CHATHAM SS
+CHATHAM-LT.EDGECOM_DRA,WEST,capacity_auction_table,CHATHAM SS
+CHATHAM-LT.EEC_DRA,WEST,capacity_auction_table,CHATHAM SS
+CHATHAM-LT.ENERCORP_DRA,WEST,capacity_auction_table,CHATHAM SS
+CHATHAM-LT.ENERNOC_DRA,WEST,capacity_auction_table,CHATHAM SS
+CHATHAM-LT.ENPOWINC_DRA,WEST,capacity_auction_table,CHATHAM SS
+CHATHAM-LT.GCPROJECT_DRA,WEST,capacity_auction_table,CHATHAM SS
+CHATHAM-LT.LINDE_DRA,WEST,capacity_auction_table,CHATHAM SS
+CHATHAM-LT.NRGCS_DRA,WEST,capacity_auction_table,CHATHAM SS
+CHATHAM-LT.NRSTORCI_DRA,WEST,capacity_auction_table,CHATHAM SS
+CHATHAM-LT.RODANBTM_DRA,WEST,capacity_auction_table,CHATHAM SS
+CHATHAM-LT.RODANCI_DRA,WEST,capacity_auction_table,CHATHAM SS
+CHATHAM-LT.VINEFR_DRA,WEST,capacity_auction_table,CHATHAM SS
+CHATHAM-LT.VOLTUS_DRA,WEST,capacity_auction_table,CHATHAM SS
+CHATSFALLS-LT.AG_115,EAST,capacity_auction_table,CHATS FALLS TS
+CHATSFALLS-LT.AG_230,EAST,capacity_auction_table,CHATS FALLS TS
+CHATSFALLS-LT.AG_Q4C,EAST,capacity_auction_table,CHATS FALLS TS
+CHENAUX-LT.AG1234,EAST,capacity_auction_table,CHENAUX TS
+CHENAUX-LT.AG5678,EAST,capacity_auction_table,CHENAUX TS
+CHERRYWOOD-500:LMP,TORONTO,capacity_auction_table,CHERRYWOOD TS
+CHERRYWOOD-LT.ALECTRA_DRA,TORONTO,capacity_auction_table,CHERRYWOOD TS
+CHERRYWOOD-LT.ASHGROVE_DRA,TORONTO,capacity_auction_table,CHERRYWOOD TS
+CHERRYWOOD-LT.DEMAND_DRA,TORONTO,capacity_auction_table,CHERRYWOOD TS
+CHERRYWOOD-LT.DRCTENGY_DRA,TORONTO,capacity_auction_table,CHERRYWOOD TS
+CHERRYWOOD-LT.EDGECOM_DRA,TORONTO,capacity_auction_table,CHERRYWOOD TS
+CHERRYWOOD-LT.ENERCORP_DRA,TORONTO,capacity_auction_table,CHERRYWOOD TS
+CHERRYWOOD-LT.ENERNOC_DRA,TORONTO,capacity_auction_table,CHERRYWOOD TS
+CHERRYWOOD-LT.ENPOWINC_DRA,TORONTO,capacity_auction_table,CHERRYWOOD TS
+CHERRYWOOD-LT.GCPOWER_DRA,TORONTO,capacity_auction_table,CHERRYWOOD TS
+CHERRYWOOD-LT.GCPROJECT_DRA,TORONTO,capacity_auction_table,CHERRYWOOD TS
+CHERRYWOOD-LT.LFBY,TORONTO,capacity_auction_table,CHERRYWOOD TS
+CHERRYWOOD-LT.LINDE_DRA,TORONTO,capacity_auction_table,CHERRYWOOD TS
+CHERRYWOOD-LT.NORAMPTRENT_DRA,TORONTO,capacity_auction_table,CHERRYWOOD TS
+CHERRYWOOD-LT.NRGCS_DRA,TORONTO,capacity_auction_table,CHERRYWOOD TS
+CHERRYWOOD-LT.NRSTORCI_DRA,TORONTO,capacity_auction_table,CHERRYWOOD TS
+CHERRYWOOD-LT.OHMCONECT_DRA,TORONTO,capacity_auction_table,CHERRYWOOD TS
+CHERRYWOOD-LT.RODANBTM_DRA,TORONTO,capacity_auction_table,CHERRYWOOD TS
+CHERRYWOOD-LT.RODANCI_DRA,TORONTO,capacity_auction_table,CHERRYWOOD TS
+CHERRYWOOD-LT.SANOFI_DRA,TORONTO,capacity_auction_table,CHERRYWOOD TS
+CHERRYWOOD-LT.SOBEYSCI_DRA,TORONTO,capacity_auction_table,CHERRYWOOD TS
+CHERRYWOOD-LT.STEM_DRA,TORONTO,capacity_auction_table,CHERRYWOOD TS
+CHERRYWOOD-LT.UOFT_DRA,TORONTO,capacity_auction_table,CHERRYWOOD TS
+CHERRYWOOD-LT.VOLTUS_DRA,TORONTO,capacity_auction_table,CHERRYWOOD TS
+CHESTERVL-LT.T1_LF,,unassigned,
+CHRYSLER-LT.T1_LF,,unassigned,
+CHURCHLLMED-LT.T1_LFB,,unassigned,
+CLAIREVILLE-500:LMP,TORONTO,capacity_auction_table,CLAIREVILLE TS
+CLARABELLE-LT_H1,NORTHEAST,capacity_auction_table,CLARABELLE TS
+CLARENCE-LT.T1_LF,OTTAWA,capacity_auction_table,CLARENCE DS
+CLARKE-LT.LFBY,WEST,capacity_auction_table,CLARKE TS
+CLEARWATRBAY-LT.T1_LF,,unassigned,
+CLERGUE-LT.G1,NORTHEAST,capacity_auction_table,CLERGUE TS
+CLERGUE-LT.G2,NORTHEAST,capacity_auction_table,CLERGUE TS
+CLERGUE-LT.G3,NORTHEAST,capacity_auction_table,CLERGUE TS
+CNP18-LT.T1_LF,,unassigned,
+COBDEN-LT.T12,EAST,capacity_auction_table,COBDEN TS
+COBDEN-LT.T3_LF,EAST,capacity_auction_table,COBDEN TS
+COCHRANECGS-LT.G2,NORTHEAST,capacity_auction_table,COCHRANE MTS
+COCHRANEMS-LT.TT_LF,NORTHEAST,capacity_auction_table,COCHRANE MTS
+COCHRANEWEST-LT.T1_LF,NORTHEAST,capacity_auction_table,COCHRANE WEST DS
+COMBER-LT.AG_T1,,unassigned,
+COMBER-LT.AG_T2,,unassigned,
+COMMERCEWAY-LT.T1_LB,SOUTHWEST,capacity_auction_table,COMMERCE WAY TS
+CONSTANCE-LT.TT_LF,SOUTHWEST,capacity_auction_table,CONSTANCE DS
+COOKSVLE-LT.LFEJQZ,,unassigned,
+COPELAND-LT.LFT1,TORONTO,capacity_auction_table,COPELAND SS
+COTEGOLDCTS-LT.LOAD-LF,NORTHEAST,capacity_auction_table,COTE GOLD CTS
+COTEGOLDCTS-LT.LOAD-LF_DRA,NORTHEAST,capacity_auction_table,COTE GOLD CTS
+CRAWFORD-LT.LFEY,WEST,capacity_auction_table,CRAWFORD TS
+CROSBY-LT.LFABY,EAST,capacity_auction_table,CROSBY TS
+CROWLAND-LT.T5_LF,NIAGARA,capacity_auction_table,CROWLAND TS
+CROWRIVERDS-LT.TT_LF,NORTHWEST,capacity_auction_table,CROW RIVER DS
+CRYSLER-LT.AG_T1,,unassigned,
+CRYSTALFALLS-LT.LFEZ,NORTHEAST,capacity_auction_table,CRYSTAL FALLS TS
+CUMBERLAND-LT.LFBQ,,unassigned,
+CUMBERLAND-LT.TT12_LF,,unassigned,
+CYANAMIDCAN-LT.T1_LF,,unassigned,
+CYRVILLE-LT.LFJQ,OTTAWA,capacity_auction_table,CYRVILLE MTS
+DARLINGTON-LT.G1,,unassigned,
+DARLINGTON-LT.G2,,unassigned,
+DARLINGTON-LT.G3,,unassigned,
+DARLINGTON-LT.G4,,unassigned,
+DARLINGTON-LT.SG1,,unassigned,
+DARLINGTON-LT.SG2,,unassigned,
+DARLINGTON-LT.SG3,,unassigned,
+DARLINGTON-LT.SG4,,unassigned,
+DAWATSON-LT.AG123,NORTHEAST,capacity_auction_table,DA WATSON TS
+DAWATSON-LT.AG456,NORTHEAST,capacity_auction_table,DA WATSON TS
+DECEWFALLS-LT.G1,NIAGARA,capacity_auction_table,DECEW FALLS SS
+DECEWFALLS-LT.G2,NIAGARA,capacity_auction_table,DECEW FALLS SS
+DECEWND1-LT.AG5678,,unassigned,
+DEEPRIVER-LT.TT_H1,ESSA,capacity_auction_table,DEEP RIVER DS
+DESJCHMSDS-LT.T1_LF,,unassigned,
+DESJOACHIMS-LT.AG12,ESSA,capacity_auction_table,DES JOACHIMS TS
+DESJOACHIMS-LT.AG34,ESSA,capacity_auction_table,DES JOACHIMS TS
+DESJOACHIMS-LT.AG56,ESSA,capacity_auction_table,DES JOACHIMS TS
+DESJOACHIMS-LT.AG78,ESSA,capacity_auction_table,DES JOACHIMS TS
+DESTEC-LT.G1,,unassigned,
+DESTEC-LT.G2,,unassigned,
+DETOUR-LT.T2_LF,,unassigned,
+DILLON-LT.AG_T1,,unassigned,
+DOBBIN-LT.LFB,EAST,capacity_auction_table,DOBBIN TS
+DOBBINDS-LT.T1_LF,EAST,capacity_auction_table,DOBBIN TS
+DOFASCO-LT.T1_LF,,unassigned,
+DOFASCO-LT.T1_LF_DRA,,unassigned,
+DOFASCO-LT.T5_LF,,unassigned,
+DOFKENILWRTH-LT.LF78,,unassigned,
+DOMTRESPNOLA-LT.AT123_LF,,unassigned,
+DOUGLASPTTS-LT.T34,,unassigned,
+DOWCHEMICAL-LT.AG1245,,unassigned,
+DPNTMTLND-LT.G1,,unassigned,
+DRYDEN-LT.T1_LF,NORTHWEST,capacity_auction_table,DRYDEN TS
+DRYDENWYRHSR-LT.AG12,NORTHWEST,capacity_auction_table,DRYDEN TS
+DUART-LT.LFBY,WEST,capacity_auction_table,DUART TS
+DUFFERIN-LT.T1_LF,TORONTO,capacity_auction_table,DUFFERIN TS
+DUNDAS-LT.T1_LF,SOUTHWEST,capacity_auction_table,DUNDAS TS
+DUNDAS-LT.T5_LF,SOUTHWEST,capacity_auction_table,DUNDAS TS
+DUNDAS-LT.T6_LF,SOUTHWEST,capacity_auction_table,DUNDAS TS
+DUNNVLE-LT_H1,,unassigned,
+DUPLEX-LT.T1_LF,TORONTO,capacity_auction_table,DUPLEX TS
+DYMOND-LT.T34,NORTHEAST,capacity_auction_table,DYMOND TS
+EARFALLS-LT.AG1234,NORTHWEST,capacity_auction_table,EAR FALLS TS
+EARFALLS-LT.LF_T5,NORTHWEST,capacity_auction_table,EAR FALLS TS
+EASTLAKESCWF-LT.AG_T1,,unassigned,
+EASTWCGS-LT.G1,,unassigned,
+EASTWCGS-LT.G2,,unassigned,
+EASTWCGS-LT.G3,,unassigned,
+ECHORIVER-LT.T1_LF,NORTHEAST,capacity_auction_table,ECHO RIVER TS
+EDDYNAIRN-LT.T1_LF,,unassigned,
+EDGEWARE-LT.BY,WEST,capacity_auction_table,EDGEWARE TS
+EEFW-LT.G1,,unassigned,
+EEFW-LT.G2,,unassigned,
+ELGIN-LT.T1_LF,SOUTHWEST,capacity_auction_table,ELGIN TS
+ELLESMERE-LT.LFJQ,TORONTO,capacity_auction_table,ELLESMERE TS
+ELLIOTLAKE-LT.T1_LF,,unassigned,
+ELLWOOD-LT.LFJQ,OTTAWA,capacity_auction_table,ELLWOOD MTS
+ELLWOODRSVC-LT.BATT_LF,OTTAWA,capacity_auction_table,ELLWOOD MTS
+ELLWOODRSVC-LT.BATT_TG,OTTAWA,capacity_auction_table,ELLWOOD MTS
+ELMIRA-LT.BATT_LF,SOUTHWEST,capacity_auction_table,ELMIRA TS
+ELMIRA-LT.BATT_TG,SOUTHWEST,capacity_auction_table,ELMIRA TS
+ELMIRA-LT.T12,SOUTHWEST,capacity_auction_table,ELMIRA TS
+EMPIRESF-LT.AG_T1,,unassigned,
+ENBRCARDINAL-LT.T1_LF,,unassigned,
+ENBRHILTON-LT.T1_LF,,unassigned,
+ENBRYANSTON-LT.T1_LF,,unassigned,
+ENFIELD-LT.T5_LB,TORONTO,capacity_auction_table,ENFIELD TS
+EPWORTH-LT.T12,,unassigned,
+ERIEAU-LT.AG_T1,,unassigned,
+ERINDALE-LT.LFBEJQYZ,TORONTO,capacity_auction_table,ERINDALE TS
+ESPANOLA-LT.TT_LF,NORTHEAST,capacity_auction_table,ESPANOLA TS
+ESPLANADE-LT.TT_LF,TORONTO,capacity_auction_table,ESPLANADE TS
+ESSA-500:LMP,,unassigned,
+ESSA-LT.AESLNR1_DRA,,unassigned,
+ESSA-LT.EDGECOM_DRA,,unassigned,
+ESSA-LT.ENERCORP_DRA,,unassigned,
+ESSA-LT.ENERNOC_DRA,,unassigned,
+ESSA-LT.ENPOWINC_DRA,,unassigned,
+ESSA-LT.GCPOWER_DRA,,unassigned,
+ESSA-LT.GCPROJECT_DRA,,unassigned,
+ESSA-LT.NRGCS_DRA,,unassigned,
+ESSA-LT.NRSTORCI_DRA,,unassigned,
+ESSA-LT.VOLTUS_DRA,,unassigned,
+ESSEX-LT.LFB1,WEST,capacity_auction_table,ESSEX TS
+ETONDS-LT.T1_LF,NORTHWEST,capacity_auction_table,ETON DS
+EVERETT-LT.LFBY,ESSA,capacity_auction_table,EVERETT TS
+FAIRBANK-LT.TT1_LF,TORONTO,capacity_auction_table,FAIRBANK TS
+FAIRCHILD-LT.LFBJQY,TORONTO,capacity_auction_table,FAIRCHILD TS
+FALCONBRNRM-LT.TT,,unassigned,
+FALCONBRSM-LT.AT1_LF,,unassigned,
+FALLOWFIELD-LT.G_POWERTRAIL,OTTAWA,capacity_auction_table,FALLOWFIELD DS
+FALLOWFIELD-LT.TT_LF,OTTAWA,capacity_auction_table,FALLOWFIELD DS
+FAUQUIER-LT.T1_LF,NORTHEAST,capacity_auction_table,FAUQUIER DS
+FERGUS-LT.LFBY,SOUTHWEST,capacity_auction_table,FERGUS TS
+FESTIVALMTS1-LT.LJ,SOUTHWEST,capacity_auction_table,FESTIVAL MTS1
+FFMS-LT.T1_LF,,unassigned,
+FINCH-LT.LFBJQY,TORONTO,capacity_auction_table,FINCH TS
+FLAKEBOARD-LT.T1_LF,NORTHEAST,capacity_auction_table,FLAKEBOARD TS
+FLAKEBOARD-LT.TT_LF_DRA,NORTHEAST,capacity_auction_table,FLAKEBOARD TS
+FORDANEX-LT.T1_LF,,unassigned,
+FORDCTS-LT.T1_LF,,unassigned,
+FORDEEP-LT.LFAB,,unassigned,
+FORDOAKVLE-LT.LFAB,,unassigned,
+FORESTJURA-LT.TT_LF,WEST,capacity_auction_table,FOREST JURA DS
+FORESTLEA-LT.T12,ESSA,capacity_auction_table,FOREST LEA DS
+FORTALBANY-LT.T1_LF,NORTHEAST,capacity_auction_table,FORT ALBANY CTS
+FORTFRANCSWC-LT.AG12,,unassigned,
+FORTWILLIAM-LT.T5_LF,NORTHWEST,capacity_auction_table,FORT WILLIAM TS
+FRONTENAC-LT.T1_LF,EAST,capacity_auction_table,FRONTENAC TS
+FROOD-LT.T12,,unassigned,
+FROOD-LT.T12_DRA,,unassigned,
+GAGE-LT.TT1_LF,,unassigned,
+GALT-LT.LFJY,,unassigned,
+GARDINER-LT.LFBJQY,EAST,capacity_auction_table,GARDINER TS
+GARTSHORECGS-LT.G1,,unassigned,
+GECO-LT.T1_LF,,unassigned,
+GERDAUCAM-LT.LFA,,unassigned,
+GERDAUCAM-LT.LFB_DRA,,unassigned,
+GERDAUCAM-LT.T3_LF,,unassigned,
+GERDAUWBY-LT.LFAB,,unassigned,
+GERDAUWBY-LT.T3_LF,,unassigned,
+GERRARD-LT.TT1_LF,TORONTO,capacity_auction_table,GERRARD TS
+GLENDALE-LT.TT1_LF,NIAGARA,capacity_auction_table,GLENDALE TS
+GLENGARRY-LT.BATT_LF1,,unassigned,
+GLENGARRY-LT.BATT_TG1,,unassigned,
+GLENGROVE-LT.TT1_LF,TORONTO,capacity_auction_table,GLENGROVE TS
+GLENORCHY1-LT.T1_LF,,unassigned,
+GLOUCESTER-LT.T12,,unassigned,
+GMCTS-LT.T1_LF,,unassigned,
+GODERICH-LT.LFQZ,SOUTHWEST,capacity_auction_table,GODERICH TS
+GODERICH-LT.STRG_LF,SOUTHWEST,capacity_auction_table,GODERICH TS
+GODERICH-LT.STRG_TG,SOUTHWEST,capacity_auction_table,GODERICH TS
+GOLDCORP-LT.T1_LF,,unassigned,
+GOREWAY-LT.LFBYZ,TORONTO,capacity_auction_table,GOREWAY TS
+GOREWAY-LT.LFJ,TORONTO,capacity_auction_table,GOREWAY TS
+GOREWAY-LT.LFQ,TORONTO,capacity_auction_table,GOREWAY TS
+GOREWAYBESS-LT.BATT_LF,TORONTO,capacity_auction_table,GOREWAY TS
+GOREWAYBESS-LT.BATT_TG,TORONTO,capacity_auction_table,GOREWAY TS
+GOSFIELD-LT.AG_T1,,unassigned,
+GOSHEN-LT.AG_T1,,unassigned,
+GOULAISBAY-LT.T1_LF,NORTHEAST,capacity_auction_table,GOULAIS BAY DS
+GOULAISWF-LT.AG_T1,,unassigned,
+GRANDSF-LT.AG_T2,,unassigned,
+GRANDVALLEY3-LT.AG_T1,,unassigned,
+GRANDWF-LT.AG_T1,,unassigned,
+GRDEAST-LT.T1_LF,,unassigned,
+GREELYDS-LT.TT_LF,OTTAWA,capacity_auction_table,GREELY DS
+GREENFIELD-LT.G1,,unassigned,
+GREENFIELD-LT.G2,,unassigned,
+GREENFIELD-LT.G3,,unassigned,
+GREENFIELD-LT.G4,,unassigned,
+GREENWICH-LT.AG_T1,,unassigned,
+GREENWICH-LT.AG_T2,,unassigned,
+GRNDMOE-LT.T1_LF,,unassigned,
+GRUBSTAKE-LT.T1_LF,,unassigned,
+GRUBSTAKE-LT.T1_LF_DRA,,unassigned,
+GSPC-LT.G1,,unassigned,
+GSPC-LT.G2,,unassigned,
+GSPC-LT.G3,,unassigned,
+GTAA-LT.G_M12,,unassigned,
+GTAA-LT.G_M45,,unassigned,
+GTAA-LT.G_M46,,unassigned,
+GTAA-LT.LF_M12,,unassigned,
+GTAA-LT.M4546,,unassigned,
+HAGERSVILLE-LT.BATT_LF1,,unassigned,
+HAGERSVILLE-LT.BATT_LF2,,unassigned,
+HAGERSVILLE-LT.BATT_LF3,,unassigned,
+HAGERSVILLE-LT.BATT_LF4,,unassigned,
+HAGERSVILLE-LT.BATT_TG1,,unassigned,
+HAGERSVILLE-LT.BATT_TG2,,unassigned,
+HAGERSVILLE-LT.BATT_TG3,,unassigned,
+HAGERSVILLE-LT.BATT_TG4,,unassigned,
+HALEYIND-LT.T1_LF,,unassigned,
+HALTON-LT.LFJQ,SOUTHWEST,capacity_auction_table,HALTON TS
+HALTONHILLS-LT.G1,SOUTHWEST,capacity_auction_table,HALTON TS
+HALTONHILLS-LT.G2,SOUTHWEST,capacity_auction_table,HALTON TS
+HALTONHILLS-LT.G3,SOUTHWEST,capacity_auction_table,HALTON TS
+HALTONMTS1-LT.LFJZ,SOUTHWEST,capacity_auction_table,HALTON TS
+HAMBEACH-LT.G_WOODWARD,,unassigned,
+HAMBEACH-LT.T3_LF,,unassigned,
+HAMLAKE-LT.LFBJQY,,unassigned,
+HAMNEBO-LT.LFBY,,unassigned,
+HAMNEBO-LT.LFJQ,,unassigned,
+HANLON-LT.T1_LF,SOUTHWEST,capacity_auction_table,HANLON TS
+HANMER-500:LMP,NORTHEAST,capacity_auction_table,HANMER TS
+HANMER-LT.DEMAND_DRA,NORTHEAST,capacity_auction_table,HANMER TS
+HANMER-LT.EDGECOM_DRA,NORTHEAST,capacity_auction_table,HANMER TS
+HANMER-LT.ENERCORP_DRA,NORTHEAST,capacity_auction_table,HANMER TS
+HANMER-LT.ENERNOC_DRA,NORTHEAST,capacity_auction_table,HANMER TS
+HANMER-LT.ENPOWINC_DRA,NORTHEAST,capacity_auction_table,HANMER TS
+HANMER-LT.MCEWEN_DRA,NORTHEAST,capacity_auction_table,HANMER TS
+HANMER-LT.NRGCS_DRA,NORTHEAST,capacity_auction_table,HANMER TS
+HANMER-LT.NRGPEAKS_DRA,NORTHEAST,capacity_auction_table,HANMER TS
+HANMER-LT.PLACERDOMECA_DRA,NORTHEAST,capacity_auction_table,HANMER TS
+HANMER-LT.RODANCI_DRA,NORTHEAST,capacity_auction_table,HANMER TS
+HANMER-LT.VOLTUS_DRA,NORTHEAST,capacity_auction_table,HANMER TS
+HANOVER-LT.T12,SOUTHWEST,capacity_auction_table,HANOVER TS
+HARMON-LT.AG12_B,,unassigned,
+HARMON-LT.G3,,unassigned,
+HARRIS-LT.G1,,unassigned,
+HARROWSMITH-LT.T12,EAST,capacity_auction_table,HARROWSMITH DS
+HAVELOCK-LT.LFBY,EAST,capacity_auction_table,HAVELOCK TS
+HAWKESBURY-LT.TT12_LF,,unassigned,
+HAWTHORNE-LT.EDGECOM_DRA,OTTAWA,capacity_auction_table,HAWTHORNE TS
+HAWTHORNE-LT.ENERCORP_DRA,OTTAWA,capacity_auction_table,HAWTHORNE TS
+HAWTHORNE-LT.ENERNOC_DRA,OTTAWA,capacity_auction_table,HAWTHORNE TS
+HAWTHORNE-LT.ENPOWINC_DRA,OTTAWA,capacity_auction_table,HAWTHORNE TS
+HAWTHORNE-LT.GCPROJECT_DRA,OTTAWA,capacity_auction_table,HAWTHORNE TS
+HAWTHORNE-LT.LFB,OTTAWA,capacity_auction_table,HAWTHORNE TS
+HAWTHORNE-LT.NRGCS_DRA,OTTAWA,capacity_auction_table,HAWTHORNE TS
+HAWTHORNE-LT.RODANCI_DRA,OTTAWA,capacity_auction_table,HAWTHORNE TS
+HAWTHORNE-LT.VOLTUS_DRA,OTTAWA,capacity_auction_table,HAWTHORNE TS
+HEALEY-LT.AG_M4,,unassigned,
+HEARST-LT_H1,NORTHEAST,capacity_auction_table,HEARST TS
+HENVEYNORTH-LT.AG_T1N,,unassigned,
+HENVEYSOUTH-LT.AG_T1S,,unassigned,
+HERRIDGELAKE-LT.T1_LF,NORTHEAST,capacity_auction_table,HERRIDGE LAKE DS
+HIGHBURY-LT.TT_LF,WEST,capacity_auction_table,HIGHBURY TS
+HINCHEY-LT.T3_LF,OTTAWA,capacity_auction_table,HINCHEY TS
+HINCHINBROOK-LT.T1_LF,,unassigned,
+HNDCHUTE-LT.AG_M3,,unassigned,
+HOGGCGS-LT.G1,,unassigned,
+HOLDEN-LT.AG1234,,unassigned,
+HOLDEN-LT.AG5678,,unassigned,
+HOLINGSWTH-LT.G1,,unassigned,
+HOLLAND-LT.T1_LFB,ESSA,capacity_auction_table,HOLLAND TS
+HORNER-LT.LFBEJQYZ,TORONTO,capacity_auction_table,HORNER TS
+HORNING-LT.LFB1,SOUTHWEST,capacity_auction_table,HORNING TS
+HOYLE-LT.T1_LF,NORTHEAST,capacity_auction_table,HOYLE DS
+HWY101-LT.LF123,,unassigned,
+IBM-LT.LFBY,,unassigned,
+ICESPRINGS-LT.M1_LF,,unassigned,
+IMPERIAL-LT.T1_LF,,unassigned,
+IMPERIALNANT-LT.LFT1,,unassigned,
+INCO4-LT.T12,,unassigned,
+INCO4-LT.T12_DRA,,unassigned,
+INCOC2P-LT.T1_LF,NORTHEAST,capacity_auction_table,INCO CTS
+INGERSOLL-LT.LFEZ,SOUTHWEST,capacity_auction_table,INGERSOLL TS
+INGERSOLLCGS-LT.G3,SOUTHWEST,capacity_auction_table,INGERSOLL TS
+IPPB5G-LT.T1_LF,,unassigned,
+IROQUODS-LT.T12,,unassigned,
+ISLINGTON-LT.M12_LF,,unassigned,
+IVACO-LT.ALF,OTTAWA,capacity_auction_table,IVACO CTS
+IVACO-LT.LFQ,OTTAWA,capacity_auction_table,IVACO CTS
+IVACO-LT.LFY,OTTAWA,capacity_auction_table,IVACO CTS
+JARVIS-LT.T34,SOUTHWEST,capacity_auction_table,JARVIS TS
+JBLCAN-LT.T1_LF_DRA,,unassigned,
+JBLCTS-LT.LFB13,NIAGARA,capacity_auction_table,JBL CTS
+JELLICO-LT.T1_LF,,unassigned,
+JERICHO-LT.AG_T1,,unassigned,
+JIMYARROW-LT.LFA,TORONTO,capacity_auction_table,JIM YARROW MTS
+JOHN-LT.T2_LF,,unassigned,
+JPII1-LT.BATT_LF,,unassigned,
+JPII1-LT.BATT_TG,,unassigned,
+K2WIND2-LT.AG_T20,,unassigned,
+K2WIND5-LT.AG_T10,,unassigned,
+KAKABEKA-LT.AG1234,,unassigned,
+KALAR-LT.T1_LF,NIAGARA,capacity_auction_table,KALAR MTS
+KANATA-LT.T1_LF,OTTAWA,capacity_auction_table,KANATA MTS
+KAPGS-LT.AG12,,unassigned,
+KAPUSKASING-LT.T5_LF,NORTHEAST,capacity_auction_table,KAPUSKASING TS
+KASHECHEWAN-LT.T2_LF,NORTHEAST,capacity_auction_table,KASHECHEWAN CTS
+KEEWATIN-LT.LF,NORTHWEST,capacity_auction_table,KEEWATIN DS
+KEITH-LT.LFBY,WEST,capacity_auction_table,KEITH TS
+KENILWORTH-LT.LF8X_DRA,SOUTHWEST,capacity_auction_table,KENILWORTH TS
+KENILWORTH-LT.T23,SOUTHWEST,capacity_auction_table,KENILWORTH TS
+KENORAGS-LT.T1_LF,NORTHWEST,capacity_auction_table,KENORA TS
+KENORAMS-LT.TT_LF,NORTHWEST,capacity_auction_table,KENORA TS
+KENT-LT.LFBEYZ,,unassigned,
+KEYSER-LT.T2_LF,,unassigned,
+KIDDCREEK-LT.TT,,unassigned,
+KIDDCREEKM-LT.TT_LF,,unassigned,
+KIMBERCLARK-LT.T34_LF,,unassigned,
+KIMBERCLARK-LT.TT_LF_DRA,,unassigned,
+KINGEDWARD-LT.T3_LF,OTTAWA,capacity_auction_table,KING EDWARD TS
+KINGFISHER-LT.J_66999-LF,,unassigned,
+KINGSBRIDGE-LT.AG_T1,,unassigned,
+KINGSBRIDGE-LT.AG_T2,,unassigned,
+KINGSTONSF-LT.AG_T1,,unassigned,
+KINGSVILLE-LT.T1_LF,,unassigned,
+KINROSS-LT.T1_LF,,unassigned,
+KIPLING-LT.AG12_B,,unassigned,
+KIPLING-LT.G3,,unassigned,
+KIRKLANDLAKE-LT.KLG,NORTHEAST,capacity_auction_table,KIRKLAND LAKE TS
+KIRKLANDLAKE-LT.T34,NORTHEAST,capacity_auction_table,KIRKLAND LAKE TS
+KITCHENER3-LT.T6_LF,SOUTHWEST,capacity_auction_table,KITCHENER TS
+KITCHENER4-LT.T7_LF,SOUTHWEST,capacity_auction_table,KITCHENER 4
+KITCHENER8-LT.T15_LF,SOUTHWEST,capacity_auction_table,KITCHENER TS
+KITCHENR1-LT.T12,,unassigned,
+KITCHENR7-LT.T1_LF,,unassigned,
+KITCHENR9-LT.LF111,,unassigned,
+KITCHENR9-LT.LF112,,unassigned,
+KITCHNRMS-LT.T9_LF,,unassigned,
+KLEINBURG-LT.BJQY,TORONTO,capacity_auction_table,KLEINBURG TS
+LACDESILES-LT.T1_LF,,unassigned,
+LAFARGE-LT.T1_LFA,,unassigned,
+LAFARGE-LT.T1_LFA_DRA,,unassigned,
+LAFORESTRDDS-LT.TT_LF,,unassigned,
+LAKEHEAD-LT.ENPOWINC_DRA,NORTHWEST,capacity_auction_table,LAKEHEAD TS
+LAKEHEAD-LT.NRGCS_DRA,NORTHWEST,capacity_auction_table,LAKEHEAD TS
+LAKEHEAD-LT.VOLTUS_DRA,NORTHWEST,capacity_auction_table,LAKEHEAD TS
+LAKESUPERIOR-LT.GTG1,,unassigned,
+LAKESUPERIOR-LT.GTG2,,unassigned,
+LAKESUPERIOR-LT.STG1,,unassigned,
+LAMBTON-230:LMP,WEST,capacity_auction_table,LAMBTON TS
+LAMBTON-LT.LFDJQY,WEST,capacity_auction_table,LAMBTON TS
+LANDONWF-LT.AG_T1,,unassigned,
+LARCHWOOD-LT.T2_LF,NORTHEAST,capacity_auction_table,LARCHWOOD TS
+LAUZON-LT.AG_EBUS,,unassigned,
+LAUZON-LT.AG_JBUS,,unassigned,
+LAUZON-LT.LFBEJQ,,unassigned,
+LEAMINGTON-LT.LFB,WEST,capacity_auction_table,LEAMINGTON TS
+LEAMINGTON-LT_GENSET,WEST,capacity_auction_table,LEAMINGTON TS
+LEASIDE-LT.LFB,TORONTO,capacity_auction_table,LEASIDE TS
+LENNOX-LT.CTG1,EAST,capacity_auction_table,LENNOX TS
+LENNOX-LT.CTG2,EAST,capacity_auction_table,LENNOX TS
+LENNOX-LT.DRCTENGY_DRA,EAST,capacity_auction_table,LENNOX TS
+LENNOX-LT.EDGECOM_DRA,EAST,capacity_auction_table,LENNOX TS
+LENNOX-LT.ENERCORP_DRA,EAST,capacity_auction_table,LENNOX TS
+LENNOX-LT.ENERNOC_DRA,EAST,capacity_auction_table,LENNOX TS
+LENNOX-LT.ENPOWINC_DRA,EAST,capacity_auction_table,LENNOX TS
+LENNOX-LT.G1,EAST,capacity_auction_table,LENNOX TS
+LENNOX-LT.G2,EAST,capacity_auction_table,LENNOX TS
+LENNOX-LT.G3,EAST,capacity_auction_table,LENNOX TS
+LENNOX-LT.G4,EAST,capacity_auction_table,LENNOX TS
+LENNOX-LT.NRGCS_DRA,EAST,capacity_auction_table,LENNOX TS
+LENNOX-LT.NRGPEAKS_DRA,EAST,capacity_auction_table,LENNOX TS
+LENNOX-LT.NRSTORCI_DRA,EAST,capacity_auction_table,LENNOX TS
+LENNOX-LT.PEMBROKE_DRA,EAST,capacity_auction_table,LENNOX TS
+LENNOX-LT.RODANBTM_DRA,EAST,capacity_auction_table,LENNOX TS
+LENNOX-LT.VOLTUS_DRA,EAST,capacity_auction_table,LENNOX TS
+LESLIE-LT.LFBJQY,TORONTO,capacity_auction_table,LESLIE TS
+LIMEBANK-LT.LFJQ12,OTTAWA,capacity_auction_table,LIMEBANK MTS
+LINCOLNHTS-LT.T1_LF,,unassigned,
+LINDSAY-LT.LFBY,ESSA,capacity_auction_table,LINDSAY TS
+LISGAR-LT.T1_LF,OTTAWA,capacity_auction_table,LISGAR TS
+LISKEARD-LT.AG_A,,unassigned,
+LISKEARD-LT.AG_B,,unassigned,
+LISKEARD-LT.AG_C,,unassigned,
+LITTLELONG-LT.AG12_B,NORTHEAST,capacity_auction_table,LITTLE LONG SS
+LITTLELONG-LT.G3,NORTHEAST,capacity_auction_table,LITTLE LONG SS
+LODGEROOM-LT.T12,EAST,capacity_auction_table,LODGEROOM DS
+LONGLAC-LT.LFBY,NORTHWEST,capacity_auction_table,LONG LAC TS
+LONGLAKESF-LT.AG_T1,NORTHWEST,capacity_auction_table,LONG LAC TS
+LONGSAULTE-LT.G1,,unassigned,
+LONGSAULTE-LT.G2,,unassigned,
+LONGSAULTE-LT.G3,,unassigned,
+LONGSAULTE-LT.G4,,unassigned,
+LONGUEUIL-LT.LFJQ,OTTAWA,capacity_auction_table,LONGUEUIL TS
+LONGWOODESN-LT.LFJQ,WEST,capacity_auction_table,LONGWOOD TS
+LORNEPARK-LT.LFBJ,TORONTO,capacity_auction_table,LORNE PARK TS
+LOWERNOTCH-LT.AG12,,unassigned,
+LOWERSTGN-LT.AG_F1,,unassigned,
+LOWERWHITE-LT.AG_T1,,unassigned,
+MACASSA-LT.T12,NORTHEAST,capacity_auction_table,MACASSA CTS
+MACASSAMILL-LT.T1_LF,NORTHEAST,capacity_auction_table,MACASSA CTS
+MACKAYCGS-LT.AG12,NORTHEAST,capacity_auction_table,MACKAY TS
+MACKAYCGS-LT.G3,NORTHEAST,capacity_auction_table,MACKAY TS
+MACKENZIE-LT.T1_LF,NORTHWEST,capacity_auction_table,MACKENZIE TS
+MAINS-LT.T3_LF,,unassigned,
+MAITLAND-LT.TT_LF,,unassigned,
+MALDEN-LT_ENWIN,WEST,capacity_auction_table,MALDEN TS
+MALVERN-LT.LFJQ,TORONTO,capacity_auction_table,MALVERN TS
+MANBYW-LT.LFBYQZ,TORONTO,capacity_auction_table,MANBY TS
+MANITOUFALLS-LT.AG12345,,unassigned,
+MANITOULIN-LT.TT_LF,NORTHEAST,capacity_auction_table,MANITOULIN TS
+MANITOUWADS-LT.T1_LF,,unassigned,
+MANITOUWATS-LT.T1_LF,,unassigned,
+MANITOUWATS-TWIN-LT.AG12,,unassigned,
+MANORDALE-LT.T12,OTTAWA,capacity_auction_table,MANORDALE MTS
+MANOTICK-LT.T12,OTTAWA,capacity_auction_table,MANOTICK DS
+MARATHONDS-LT.T2_LF,NORTHWEST,capacity_auction_table,MARATHON TS
+MARCHWOOD-LT.T12,OTTAWA,capacity_auction_table,MARCHWOOD MTS
+MARGACH-LT.TT_LF,NORTHWEST,capacity_auction_table,MARGACH DS
+MARIONVLE-LT.T1_LF,,unassigned,
+MARKHAM1-LT.LFBY,,unassigned,
+MARKHAM2-LT.LFJQ,,unassigned,
+MARKHAM3-LT.LFEJYZ,,unassigned,
+MARKHAM4-LT.LFPR,,unassigned,
+MARKHAMSTRGE-LT.FREG_TG,,unassigned,
+MARTINDALE-LT.LFJ,NORTHEAST,capacity_auction_table,MARTINDALE TS
+MARTINSMEDSF-LT.AG_T1,,unassigned,
+MASSEY-LT.T1_LF,NORTHEAST,capacity_auction_table,MASSEY DS
+MASTRONCTS-LT.LFB,,unassigned,
+MATTABI-LT.TT_LF,,unassigned,
+MATTAWADS-LT.LFB,NORTHEAST,capacity_auction_table,MATTAWA DS
+MAZINAW-LT.LFT1,EAST,capacity_auction_table,MAZINAW DS
+MCLEANSMTNWF-LT.AG_T1,,unassigned,
+MCMASTER-LT.LFQ12,SOUTHWEST,capacity_auction_table,MCMASTER CTS
+MCMASTER-LT.T1_LF_DRA,SOUTHWEST,capacity_auction_table,MCMASTER CTS
+MEADOWVALE-LT.LFEZ,SOUTHWEST,capacity_auction_table,MEADOWVALE TS
+MEAFORD-LT.T12,SOUTHWEST,capacity_auction_table,MEAFORD TS
+MERIVALE-LT.T1_LF,OTTAWA,capacity_auction_table,MERIVALE TS
+MIDDLEPORT-LT.AESLNR1_DRA,SOUTHWEST,capacity_auction_table,MIDDLEPORT TS
+MIDDLEPORT-LT.DRCTENGY_DRA,SOUTHWEST,capacity_auction_table,MIDDLEPORT TS
+MIDDLEPORT-LT.EDGECOM_DRA,SOUTHWEST,capacity_auction_table,MIDDLEPORT TS
+MIDDLEPORT-LT.ENERCORP_DRA,SOUTHWEST,capacity_auction_table,MIDDLEPORT TS
+MIDDLEPORT-LT.ENERNOC_DRA,SOUTHWEST,capacity_auction_table,MIDDLEPORT TS
+MIDDLEPORT-LT.ENPOWINC_DRA,SOUTHWEST,capacity_auction_table,MIDDLEPORT TS
+MIDDLEPORT-LT.GCPROJECT_DRA,SOUTHWEST,capacity_auction_table,MIDDLEPORT TS
+MIDDLEPORT-LT.HCE_DRA,SOUTHWEST,capacity_auction_table,MIDDLEPORT TS
+MIDDLEPORT-LT.HHSC_DRA,SOUTHWEST,capacity_auction_table,MIDDLEPORT TS
+MIDDLEPORT-LT.NRGCS_DRA,SOUTHWEST,capacity_auction_table,MIDDLEPORT TS
+MIDDLEPORT-LT.NRSTORCI_DRA,SOUTHWEST,capacity_auction_table,MIDDLEPORT TS
+MIDDLEPORT-LT.OPG_DRA,SOUTHWEST,capacity_auction_table,MIDDLEPORT TS
+MIDDLEPORT-LT.RODANBTM_DRA,SOUTHWEST,capacity_auction_table,MIDDLEPORT TS
+MIDDLEPORT-LT.RODANCI_DRA,SOUTHWEST,capacity_auction_table,MIDDLEPORT TS
+MIDDLEPORT-LT.STELCO_DRA,SOUTHWEST,capacity_auction_table,MIDDLEPORT TS
+MIDDLEPORT-LT.STEM_DRA,SOUTHWEST,capacity_auction_table,MIDDLEPORT TS
+MIDDLEPORT-LT.UOG_DRA,SOUTHWEST,capacity_auction_table,MIDDLEPORT TS
+MIDDLEPORT-LT.VOLTUS_DRA,SOUTHWEST,capacity_auction_table,MIDDLEPORT TS
+MIDHURST-LT.LFBY,ESSA,capacity_auction_table,MIDHURST TS
+MIDHURST-LT_BARRIE,ESSA,capacity_auction_table,MIDHURST TS
+MINAKIDS-LT.TT_LF,NORTHWEST,capacity_auction_table,MINAKI DS
+MINDEN-LT.LF3,ESSA,capacity_auction_table,MINDEN TS
+MISSIONFLS-LT.G1,,unassigned,
+MISSISSAGI-230:LMP,NORTHEAST,capacity_auction_table,MISSISSAGI TS
+MODELAND-LT.LFJQ,WEST,capacity_auction_table,MODELAND TS
+MOE-LT.T1_LF,,unassigned,
+MOHAWK-LT.T1_LF,SOUTHWEST,capacity_auction_table,MOHAWK TS
+MONTEITH-LT.T1_LF,NORTHEAST,capacity_auction_table,MONTEITH DS
+MOOSELAKE-LT.T23_LF,NORTHWEST,capacity_auction_table,MOOSE LAKE TS
+MOOSONEE-LT.TT_LF,NORTHEAST,capacity_auction_table,MOOSONEE SS
+MORRISBURG-LT.T1_LF,EAST,capacity_auction_table,MORRISBURG TS
+MOULTON-LT.TT_LF,OTTAWA,capacity_auction_table,MOULTON MTS
+MTNCHUTE-LT.AG12,,unassigned,
+MTNCHUTEDS-LT.17T1_LF,,unassigned,
+MURILLO-LT.T1_LF,NORTHWEST,capacity_auction_table,MURILLO DS
+MURRAY-LT_H1DIST,NIAGARA,capacity_auction_table,MURRAY TS
+MURRAY-LT_NFHEC,NIAGARA,capacity_auction_table,MURRAY TS
+MUSKOKA-LT.LFBY,ESSA,capacity_auction_table,MUSKOKA TS
+NAGAGAMI-LT.G1,,unassigned,
+NAGAGAMI-LT.G2,,unassigned,
+NAMEWAMNKN-LT.AG_T1,,unassigned,
+NANTSOLAR-LT.AG12,,unassigned,
+NAPANEE-LT.T12,EAST,capacity_auction_table,NAPANEE TS
+NAPANEEBESS-LT.BATT_LF1,EAST,capacity_auction_table,NAPANEE TS
+NAPANEEBESS-LT.BATT_LF2,EAST,capacity_auction_table,NAPANEE TS
+NAPANEEBESS-LT.BATT_TG1,EAST,capacity_auction_table,NAPANEE TS
+NAPANEEBESS-LT.BATT_TG2,EAST,capacity_auction_table,NAPANEE TS
+NAPANEECGS-LT.G1,EAST,capacity_auction_table,NAPANEE TS
+NAPANEECGS-LT.G2,EAST,capacity_auction_table,NAPANEE TS
+NAPANEECGS-LT.G3,EAST,capacity_auction_table,NAPANEE TS
+NATIONALAERO-LT.T1_LF,,unassigned,
+NAVAN-LT.T12,OTTAWA,capacity_auction_table,NAVAN DS
+NCARIBOULK-115.AG_LF,,unassigned,
+NCARIBOULK-LT.D1_LF,,unassigned,
+NEELONSTEEL-LT.TT_LF,,unassigned,
+NELSON-LT.TT_LF,,unassigned,
+NELSONCHP2-LT.TG,,unassigned,
+NEPEAN-LT.LFJQ,OTTAWA,capacity_auction_table,NEPEAN TS
+NESTORFALLS-LT.T1_LF,NORTHWEST,capacity_auction_table,NESTOR FALLS DS
+NEWINGTON-LT.T1_LF,EAST,capacity_auction_table,NEWINGTON DS
+NEWTON-LT.TT_LF,SOUTHWEST,capacity_auction_table,NEWTON TS
+NEXTSTAR-LT.T12,WEST,capacity_auction_table,NEXTSTAR TS
+NIAGARALAKE-LT.T1_LF,NIAGARA,capacity_auction_table,NIAGARA TS
+NIAGARAWEST-LT.LFBY,SOUTHWEST,capacity_auction_table,NIAGARA WEST MTS
+NIPIGON-LT.24T1_LF,NORTHWEST,capacity_auction_table,NIPIGON DS
+NIPIGONGS-LT.G1,NORTHWEST,capacity_auction_table,NIPIGON DS
+NIPIGONGS-LT.G2,NORTHWEST,capacity_auction_table,NIPIGON DS
+NKENT1WF-LT.AG_T1,,unassigned,
+NORFOLK-LT.T12,SOUTHWEST,capacity_auction_table,NORFOLK TS
+NORTHAVE-LT.T2_LF,,unassigned,
+NORTHBAY-LT.TT_LF,NORTHEAST,capacity_auction_table,NORTH BAY TS
+NORTHBAYGS-LT.AG12,NORTHEAST,capacity_auction_table,NORTH BAY TS
+NORTHBROOK-LT.T1_LF,,unassigned,
+NORTHSHORE-LT.T1_LF,NORTHEAST,capacity_auction_table,NORTH SHORE DS
+NOTL1-LT.T1_LF,,unassigned,
+NOVACORUNNA-LT.LFAB,WEST,capacity_auction_table,NOVA CORUNNA CTS
+NOVAMOORE-LT.LFAB,WEST,capacity_auction_table,NOVA MOORE CTS
+NOVASTCLAIR-LT.LFB,,unassigned,
+NPIROQFALLS-LT.AG123,,unassigned,
+NPKIRKLAND-LT.AG123,,unassigned,
+NPKIRKLAND-LT.AG45,,unassigned,
+NPKIRKLAND-LT.G6,,unassigned,
+NTLRESEARCH-LT.TT_LF,,unassigned,
+NUTRITE-LT.T1_LF,,unassigned,
+OAKVLE-LT.LFEZ,,unassigned,
+ONAKAWANA-LT.T1_LF,NORTHEAST,capacity_auction_table,ONAKAWANA CTS
+ONEIDA-LT.BATT_LF1,,unassigned,
+ONEIDA-LT.BATT_LF2,,unassigned,
+ONEIDA-LT.BATT_TG1,,unassigned,
+ONEIDA-LT.BATT_TG2,,unassigned,
+ONTARIO_ZONAL_PRICE,,unassigned,
+ONTARIO_ZONAL_PRICE_REF,,unassigned,
+ORANGEVLE-LT.LFBEYZ,,unassigned,
+ORILLIA-LT.LFBY,ESSA,capacity_auction_table,ORILLIA TS
+ORLEANSTS-LT.T1_LFQ,OTTAWA,capacity_auction_table,ORLEANS TS
+OSHAWAGM2-LT.LFABCD,TORONTO,capacity_auction_table,OSHAWA GM TS
+OTONABEE-LT.LFBJQY,EAST,capacity_auction_table,OTONABEE TS
+OTTERRAPIDS-LT.AG_115_A,NORTHEAST,capacity_auction_table,OTTER RAPIDS SS
+OTTERRAPIDS-LT.AG_230_A,NORTHEAST,capacity_auction_table,OTTER RAPIDS SS
+OVERBROOK-LT.T2_LF,OTTAWA,capacity_auction_table,OVERBROOK TS
+OWENSOUND-LT.LFJQ,SOUTHWEST,capacity_auction_table,OWEN SOUND TS
+OXYVINYLS-LT.T1_LF,,unassigned,
+PALERMO-LT_BURL,SOUTHWEST,capacity_auction_table,PALERMO TS
+PALMERSTON-LT.TT_LF,SOUTHWEST,capacity_auction_table,PALMERSTON TS
+PANABRASIVES-LT.T1_LF,NIAGARA,capacity_auction_table,PANABRASIVES CTS
+PAROCHES-LT.AG_T1,,unassigned,
+PARRYSOUND-LT.BATT_LF,ESSA,capacity_auction_table,PARRY SOUND TS
+PARRYSOUND-LT.BATT_TG,ESSA,capacity_auction_table,PARRY SOUND TS
+PARRYSOUND-LT.T12,ESSA,capacity_auction_table,PARRY SOUND TS
+PATRICKSTEEL-LT.10T1_LF,NORTHEAST,capacity_auction_table,PATRICK ST TS
+PATRICKSTEEL-LT.314T_LF,NORTHEAST,capacity_auction_table,PATRICK ST TS
+PATRICKSTEEL-LT.T6_LF,NORTHEAST,capacity_auction_table,PATRICK ST TS
+PATRICKSTEEL-LT.T6_LF_DRA,NORTHEAST,capacity_auction_table,PATRICK ST TS
+PEMBROKE-LT_H1,EAST,capacity_auction_table,PEMBROKE TS
+PERAULTFALLS-LT.T1_LF,,unassigned,
+PETAWACRAIG-LT.TT_LF,,unassigned,
+PETAWAWA-LT.T12,ESSA,capacity_auction_table,PETAWAWA DS
+PICDS-LT.TT_LF,NORTHWEST,capacity_auction_table,PIC DS
+PICKERINGA-LT.UPT1_LF,TORONTO,capacity_auction_table,PICKERING A SS
+PICKERINGAPS-LT.AG12,TORONTO,capacity_auction_table,PICKERING A SS
+PICKERINGB-LT.G5,TORONTO,capacity_auction_table,PICKERING B SS
+PICKERINGB-LT.G6,TORONTO,capacity_auction_table,PICKERING B SS
+PICKERINGB-LT.G7,TORONTO,capacity_auction_table,PICKERING B SS
+PICKERINGB-LT.G8,TORONTO,capacity_auction_table,PICKERING B SS
+PICTON-LT.ESSROC_DRA,EAST,capacity_auction_table,PICTON TS
+PICTON-LT.T12,EAST,capacity_auction_table,PICTON TS
+PIKANGIKUM-LT.Q_70999-LF,,unassigned,
+PINEPORTAGE-LT.AG12,NORTHWEST,capacity_auction_table,PINE PORTAGE SS
+PINEPORTAGE-LT.AG34,NORTHWEST,capacity_auction_table,PINE PORTAGE SS
+PIPERVILLE-LT.B12_LF,OTTAWA,capacity_auction_table,PIPERVILLE MTS
+PLEASANT-LT.LFBEFJQVYZ,TORONTO,capacity_auction_table,PLEASANT TS
+PORTALMA-LT.AG_T1,,unassigned,
+PORTALMA2-LT.AG_T3,,unassigned,
+PORTARTHUR-LT.T1_LF,,unassigned,
+PORTCOLBORNE-LT.TT6162,NIAGARA,capacity_auction_table,PORT COLBORNE TS
+PORTHOPE-LT.T1_LF,EAST,capacity_auction_table,PORT HOPE TS
+PORTHOPEBESS1-LT.BATT_LF,EAST,capacity_auction_table,PORT HOPE TS
+PORTHOPEBESS1-LT.BATT_TG,EAST,capacity_auction_table,PORT HOPE TS
+PORTLANDS-LT.G1,,unassigned,
+PORTLANDS-LT.G2,,unassigned,
+PORTLANDS-LT.G3,,unassigned,
+POWERLINE-LT.LFB,SOUTHWEST,capacity_auction_table,POWERLINE MTS
+POWERLINE-LT.LFY,SOUTHWEST,capacity_auction_table,POWERLINE MTS
+PRESTON-LT.LFJQ,SOUTHWEST,capacity_auction_table,PRESTON TS
+PRINCEFARM-LT.AG_T1,,unassigned,
+PRINCEFARM2-LT.AG_T2,,unassigned,
+PTBURWELL-LT.AG1,,unassigned,
+PUSLINCH-LT.T12,SOUTHWEST,capacity_auction_table,PUSLINCH DS
+RAILBEDWF-LT.AG_SR,,unassigned,
+RAINYRIVGLD-LT.LFAB,,unassigned,
+RAINYRIVGLD-LT.LF_DRA,,unassigned,
+RAMORE-LT.T1_LF,NORTHEAST,capacity_auction_table,RAMORE TS
+RAYNER-LT.AG12,,unassigned,
+REDLAKE-LT.TT21_LF,NORTHWEST,capacity_auction_table,RED LAKE TS
+REDROCK-LT.AG12,NORTHWEST,capacity_auction_table,RED ROCK DS
+REDROCKDS-LT.T1_LF,NORTHWEST,capacity_auction_table,RED ROCK DS
+RENISON-LT.T1_LF,NORTHEAST,capacity_auction_table,RENISON CTS
+REXDALE-LT.LFBEZY,TORONTO,capacity_auction_table,REXDALE TS
+RICHMOND-LT.T1_LF,OTTAWA,capacity_auction_table,RICHMOND DS
+RICHMOND1-LT.LFAB,OTTAWA,capacity_auction_table,RICHMOND DS
+RICHVIEW-230.REFERENCE:LMP,TORONTO,capacity_auction_table,RICHVIEW TS
+RICHVIEW-LT.LFBEJY,TORONTO,capacity_auction_table,RICHVIEW TS
+RIPLEYSOUTH-LT.AG_T3,,unassigned,
+RIVERDALE-LT.T2_LF,OTTAWA,capacity_auction_table,RIVERDALE TS
+RIVERGOLD-LT.T1_LF,,unassigned,
+ROCKLAND-LT.T1_LF,OTTAWA,capacity_auction_table,ROCKLAND DS
+ROCKLANDEAST-LT.TT12_L,OTTAWA,capacity_auction_table,ROCKLAND EAST DS
+ROMNEYWF-LT.AG_T1,,unassigned,
+RUNNYMEDE-LT.T3_LF,TORONTO,capacity_auction_table,RUNNYMEDE TS
+RUSH-LT.T12,,unassigned,
+RUSSELL-LT.T1_LF,OTTAWA,capacity_auction_table,RUSSELL TS
+RUSSELLDS-LT.TT12_LF,OTTAWA,capacity_auction_table,RUSSELL TS
+SAMLAKE-LT.T1_LF,NORTHWEST,capacity_auction_table,SAM LAKE DS
+SANDUSK-LT.AG_T1,SOUTHWEST,capacity_auction_table,SANDUSK SS
+SANDYFALLS-LT.G1,,unassigned,
+SAPAWE-LT.T12,NORTHWEST,capacity_auction_table,SAPAWE DS
+SAULTRSVC-LT.BATT_LF,,unassigned,
+SAULTRSVC-LT.BATT_TG,,unassigned,
+SAUNDERS-LT.AG1234,,unassigned,
+SAUNDERS-LT.AG3456,,unassigned,
+SAUNDERS-LT.AG5678,,unassigned,
+SAUNDERS-LT.AG9012,,unassigned,
+SCARBORO-LT.LFBJQY,TORONTO,capacity_auction_table,SCARBORO TS
+SCHEIFELE-LT.LFBEJQZ,SOUTHWEST,capacity_auction_table,SCHEIFELE MTS
+SCHREIBER-LT.T1_LF,,unassigned,
+SEAFORTH-LT.T12,SOUTHWEST,capacity_auction_table,SEAFORTH TS
+SEATON-LT.ELEXICON_LF,,unassigned,
+SERPENT-LT.G1,,unassigned,
+SERPENT-LT.G2,,unassigned,
+SHABAQUA-LT.T1_LF,NORTHWEST,capacity_auction_table,SHABAQUA DS
+SHANNON-LT.AG_T1,,unassigned,
+SHARBOT-LT.T1_LF,EAST,capacity_auction_table,SHARBOT DS
+SHELL-LT.LFAB,,unassigned,
+SHEPPARD-LT.LFEJKLQZ,TORONTO,capacity_auction_table,SHEPPARD TS
+SHININGTREE-LT.25T1_S_LF,NORTHEAST,capacity_auction_table,SHININGTREE DS
+SIDNEY-LT.AG_M1,EAST,capacity_auction_table,SIDNEY TS
+SIDNEY-LT.T1_LF,EAST,capacity_auction_table,SIDNEY TS
+SILVERCRKSF-LT.AG_T1,,unassigned,
+SILVERFALLS-LT.G1,,unassigned,
+SIOUXNARROWS-LT.TT_LF,NORTHWEST,capacity_auction_table,SIOUX NARROWS DS
+SITHEG-LT.G11,,unassigned,
+SITHEG-LT.G12,,unassigned,
+SITHEG-LT.G13,,unassigned,
+SITHEG-LT.G15,,unassigned,
+SLATEFALLS-LT.T1_LF,NORTHWEST,capacity_auction_table,SLATE FALLS DS
+SLATER-LT.T1_LF,OTTAWA,capacity_auction_table,SLATER TS
+SMITHSFALLS-LT.LFJY,EAST,capacity_auction_table,SMITHS FALLS TS
+SMOKYFALLS-LT.AG12,,unassigned,
+SMOKYFALLS-LT.G3,,unassigned,
+SMOOTHRKFCGS-LT.AG12,,unassigned,
+SMOOTHROCK-LT.TT_LF,,unassigned,
+SOUTHGATESF-LT.AG_T1,,unassigned,
+SOUTHMARCH-LT.LFQY,OTTAWA,capacity_auction_table,SOUTHMARCH SS
+SOUTHMIDDLRD1-LT.LFJ,,unassigned,
+SOWERBY-LT.T1_LF,NORTHEAST,capacity_auction_table,SOWERBY DS
+SPANISH-LT.T1_LF,NORTHEAST,capacity_auction_table,SPANISH DS
+SPEEDIERBESS-LT.BATT_LF,,unassigned,
+SPEEDIERBESS-LT.BATT_TG,,unassigned,
+SPENCECGS-LT.AG_T1,WEST,capacity_auction_table,SPENCE SS
+SPRUCEFALLS-LT.T1_LF,NORTHEAST,capacity_auction_table,SPRUCE FALLS TS
+SPRUCEFLSPP-LT.AT789_LF,,unassigned,
+STANDREW-LT.TT_LF,,unassigned,
+STANLEY-LT.T1_LF,,unassigned,
+STATION17-LT.TB1_LF,,unassigned,
+STAYNER-LT.T4_LFY,ESSA,capacity_auction_table,STAYNER TS
+STCLAIRCGS-LT.AG_T3,,unassigned,
+STCLAIRCGS-LT.AG_T4,,unassigned,
+STEEPHILLF-LT.G1,,unassigned,
+STELCO-LT.T1_LF,,unassigned,
+STELCO-LT.T1_LF_DRA,,unassigned,
+STEWARTVLE-LT.AG123,,unassigned,
+STEWARTVLE-LT.AG45,,unassigned,
+STEWARTVLE-LT.T67,,unassigned,
+STIRTON-LT.T1_LF,SOUTHWEST,capacity_auction_table,STIRTON TS
+STISIDORE-LT.LFB,OTTAWA,capacity_auction_table,ST. ISIDORE TS
+STLAWRENCE-LT.LFJQ,EAST,capacity_auction_table,ST. LAWRENCE TS
+STMARY-LT.TT_LF,,unassigned,
+STMARYCMNT-LT.T1_LF,,unassigned,
+STMARYS-LT.TT_LF,SOUTHWEST,capacity_auction_table,ST. MARYS TS
+STONEMILLS-LT.AG_T1,,unassigned,
+STRACHAN-LT.TT1_LF,TORONTO,capacity_auction_table,STRACHAN TS
+STRATFORD-LT.LFBY,SOUTHWEST,capacity_auction_table,STRATFORD TS
+STRATHCONA-LT.TT_LF,,unassigned,
+STRATHROY-LT.TT_LF,WEST,capacity_auction_table,STRATHROY TS
+STRIKER-LT.TT_LF,NORTHEAST,capacity_auction_table,STRIKER DS
+STURGEONFALL-LT.G2,,unassigned,
+STURGEONFALL-LT.LFB,,unassigned,
+SUMMERHAVEN-LT.AG_T1,SOUTHWEST,capacity_auction_table,SUMMERHAVEN SS
+SUNCANADIAN-LT.T1_LF,,unassigned,
+SUNOCO-LT.T1_LF,WEST,capacity_auction_table,SUNOCO CTS
+SUTHERLAND-LT.AG12,,unassigned,
+TALBOT-LT.LFBJQY,WEST,capacity_auction_table,TALBOT TS
+TAOHSC-LT.AG2012,,unassigned,
+TASARNIA-LT.G861,,unassigned,
+TASARNIA-LT.G871,,unassigned,
+TASARNIA-LT.G881,,unassigned,
+TASARNIA-LT.G891,,unassigned,
+TAWINDSOR-LT.AG12,,unassigned,
+TBAYBOWATER-LOADS,,unassigned,
+TBAYBOWATER-LT.AG36,,unassigned,
+TBAYBOWATER-LT.AT2_LF_DRA,,unassigned,
+TCPLBRACEB-LT.LF_HONI,,unassigned,
+TCPLVERMIL-LT.LF123,,unassigned,
+TCPP4S-LT.T1_LF,,unassigned,
+TCPQ6S-LT.TT_LF,,unassigned,
+TEMAGAMI-LT.T1_LF,,unassigned,
+TERAULEY-LT.T1_LF,TORONTO,capacity_auction_table,TERAULEY TS
+TERRYFOX-LT.LFJQ,EAST,capacity_auction_table,TERRY FOX MTS
+THORNTON-LT.LFBY,,unassigned,
+THOROLD-LT.T1_LF,,unassigned,
+THOROLDAB-LT.LFB,,unassigned,
+THOROLDACI-LT.T61_LF,,unassigned,
+THOROLDGS-LT.AG12,,unassigned,
+TILBURYBESS-LT.BATT_LF1,WEST,capacity_auction_table,TILBURY TS
+TILBURYBESS-LT.BATT_LF2,WEST,capacity_auction_table,TILBURY TS
+TILBURYBESS-LT.BATT_TG1,WEST,capacity_auction_table,TILBURY TS
+TILBURYBESS-LT.BATT_TG2,WEST,capacity_auction_table,TILBURY TS
+TILBURYWEST-LT_H1,WEST,capacity_auction_table,TILBURY WEST DS
+TILLSONBURG-LT.TT_LF,WEST,capacity_auction_table,TILLSONBURG TS
+TIMMINS-LT.T62_LF,NORTHEAST,capacity_auction_table,TIMMINS TS
+TIMWESTMINE-LT.T1,,unassigned,
+TOMKEN-LT.LFBEYZ,TORONTO,capacity_auction_table,TOMKEN TS
+TOYOTAWDSTCK-LT.LFJQ,,unassigned,
+TRADERSBLVD-LT.L1_LF,,unassigned,
+TRAFALGRDESN-LT.LFBY,,unassigned,
+TREMAINE-LT.LFBY,SOUTHWEST,capacity_auction_table,TREMAINE TS
+TROUTLAKE-LT.LFBY,NORTHEAST,capacity_auction_table,TROUT LAKE TS
+TUNISGS-LT.G1,,unassigned,
+TUNISGS-LT.G2,,unassigned,
+TWINNEY1-LT.BATT_LF,,unassigned,
+TWINNEY1-LT.BATT_TG,,unassigned,
+TWINNEY2-LT.BATT_LF,,unassigned,
+TWINNEY2-LT.BATT_TG,,unassigned,
+UMBATAFALLS-LT.AG_MPT1,,unassigned,
+UNDERWOODWGS-LT.AG_T1,,unassigned,
+UNDERWOODWGS-LT.AG_T2,,unassigned,
+UNIAVEPG-LT.L1_LF,,unassigned,
+UPLANDS-LT.TOTAL_LOAD,OTTAWA,capacity_auction_table,UPLANDS MTS
+UPPERWHITE-LT.AG_T1,,unassigned,
+VALORA-LT.T1_LF,NORTHWEST,capacity_auction_table,VALORA DS
+VALRIEFALLS-LT.G1,,unassigned,
+VALRIEFALLS-LT.G2,,unassigned,
+VANSICKLE-LT.T5_LF,NIAGARA,capacity_auction_table,VANSICKLE TS
+VAUGHAN1-LT.LFABCD,,unassigned,
+VAUGHAN1BESS-LT.BATT_LF1,,unassigned,
+VAUGHAN1BESS-LT.BATT_LF2,,unassigned,
+VAUGHAN1BESS-LT.BATT_TG1,,unassigned,
+VAUGHAN1BESS-LT.BATT_TG2,,unassigned,
+VAUGHAN2-LT.LFAB,,unassigned,
+VAUGHAN3-LT.LFA,,unassigned,
+VAUGHAN3BESS-LT.BATT_LF1,,unassigned,
+VAUGHAN3BESS-LT.BATT_LF2,,unassigned,
+VAUGHAN3BESS-LT.BATT_TG1,,unassigned,
+VAUGHAN3BESS-LT.BATT_TG2,,unassigned,
+VAUGHAN4-LT.LFA,,unassigned,
+VERMILLION-LT.T1_LF,,unassigned,
+VERNER-LT.TT_LF,NORTHEAST,capacity_auction_table,VERNER DS
+VICTORIAMINE-LT.TT_LF,NORTHEAST,capacity_auction_table,VICTORIA MINE CTS
+VINELAND-LT_PENWEST,NIAGARA,capacity_auction_table,VINELAND DS
+VOYAGEUR-LT.T1_LF,NORTHWEST,capacity_auction_table,VOYAGEUR CTS
+WALKER-LT.LFBY,,unassigned,
+WALKER-LT.LFEQ,,unassigned,
+WALKERBESS4-LT.BATT_LF,,unassigned,
+WALKERBESS4-LT.BATT_TG,,unassigned,
+WALKERBESS5-LT.BATT_LF,,unassigned,
+WALKERBESS5-LT.BATT_TG,,unassigned,
+WALKERBESS6-LT.BATT_LF,,unassigned,
+WALKERBESS6-LT.BATT_TG,,unassigned,
+WALLACE-LT.LFQY,ESSA,capacity_auction_table,WALLACE TS
+WALLACEBURG-LT.TT_LF,WEST,capacity_auction_table,WALLACEBURG TS
+WANSTEAD-LT.T1_LF,WEST,capacity_auction_table,WANSTEAD TS
+WARDEN-LT.LFJQ,TORONTO,capacity_auction_table,WARDEN TS
+WARREN-LT.TT_LF,NORTHEAST,capacity_auction_table,WARREN DS
+WATERLOO3-LT.T1_LF,,unassigned,
+WAUBAUSHENE-LT.T56,ESSA,capacity_auction_table,WAUBAUSHENE TS
+WAWA-115:LMP,,unassigned,
+WAWA-230:LMP,,unassigned,
+WAWAITIN-LT.AG_M8,,unassigned,
+WAWATAY-LT.G1,,unassigned,
+WAWATAY-LT.G2,,unassigned,
+WAWATAY-LT.G3,,unassigned,
+WDSTOCKLFRGE-LT.T3_LF,,unassigned,
+WDSTOCKLFRGE-LT.TT1_LF_DRA,,unassigned,
+WELLS-LT.G1,,unassigned,
+WELLS-LT.G2,,unassigned,
+WENDOVER-LT.T12,OTTAWA,capacity_auction_table,WENDOVER DS
+WESTLINWF-LT.AG_T1T2,,unassigned,
+WESTONLAKE-LT.T1_LF,NORTHEAST,capacity_auction_table,WESTON LAKE DS
+WESTWINDSOR-LT.AG12,,unassigned,
+WESTWINDSOR-LT.G3,,unassigned,
+WEYERHAEUSER-LT.T1_LF_DRA,,unassigned,
+WEYERHAUS-LT.T1_LF,,unassigned,
+WHARNCLIFFE-LT.T1_LF,NORTHEAST,capacity_auction_table,WHARNCLIFFE DS
+WHITBY-LT.LFBEJQYZ,TORONTO,capacity_auction_table,WHITBY TS
+WHITBYCGS-LT.G1,TORONTO,capacity_auction_table,WHITBY TS
+WHITEDOG-LT.AG123,,unassigned,
+WHITEFISH-LT.T1_LF,NORTHEAST,capacity_auction_table,WHITEFISH DS
+WHITERIVER-LT.TT_LF,NORTHWEST,capacity_auction_table,WHITE RIVER DS
+WILHAVEN-LT.T12,OTTAWA,capacity_auction_table,WILHAVEN DS
+WILIAMS-LT.TT_LF,,unassigned,
+WILMOT-LT.LF111,,unassigned,
+WILSON-LT.LFEZ,,unassigned,
+WILSON-LT.LFJQ,,unassigned,
+WILTSHIRE-LT.TT1_LF,TORONTO,capacity_auction_table,WILTSHIRE TS
+WINDSORSF-LT.AG_T1,,unassigned,
+WINGHAM-LT.LFBY,SOUTHWEST,capacity_auction_table,WINGHAM TS
+WINONA-LT.T1_LF,SOUTHWEST,capacity_auction_table,WINONA TS
+WINSTON-LT.T1_LF,,unassigned,
+WOLFEISLAND-LT.AG_T1,,unassigned,
+WOLVERTON-LT.TT_LF,SOUTHWEST,capacity_auction_table,WOLVERTON DS
+WONDERLAND-LT.LFBY,WEST,capacity_auction_table,WONDERLAND TS
+WOODBRIDGE-LT_VAUG,TORONTO,capacity_auction_table,WOODBRIDGE TS
+WOODROFFE-LT.TT13_LF,OTTAWA,capacity_auction_table,WOODROFFE TS
+WOODSTOCK-LT_WOOD,SOUTHWEST,capacity_auction_table,WOODSTOCK TS
+YELLOWFALLS-LT.AG_T1,,unassigned,
+YORKBESS-LT.BATT_LF,,unassigned,
+YORKBESS-LT.BATT_TG,,unassigned,
+YORKCGS-LT.G1,,unassigned,
+YORKCGS-LT.G2,,unassigned,
+YOUNGDAVIDSN-LT.TT26,,unassigned,
+YOUNGDAVIDSN-LT.TT_LF_DRA,,unassigned,
+ZURICH-LT.AG_T1,,unassigned,
+ELORABESS-LT.BATT_LF1,,unassigned,
+ELORABESS-LT.BATT_LF2,,unassigned,
+ELORABESS-LT.BATT_TG1,,unassigned,
+ELORABESS-LT.BATT_TG2,,unassigned,
+HEDLEYBESS-LT.BATT_LF1,,unassigned,
+HEDLEYBESS-LT.BATT_LF2,,unassigned,
+HEDLEYBESS-LT.BATT_TG1,,unassigned,
+HEDLEYBESS-LT.BATT_TG2,,unassigned,
+JBLCAN-LT.T1_LF,,unassigned,

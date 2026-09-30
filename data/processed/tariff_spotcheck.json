@@ -1,0 +1,6 @@
+{
+  "checked_at": "2026-09-29",
+  "method": "hand-compared all 14 commodity_c_per_kwh values in data/inputs/retail_tariffs.csv against the two OEB RPP price reports (rpp-price-report-20241018.pdf, rpp-price-report-20251017.pdf)",
+  "result": "pass",
+  "mismatches": []
+}

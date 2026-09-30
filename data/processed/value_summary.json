@@ -1,0 +1,19 @@
+{
+  "label": "summer preview, not annual",
+  "note": "Preview on the available upstream window only (day-ahead zonal retention 3.0 months: 2026-07-01 to 2026-09-30; LFDA ends 2026-09-16). Not annual. No headline gap metric is computed for a preview.",
+  "window_start": "2026-07-01",
+  "window_end": "2026-09-16",
+  "n_hours": 1848,
+  "expected_hours": 1848,
+  "coverage_pct": 100.0,
+  "join_dropped_timestamps": 10512,
+  "as_of": "2026-09-30",
+  "tariff_terms": [
+    "2024-11-01 to 2025-10-31",
+    "2025-11-01 to 2026-10-31"
+  ],
+  "timestamp_convention": "IESO source timestamps rederived to true UTC from fixed -05:00; joins in UTC; tariff classification on America/Toronto wall-clock fields",
+  "mean_oemp_dollars_per_mwh": 66.17,
+  "mean_tou_wedge_dollars_per_mwh": 59.52,
+  "analyst_commentary": "[ANALYST COMMENTARY - TO BE WRITTEN BY AUTHOR]"
+}

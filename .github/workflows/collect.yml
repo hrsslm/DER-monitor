@@ -1,0 +1,79 @@
+# DER monitor: daily price-history collection (data only).
+#
+# Backfills and accumulates IESO day-ahead zonal price, LFDA, day-ahead
+# LMP and fuel-mix history into data/processed/*_hourly.csv plus
+# data/processed/manifest.json. No charts, no site build -- those are
+# separate jobs. The fetcher is idempotent (manifest-tracked, dedupe
+# keep-last), so re-runs and overlapping schedules are safe.
+#
+# Schedule: twice daily at 06:00 and 18:00 UTC. IESO publishes the
+# day-ahead files around 12:31 Toronto time the day before delivery, so
+# 18:00 UTC (13:00 EST / 14:00 EDT) always lands after publication and
+# 06:00 UTC is an overnight catch-up. Times are UTC because Actions cron
+# is UTC; both hold across EST/EDT.
+
+name: collect-price-history
+
+on:
+  schedule:
+    - cron: "0 6 * * *"
+    - cron: "0 18 * * *"
+  workflow_dispatch:
+    inputs:
+      backfill_days:
+        description: "Force re-download/re-parse of files dated within the last N days (idempotent)"
+        required: false
+        default: "0"
+
+permissions:
+  contents: write
+
+concurrency:
+  # Shared with build.yml (no cancel-in-progress): the two workflows must
+  # never race on the same data/processed and docs trees.
+  group: der-monitor-data
+  cancel-in-progress: false
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: "pip"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Restore data/raw cache
+        uses: actions/cache@v4
+        with:
+          path: data/raw/
+          key: data-raw-${{ github.sha }}
+          restore-keys: |
+            data-raw-
+
+      - name: Fetch price history (strict)
+        run: |
+          python -u src/fetch_price_history.py --strict \
+            --backfill-days "${{ inputs.backfill_days || '0' }}"
+
+      - name: Commit updated history
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/processed
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "collect: daily price-history update ($(date -u +%Y-%m-%d))"
+            git push
+          fi

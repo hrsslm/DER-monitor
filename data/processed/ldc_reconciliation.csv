@@ -1,0 +1,61 @@
+licence_no,utility_name,rrr_name,match_type,remote,multi_zone
+ED-2001-0090,Attawapiskat Power Corporation,,unmatched,True,False
+ED-2002-0493,Cooperative Hydro Embrun Inc.,Cooperative Hydro Embrun Inc.,exact_current,False,False
+ED-2002-0497,Toronto Hydro-Electric System Limited,Toronto Hydro-Electric System Limited,exact_current,False,False
+ED-2002-0498,Centre Wellington Hydro Ltd.,Centre Wellington Hydro Ltd.,exact_current,False,False
+ED-2002-0499,Essex Powerlines Corporation,Essex Powerlines Corporation,exact_current,False,False
+ED-2002-0500,Orangeville Hydro Limited,Orangeville Hydro Limited,exact_current,False,False
+ED-2002-0502,Espanola Regional Hydro Distribution Corporation,North Bay Hydro Distribution Limited,exact_historical,False,False
+ED-2002-0511,Wellington North Power Inc.,Wellington North Power Inc.,exact_current,False,False
+ED-2002-0513,Festival Hydro Inc.,Festival Hydro Inc.,exact_current,False,False
+ED-2002-0514,Sioux Lookout Hydro Inc.,Sioux Lookout Hydro Inc.,exact_current,False,False
+ED-2002-0515,Westario Power Inc.,Westario Power Inc.,exact_current,False,False
+ED-2002-0516,ERTH Power Corporation,ERTH Power Corporation,exact_current,False,False
+ED-2002-0517,Bluewater Power Distribution Corporation,Bluewater Power Distribution Corporation,exact_current,False,False
+ED-2002-0518,EPCOR Electricity Distribution Ontario Inc.,EPCOR Electricity Distribution Ontario Inc.,exact_current,False,False
+ED-2002-0520,InnPower Corporation,InnPower Corporation,exact_current,False,False
+ED-2002-0527,ENWIN Utilities Ltd.,ENWIN Utilities Ltd.,exact_current,False,False
+ED-2002-0530,Orillia Power Distribution Corporation,,unmatched,False,False
+ED-2002-0533,Hearst Power Distribution Company Limited,Hearst Power Distribution Company Limited,exact_current,False,False
+ED-2002-0540,Lakeland Power Distribution Ltd.,Lakeland Power Distribution Ltd.,exact_current,False,False
+ED-2002-0542,Hydro 2000 Inc.,Hydro 2000 Inc.,exact_current,False,False
+ED-2002-0544,Wasaga Distribution Inc.,Wasaga Distribution Inc.,exact_current,False,False
+ED-2002-0545,Lakefront Utilities Inc.,Lakefront Utilities Inc.,exact_current,False,False
+ED-2002-0546,PUC Distribution Inc.,PUC Distribution Inc.,exact_current,False,False
+ED-2002-0547,Niagara-On-The-Lake Hydro Inc.,Niagara-on-the-Lake Hydro Inc.,exact_current,False,False
+ED-2002-0552,Halton Hills Hydro Inc.,Halton Hills Hydro Inc.,exact_current,False,False
+ED-2002-0554,Grimsby Power Incorporated,Grimsby Power Incorporated,exact_current,False,False
+ED-2002-0556,Hydro Ottawa Limited,Hydro Ottawa Limited,exact_current,False,False
+ED-2002-0557,London Hydro Inc.,London Hydro Inc.,exact_current,False,False
+ED-2002-0559,Greater Sudbury Hydro Inc.,Greater Sudbury Hydro Inc.,exact_current,False,False
+ED-2002-0560,Oshawa PUC Networks Inc.,Oshawa PUC Networks Inc.,exact_current,False,False
+ED-2002-0563,Entegrus Powerlines Inc.,Entegrus Powerlines Inc.,exact_current,False,False
+ED-2002-0572,Canadian Niagara Power Inc.,Canadian Niagara Power Inc.,exact_current,False,False
+ED-2002-0577,Renfrew Hydro Inc.,Renfrew Hydro Inc.,exact_current,False,False
+ED-2003-0001,Atikokan Hydro Inc.,Atikokan Hydro Inc.,exact_current,False,False
+ED-2003-0002,Welland Hydro-Electric System Corp.,Welland Hydro-Electric System Corp.,exact_current,False,False
+ED-2003-0003,Rideau St. Lawrence Distribution Inc.,Rideau St. Lawrence Distribution Inc.,exact_current,False,False
+ED-2003-0004,Burlington Hydro Inc.,Burlington Hydro Inc.,exact_current,False,False
+ED-2003-0014,Milton Hydro Distribution Inc.,Milton Hydro Distribution Inc.,exact_current,False,False
+ED-2003-0015,E.L.K. Energy Inc.,E.L.K. Energy Inc.,exact_current,False,False
+ED-2003-0018,Northern Ontario Wires Inc.,Northern Ontario Wires Inc.,exact_current,False,False
+ED-2003-0024,North Bay Hydro Distribution Limited,North Bay Hydro Distribution Limited,exact_current,False,False
+ED-2003-0026,Tillsonburg Hydro Inc.,Tillsonburg Hydro Inc.,exact_current,False,False
+ED-2003-0027,Hydro Hawkesbury Inc.,Hydro Hawkesbury Inc.,exact_current,False,False
+ED-2003-0028,Fort Frances Power Corporation,Fort Frances Power Corporation,exact_current,False,False
+ED-2003-0033,Ottawa River Power Corporation,Ottawa River Power Corporation,exact_current,False,False
+ED-2003-0037,Hydro One Remote Communities Inc.,,unmatched,True,False
+ED-2003-0043,Hydro One Networks Inc.,Hydro One Networks Inc.,exact_current,False,True
+ED-2003-0057,Kingston Hydro Corporation,Kingston Hydro Corporation,exact_current,False,False
+ED-2003-0079,Fort Albany Power Corporation,,unmatched,True,False
+ED-2003-0081,Kashechewan Power Corporation,,unmatched,True,False
+ED-2003-0135,Oakville Hydro Electricity Distribution Inc.,Oakville Hydro Electricity Distribution Inc.,exact_current,False,False
+ED-2004-0405,Cornwall Street Railway Light and Power Company Limited,,unmatched,False,False
+ED-2007-0624,Newmarket-Tay Power Distribution Ltd.,Newmarket-Tay Power Distribution Ltd.,exact_current,False,False
+ED-2007-0749,Niagara Peninsula Energy Inc.,Niagara Peninsula Energy Inc.,exact_current,False,False
+ED-2009-0072,Algoma Power Inc.,Algoma Power Inc.,exact_current,False,False
+ED-2016-0360,Alectra Utilities Corporation,Alectra Utilities Corporation,exact_current,False,False
+ED-2018-0233,Synergy North Corporation,Synergy North Corporation,exact_current,False,False
+ED-2019-0128,Elexicon Energy Inc.,Elexicon Energy Inc.,exact_current,False,False
+ED-2021-0280,GrandBridge Energy Inc. (Formerly Energy+ Inc.) | GrandBridge Energy Inc. (Formerly Brantford Power Inc.),GrandBridge Energy Inc.; GrandBridge Energy Inc.,parenthetical_stripped,False,False
+ED-2022-0006,Enova Power Corp.,Enova Power Corp.,exact_current,False,False

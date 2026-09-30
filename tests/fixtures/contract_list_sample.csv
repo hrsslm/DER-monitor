@@ -1,0 +1,16 @@
+Contract Type,Contract Capacity (MW),Facility Name,Supplier Legal Name,Contract Status,Milestone Commercial Operation Date,Term Start Date,Term End Date,Actual Term,Fuel Group,Technology,Fuel Type,Connection Type,Closest City/Town,Upper Municipality,IESO Zone,Regional Planning Zone
+ABESA,180.0,Atikokan Generating Station,Ontario Power Generation Inc.,CO,2014-06-30,2014-07-24,2029-07-23,"14 years, 11 months, 29 days",Renewables,Rankine Cycle,Biomass,Tx,Atikokan,Rainy River,Northwest,Northwest Ontario
+ABPRIA,823.0,Bruce Unit 1,Bruce Power LP,CO,,2012-10-22,2043-12-31,"31 years, 2 months, 9 days",Nuclear,Rankine Cycle CANDU Reactor,Uranium,Tx,Tiverton,Bruce,Bruce,Greater Bruce/Huron
+ABPRIA,823.0,Bruce Unit 2,Bruce Power LP,CO,,2012-10-31,2043-12-31,"31 years, 2 months, 0 days",Nuclear,Rankine Cycle CANDU Reactor,Uranium,Tx,Tiverton,Bruce,Bruce,Greater Bruce/Huron
+ABPRIA,816.0,Bruce Unit 3,Bruce Power LP,CO,,2005-10-31,2061-12-31,"56 years, 2 months, 0 days",Nuclear,Rankine Cycle CANDU Reactor,Uranium,Tx,Tiverton,Bruce,Bruce,Greater Bruce/Huron
+ABPRIA,806.0,Bruce Unit 4,Bruce Power LP,CO,,2005-10-31,2062-12-31,"57 years, 2 months, 0 days",Nuclear,Rankine Cycle CANDU Reactor,Uranium,Tx,Tiverton,Bruce,Bruce,Greater Bruce/Huron
+ABPRIA,822.0,Bruce Unit 5,Bruce Power LP,CO,,2016-01-01,2062-12-31,"46 years, 11 months, 30 days",Nuclear,Rankine Cycle CANDU Reactor,Uranium,Tx,Tiverton,Bruce,Bruce,Greater Bruce/Huron
+ABPRIA,817.0,Bruce Unit 6,Bruce Power LP,CO,,2016-01-01,2058-12-31,"42 years, 11 months, 30 days",Nuclear,Rankine Cycle CANDU Reactor,Uranium,Tx,Tiverton,Bruce,Bruce,Greater Bruce/Huron
+ABPRIA,825.0,Bruce Unit 7,Bruce Power LP,CO,,2016-01-01,2063-12-31,"47 years, 11 months, 30 days",Nuclear,Rankine Cycle CANDU Reactor,Uranium,Tx,Tiverton,Bruce,Bruce,Greater Bruce/Huron
+ABPRIA,817.0,Bruce Unit 8,Bruce Power LP,CO,,2016-01-01,2063-12-31,"47 years, 11 months, 30 days",Nuclear,Rankine Cycle CANDU Reactor,Uranium,Tx,Tiverton,Bruce,Bruce,Greater Bruce/Huron
+ACES,879.51,Goreway Station,Goreway Station Partnership,CO,2008-07-01,2009-06-04,2035-04-30,"25 years, 10 months, 26 days",Gas,Combined Cycle,Natural Gas,Tx,Brampton,Peel,Toronto,GTA West
+ACES,600.0,Portlands Energy Centre,Portlands Energy Centre L.P.,CO,2009-06-01,2009-04-22,2029-04-21,"19 years, 11 months, 30 days",Gas,Combined Cycle,Natural Gas,Tx,Toronto,Toronto,Toronto,Toronto
+ACES,673.0,Halton Hills Generating Station,Portlands Energy Centre L.P.,CO,2010-05-31,2010-09-01,2035-04-30,"24 years, 7 months, 29 days",Gas,Combined Cycle,Natural Gas,Tx,Halton Hills,Halton,Southwest,GTA West
+CES,1040.0,Greenfield Energy Centre,Greenfield Energy Centre LP,CO,2008-10-29,2008-10-16,2035-04-30,"26 years, 6 months, 14 days",Gas,Combined Cycle,Natural Gas,Tx,Courtright,Lambton,West,Chatham/Lambton/Sarnia
+CES,645.5,St. Clair Energy Centre,St. Clair Power LP,CO,2009-03-30,2009-03-30,2035-04-30,"26 years, 1 months, 0 days",Gas,Combined Cycle,Natural Gas,Tx,Corunna,Lambton,West,Chatham/Lambton/Sarnia
+CES,314.0,Green Electron Power Plant,Greenfield South Power Corporation,CO,2017-09-01,2017-03-15,2037-03-14,"19 years, 11 months, 27 days",Gas,Combined Cycle,Natural Gas,Tx,Oakville,Halton,West,Chatham/Lambton/Sarnia

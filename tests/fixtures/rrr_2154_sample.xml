@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataroot>
+<Demand_x0020_and_x0020_Revenue>
+<Current_Company_Name>Alectra Utilities Corporation</Current_Company_Name>
+<Historical_Company_Name>Alectra Utilities Corporation</Historical_Company_Name>
+<Year>2017</Year>
+<Customer_or_Connections>Connections</Customer_or_Connections>
+<Rate_Class_-_Generic>Embedded Distributor(s)</Rate_Class_-_Generic>
+<Annual_Billings_-_USoA_4080_-_Dollars>49923.55</Annual_Billings_-_USoA_4080_-_Dollars>
+<Metered_Consumption_in_kWh_>1.061867E+07</Metered_Consumption_in_kWh_>
+<Demand_in_kW>0</Demand_in_kW>
+</Demand_x0020_and_x0020_Revenue>
+<Demand_x0020_and_x0020_Revenue>
+<Current_Company_Name>Alectra Utilities Corporation</Current_Company_Name>
+<Historical_Company_Name>Alectra Utilities Corporation</Historical_Company_Name>
+<Year>2017</Year>
+<Customer_or_Connections>Connections</Customer_or_Connections>
+<Rate_Class_-_Generic>Sentinel Lighting Connections</Rate_Class_-_Generic>
+<Annual_Billings_-_USoA_4080_-_Dollars>62889.77</Annual_Billings_-_USoA_4080_-_Dollars>
+<Metered_Consumption_in_kWh_>737087</Metered_Consumption_in_kWh_>
+<Demand_in_kW>1727</Demand_in_kW>
+</Demand_x0020_and_x0020_Revenue>
+<Demand_x0020_and_x0020_Revenue>
+<Current_Company_Name>Alectra Utilities Corporation</Current_Company_Name>
+<Historical_Company_Name>Alectra Utilities Corporation</Historical_Company_Name>
+<Year>2017</Year>
+<Customer_or_Connections>Connections</Customer_or_Connections>
+<Rate_Class_-_Generic>Street Lighting Connections</Rate_Class_-_Generic>
+<Annual_Billings_-_USoA_4080_-_Dollars>7933632</Annual_Billings_-_USoA_4080_-_Dollars>
+<Metered_Consumption_in_kWh_>1.329435E+08</Metered_Consumption_in_kWh_>
+<Demand_in_kW>372721</Demand_in_kW>
+</Demand_x0020_and_x0020_Revenue>
+<Demand_x0020_and_x0020_Revenue>
+<Current_Company_Name>Alectra Utilities Corporation</Current_Company_Name>
+<Historical_Company_Name>Alectra Utilities Corporation</Historical_Company_Name>
+<Year>2017</Year>
+<Customer_or_Connections>Connections</Customer_or_Connections>
+<Rate_Class_-_Generic>Unmetered Scattered Load Connections</Rate_Class_-_Generic>
+<Annual_Billings_-_USoA_4080_-_Dollars>1715525</Annual_Billings_-_USoA_4080_-_Dollars>
+<Metered_Consumption_in_kWh_>4.236061E+07</Metered_Consumption_in_kWh_>
+<Demand_in_kW>0</Demand_in_kW>
+</Demand_x0020_and_x0020_Revenue>
+<Demand_x0020_and_x0020_Revenue>
+<Current_Company_Name>Alectra Utilities Corporation</Current_Company_Name>
+<Historical_Company_Name>Alectra Utilities Corporation</Historical_Company_Name>
+<Year>2017</Year>
+<Customer_or_Connections>Customers</Customer_or_Connections>
+<Rate_Class_-_Generic>General Service &lt; 50 kW</Rate_Class_-_Generic>
+<Annual_Billings_-_USoA_4080_-_Dollars>7.310821E+07</Annual_Billings_-_USoA_4080_-_Dollars>
+<Metered_Consumption_in_kWh_>2.517908E+09</Metered_Consumption_in_kWh_>
+<Demand_in_kW>0</Demand_in_kW>
+</Demand_x0020_and_x0020_Revenue>
+<Demand_x0020_and_x0020_Revenue>
+<Current_Company_Name>Alectra Utilities Corporation</Current_Company_Name>
+<Historical_Company_Name>Alectra Utilities Corporation</Historical_Company_Name>
+<Year>2017</Year>
+<Customer_or_Connections>Customers</Customer_or_Connections>
+<Rate_Class_-_Generic>General Service &gt;= 50 kW</Rate_Class_-_Generic>
+<Annual_Billings_-_USoA_4080_-_Dollars>1.499643E+08</Annual_Billings_-_USoA_4080_-_Dollars>
+<Metered_Consumption_in_kWh_>1.227583E+10</Metered_Consumption_in_kWh_>
+<Demand_in_kW>3.222377E+07</Demand_in_kW>
+</Demand_x0020_and_x0020_Revenue>
+<Demand_x0020_and_x0020_Revenue>
+<Current_Company_Name>Alectra Utilities Corporation</Current_Company_Name>
+<Historical_Company_Name>Alectra Utilities Corporation</Historical_Company_Name>
+<Year>2017</Year>
+<Customer_or_Connections>Customers</Customer_or_Connections>
+<Rate_Class_-_Generic>Large User</Rate_Class_-_Generic>
+<Annual_Billings_-_USoA_4080_-_Dollars>1.212859E+07</Annual_Billings_-_USoA_4080_-_Dollars>
+<Metered_Consumption_in_kWh_>2.659248E+09</Metered_Consumption_in_kWh_>
+<Demand_in_kW>4925544</Demand_in_kW>
+</Demand_x0020_and_x0020_Revenue>
+<Demand_x0020_and_x0020_Revenue>
+<Current_Company_Name>Alectra Utilities Corporation</Current_Company_Name>
+<Historical_Company_Name>Alectra Utilities Corporation</Historical_Company_Name>
+<Year>2017</Year>
+<Customer_or_Connections>Customers</Customer_or_Connections>
+<Rate_Class_-_Generic>Residential</Rate_Class_-_Generic>
+<Annual_Billings_-_USoA_4080_-_Dollars>2.7795E+08</Annual_Billings_-_USoA_4080_-_Dollars>
+<Metered_Consumption_in_kWh_>6.762754E+09</Metered_Consumption_in_kWh_>
+<Demand_in_kW>0</Demand_in_kW>
+</Demand_x0020_and_x0020_Revenue>
+<Demand_x0020_and_x0020_Revenue>
+<Current_Company_Name>Alectra Utilities Corporation</Current_Company_Name>
+<Historical_Company_Name>Alectra Utilities Corporation</Historical_Company_Name>
+<Year>2017</Year>
+<Customer_or_Connections>Customers</Customer_or_Connections>
+<Rate_Class_-_Generic>Sub Transmission Customers</Rate_Class_-_Generic>
+<Annual_Billings_-_USoA_4080_-_Dollars>0</Annual_Billings_-_USoA_4080_-_Dollars>
+<Metered_Consumption_in_kWh_>0</Metered_Consumption_in_kWh_>
+<Demand_in_kW>0</Demand_in_kW>
+</Demand_x0020_and_x0020_Revenue>
+<Demand_x0020_and_x0020_Revenue>
+<Current_Company_Name>Alectra Utilities Corporation</Current_Company_Name>
+<Historical_Company_Name>Alectra Utilities Corporation</Historical_Company_Name>
+<Year>2018</Year>
+<Customer_or_Connections>Connections</Customer_or_Connections>
+<Rate_Class_-_Generic>Embedded Distributor(s)</Rate_Class_-_Generic>
+<Annual_Billings_-_USoA_4080_-_Dollars>51600.47</Annual_Billings_-_USoA_4080_-_Dollars>
+<Metered_Consumption_in_kWh_>3402773</Metered_Consumption_in_kWh_>
+<Demand_in_kW>0</Demand_in_kW>
+</Demand_x0020_and_x0020_Revenue>
+</dataroot>

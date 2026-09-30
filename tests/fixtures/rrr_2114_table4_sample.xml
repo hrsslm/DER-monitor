@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataroot>
+<tab4>
+<Current_Company_Name>Alectra Utilities Corporation</Current_Company_Name>
+<Historical_Company_Name>Alectra Utilities Corporation</Historical_Company_Name>
+<Year>2023</Year>
+<Facility_Type>Biomass</Facility_Type>
+<Number_of_Facilities>3</Number_of_Facilities>
+<Installed_Capacity_kW>1678.2</Installed_Capacity_kW>
+</tab4>
+<tab4>
+<Current_Company_Name>Alectra Utilities Corporation</Current_Company_Name>
+<Historical_Company_Name>Alectra Utilities Corporation</Historical_Company_Name>
+<Year>2023</Year>
+<Facility_Type>Exporting Storage</Facility_Type>
+<Number_of_Facilities>0</Number_of_Facilities>
+<Installed_Capacity_kW>0</Installed_Capacity_kW>
+</tab4>
+<tab4>
+<Current_Company_Name>Alectra Utilities Corporation</Current_Company_Name>
+<Historical_Company_Name>Alectra Utilities Corporation</Historical_Company_Name>
+<Year>2023</Year>
+<Facility_Type>Fossil Fuel</Facility_Type>
+<Number_of_Facilities>0</Number_of_Facilities>
+<Installed_Capacity_kW>0</Installed_Capacity_kW>
+</tab4>
+<tab4>
+<Current_Company_Name>Alectra Utilities Corporation</Current_Company_Name>
+<Historical_Company_Name>Alectra Utilities Corporation</Historical_Company_Name>
+<Year>2023</Year>
+<Facility_Type>Non-Exporting Storage</Facility_Type>
+<Number_of_Facilities>15</Number_of_Facilities>
+<Installed_Capacity_kW>18136</Installed_Capacity_kW>
+</tab4>
+<tab4>
+<Current_Company_Name>Alectra Utilities Corporation</Current_Company_Name>
+<Historical_Company_Name>Alectra Utilities Corporation</Historical_Company_Name>
+<Year>2023</Year>
+<Facility_Type>Other</Facility_Type>
+<Number_of_Facilities>61</Number_of_Facilities>
+<Installed_Capacity_kW>134172.6</Installed_Capacity_kW>
+</tab4>
+<tab4>
+<Current_Company_Name>Alectra Utilities Corporation</Current_Company_Name>
+<Historical_Company_Name>Alectra Utilities Corporation</Historical_Company_Name>
+<Year>2023</Year>
+<Facility_Type>Solar</Facility_Type>
+<Number_of_Facilities>5477</Number_of_Facilities>
+<Installed_Capacity_kW>154715</Installed_Capacity_kW>
+</tab4>
+<tab4>
+<Current_Company_Name>Alectra Utilities Corporation</Current_Company_Name>
+<Historical_Company_Name>Alectra Utilities Corporation</Historical_Company_Name>
+<Year>2023</Year>
+<Facility_Type>Water</Facility_Type>
+<Number_of_Facilities>3</Number_of_Facilities>
+<Installed_Capacity_kW>17250</Installed_Capacity_kW>
+</tab4>
+<tab4>
+<Current_Company_Name>Alectra Utilities Corporation</Current_Company_Name>
+<Historical_Company_Name>Alectra Utilities Corporation</Historical_Company_Name>
+<Year>2023</Year>
+<Facility_Type>Wind</Facility_Type>
+<Number_of_Facilities>3</Number_of_Facilities>
+<Installed_Capacity_kW>54.2</Installed_Capacity_kW>
+</tab4>
+<tab4>
+<Current_Company_Name>Alectra Utilities Corporation</Current_Company_Name>
+<Historical_Company_Name>Alectra Utilities Corporation</Historical_Company_Name>
+<Year>2024</Year>
+<Facility_Type>Biomass</Facility_Type>
+<Number_of_Facilities>2</Number_of_Facilities>
+<Installed_Capacity_kW>1002.2</Installed_Capacity_kW>
+</tab4>
+<tab4>
+<Current_Company_Name>Alectra Utilities Corporation</Current_Company_Name>
+<Historical_Company_Name>Alectra Utilities Corporation</Historical_Company_Name>
+<Year>2024</Year>
+<Facility_Type>Exporting Storage</Facility_Type>
+</tab4>
+<tab4>
+<Current_Company_Name>Alectra Utilities Corporation</Current_Company_Name>
+<Historical_Company_Name>Alectra Utilities Corporation</Historical_Company_Name>
+<Year>2024</Year>
+<Facility_Type>Fossil Fuel</Facility_Type>
+<Number_of_Facilities>71</Number_of_Facilities>
+<Installed_Capacity_kW>141591.6</Installed_Capacity_kW>
+</tab4>
+<tab4>
+<Current_Company_Name>Alectra Utilities Corporation</Current_Company_Name>
+<Historical_Company_Name>Alectra Utilities Corporation</Historical_Company_Name>
+<Year>2024</Year>
+<Facility_Type>Non-Exporting Storage</Facility_Type>
+<Number_of_Facilities>16</Number_of_Facilities>
+<Installed_Capacity_kW>18480</Installed_Capacity_kW>
+</tab4>
+<tab4>
+<Current_Company_Name>Alectra Utilities Corporation</Current_Company_Name>
+<Historical_Company_Name>Alectra Utilities Corporation</Historical_Company_Name>
+<Year>2024</Year>
+<Facility_Type>Other</Facility_Type>
+<Number_of_Facilities>5</Number_of_Facilities>
+<Installed_Capacity_kW>8406</Installed_Capacity_kW>
+</tab4>
+<tab4>
+<Current_Company_Name>Alectra Utilities Corporation</Current_Company_Name>
+<Historical_Company_Name>Alectra Utilities Corporation</Historical_Company_Name>
+<Year>2024</Year>
+<Facility_Type>Solar</Facility_Type>
+<Number_of_Facilities>5472</Number_of_Facilities>
+<Installed_Capacity_kW>154692.9</Installed_Capacity_kW>
+</tab4>
+<tab4>
+<Current_Company_Name>Alectra Utilities Corporation</Current_Company_Name>
+<Historical_Company_Name>Alectra Utilities Corporation</Historical_Company_Name>
+<Year>2024</Year>
+<Facility_Type>Water</Facility_Type>
+<Number_of_Facilities>4</Number_of_Facilities>
+<Installed_Capacity_kW>17700</Installed_Capacity_kW>
+</tab4>
+</dataroot>
