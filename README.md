@@ -138,16 +138,6 @@ carry explicit ISO-8601 offsets.
   changed (rebase-and-retry against collect's commits). The build itself
   takes seconds excluding dependency install.
 
-## Release gate
-
-The repo contains third-party data whose licence the owner has **not**
-confirmed (LDC polygons, node coordinates). Until `PUBLIC_RELEASE_APPROVED`
-is `True` in `src/config.py`, every page carries a "DRAFT: not for public
-release. Data licences pending." banner and `<meta name="robots"
-content="noindex">`. The gates are listed in `RELEASE_CHECKLIST.md`; the
-owner flips the flag only after all are satisfied. GitHub Pages ("Deploy
-from a branch: main, /docs") is enabled only after the checklist is
-complete.
 
 ## Attribution
 

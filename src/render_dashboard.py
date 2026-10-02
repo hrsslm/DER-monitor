@@ -559,8 +559,11 @@ def build_index(ctx, built_utc, built_toronto, commit):
 <body>
 <header>
 <h1>Ontario DER Monitor</h1>
-<p class="sub">Evidence for the OEB DER valuation argument, docket
-EB-2025-0268. Static dashboard; all figures computed from the processed
+<p class="sub">The OEB's Report to the Minister on the Valuation of Distributed Energy Resources (docket EB-2025-0268)
+ recommends that net metering be replaced by net billing, with injected electricity paid through a time and location-based tariff. 
+ The Ministry of Energy and Mines has not made that change. These four pages put numbers on the argument using free public IESO and OEB data. 
+ They test one slice of it, the wholesale energy component, and they do not cover the capacity components of the tariff the OEB describes. 
+ Every figure is a sample from a defined window, and each page states its window. Static dashboard; all figures computed from the processed
 files below.</p>
 </header>
 {panel}

@@ -6,3 +6,4 @@ __pycache__/
 .venv/
 # Local test / scratch outputs
 /tmp/
+.DS_Store

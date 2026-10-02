@@ -1,1 +1,19 @@
-[ANALYST COMMENTARY - TO BE WRITTEN BY AUTHOR]
+**Net metering value wedge**
+
+For each of 1,848 summer hours (July 1 to mid-September 2026, about 77 days), I compared two prices; the first is the wholesale energy value of electricity, measured as the day-ahead Ontario zonal price plus the LFDA uplift. The second is what a net-metered customer on the regulated price plan is credited for each injected kilowatt-hour, which is the commodity rate for that hour's time-of-use period. The difference is the wedge.
+
+On the time-of-use plan the wedge averaged $59.52/MWh, against a mean wholesale energy value of $66.17/MWh. Those two figures imply an average retail credit of about 12.6 cents per kWh or 125.69/MWh, so roughly 47 percent of the credit in this window was not backed by wholesale energy value. On the ultra-low overnight plan the average wedge was $71.65/MWh.
+
+The retail credit moves in three fixed steps (9.8, 15.7 and 20.3 cents per kWh on time-of-use) that are set a year ahead. Wholesale value in the same window ranged from $23.27/MWh to $500.13/MWh, with a median of $50.84. Three patterns follow from that.
+
+- The time-of-use wedge was largest at on-peak ($117.15/MWh), then mid-peak ($80.21) and off-peak ($39.56). Retail steps track the daily shape of demand, but not its scale.
+- On the ultra-low overnight plan, the overnight period averaged -$1.57/MWh. Retail and wholesale were at parity there. The evening on-peak period (4 to 9 p.m.) averaged $276.57/MWh, the largest wedge of any period. That period falls after solar output has faded, so it is more relevant to storage than to rooftop solar.
+- In 149 of 1,848 hours (8.1 percent) the time-of-use wedge was negative: the wholesale price exceeded the retail credit. The minimum, -$391.61/MWh, came in a single hour when the wholesale price reached $500. A fixed credit therefore under-signals scarcity as well as over-signalling abundance.
+
+The OEB found that crediting injected electricity at the retail rate gives no adequate price signal, because the retail rate also recovers capacity reserve and the cost of conservation, storage and industry programs. It also found that the regulated price plans are built for simplicity and predictability, which makes them a poor measure of what injected power is worth at a given hour. The wedge puts a number on that gap for the energy component. The OEB's own framing is careful, and I follow it. Residential distribution rates are fixed and do not depend on volume, so net-metered residential customers still pay for the distribution assets they use. Because the OEB treats the cost imbalance as currently small and expected to grow with adoption, this page's default headline is commodity-only. It is a conservative lower bound and leaves out delivery charges.
+
+This doesn't does not mean that net-metered customers are overpaid by $59.52/MWh. The regulated price plan prices include an estimate of the Global Adjustment, which recovers real costs of contracted supply. The wedge is a measure of credit beyond wholesale energy value, not a measure of cost shifted to other customers. Three further limits apply.
+
+- The solar shape used elsewhere in the pipeline is province-wide transmission-visible solar, not rooftop output, and the figures above are all-hours averages, not weighted by solar injection. Midday periods carry different wedges from the all-hours average, so a solar-weighted wedge will differ.
+- The window is summer only. A full twelve-month window of the new market price will not close until about July 2027, and I will not publish an annual figure before then.
+- Tariff coverage ends October 31, 2026. The new regulated price plan prices take effect November 1, and I will add them when the OEB announces them.
