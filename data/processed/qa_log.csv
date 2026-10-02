@@ -1,5 +1,5 @@
 phase,dataset,action,record_id,count,note
-2A,value_preview,run,2026-07-01..2026-09-16,1848,"10560 timestamps dropped in join; label=summer preview, not annual; no headline gap metric"
+2A,value_preview,run,2026-07-01..2026-09-16,1848,"10584 timestamps dropped in join; label=summer preview, not annual; no headline gap metric"
 2C,ieso_node_locations,suspect_coordinate_quarantined,CUMBERLAND-LT.LFBQ,1,"node more than 25 km from every sibling sharing its name stem (or the explicit NORTHBAY finding); coordinate kept as-is, node excluded from the signal"
 2C,ieso_node_locations,suspect_coordinate_quarantined,CUMBERLAND-LT.TT12_LF,1,"node more than 25 km from every sibling sharing its name stem (or the explicit NORTHBAY finding); coordinate kept as-is, node excluded from the signal"
 2C,ieso_node_locations,suspect_coordinate_quarantined,NORTHBAY-LT.TT_LF,1,"node more than 25 km from every sibling sharing its name stem (or the explicit NORTHBAY finding); coordinate kept as-is, node excluded from the signal"
