@@ -497,8 +497,7 @@ downloads on later runs.</p>
 {html_mod.escape(s.get("timestamp_convention", ""))}.</p>
 <h3>Attribution</h3>
 <p>OEB data under the Open Government Licence &ndash; Ontario. IESO public
-reports under the IESO's terms of use. LDC polygon provenance and licence
-to be confirmed by the owner before public release.</p>
+reports under the IESO's terms of use.</p>
 </section>"""
 
 
@@ -545,8 +544,7 @@ def build_index(ctx, built_utc, built_toronto, commit):
     methods = methods_html(ctx, mc)
     footer = (
         f"Data: IESO public reports; OEB RRR open data (Open Government "
-        f"Licence &ndash; Ontario). LDC polygon provenance and licence to be "
-        f"confirmed by the owner before public release.<br>"
+        f"Licence &ndash; Ontario).<br>"
         f'Built <span id="{TIMESTAMP_ID}" data-utc="{built_utc}" '
         f'data-toronto="{built_toronto}">{built_utc} / {built_toronto}</span> '
         f"&middot; commit {html_mod.escape(commit)}.")

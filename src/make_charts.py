@@ -450,8 +450,8 @@ def page2():
         f"clipped to the 2nd-98th percentile per layer. "
         f"Basemap: CARTO dark matter (c) OpenStreetMap contributors "
         f"(c) CARTO. "
-        f"Polygons are indicative, not legal boundaries; polygon provenance "
-        f"and licence to be confirmed by owner before public release. "
+        f"Polygons are indicative, not legal boundaries. "
+        
         f"{ANALYST}")
     body = (f"{div}<p class='note'>LDCs not reported in RRR 2.1.2:</p>"
             f"<ul class='note'>{excl_list}</ul>")
