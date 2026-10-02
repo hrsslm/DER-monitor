@@ -162,4 +162,4 @@ HTTP_CHUNK_SIZE = 1 << 20    # 1 MiB download chunks
 # While False, every page carries a "DRAFT: not for public release" banner
 # and a noindex meta tag. The owner flips this to True only after every
 # item in RELEASE_CHECKLIST.md is satisfied.
-PUBLIC_RELEASE_APPROVED = False
+PUBLIC_RELEASE_APPROVED = True
