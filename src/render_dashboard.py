@@ -12,6 +12,7 @@ Outputs: docs/index.html (and updated docs/charts/*.html banner state).
 """
 import html as html_mod
 import json
+import os
 import re
 import subprocess
 from datetime import date, datetime, timezone
@@ -195,12 +196,10 @@ def oemp_history(summary):
 
 
 def lmp_gaps(trailing_days=35):
-    """Day-level coverage of the processed DA LMP history (the file Page 3
-    actually uses). Returns dict with fully missing and partial days in the
-    trailing window, computed from row counts per date."""
-    d = pd.read_csv(PROCESSED_DIR / "da_lmp_hourly.csv",
-                    usecols=["timestamp_utc"])
-    d["date"] = d["timestamp_utc"].str[:10]
+    """Day-level coverage of the processed DA LMP history (the compact
+    daily file Pages 3/4 actually use). Returns dict with fully missing
+    and partial days in the trailing window, from node-days per date."""
+    d = pd.read_csv(PROCESSED_DIR / "lmp_node_daily.csv", usecols=["date"])
     per_day = d.groupby("date").size()
     end = per_day.index.max()
     start = (pd.Timestamp(end) -
@@ -232,15 +231,15 @@ def ldc_stats():
     reported = adoption[adoption["reported"]]
     multi = int(reported["multi_zone"].sum())
     excluded = adoption[~adoption["reported"]]
-    review = pd.read_csv(PROCESSED_DIR / "crosswalk_review_top20.csv")
+    review = pd.read_csv(PROCESSED_DIR / "ldc_node_signal.csv")
     review["owner_status"] = review["owner_status"].fillna("").str.strip()
     approved = int((review["owner_status"].str.lower() == "approved").sum())
-    awaiting = int((review["owner_status"] == "").sum())
+    rejected = int((review["owner_status"].str.lower() == "rejected").sum())
     return {"reported": len(reported), "in_scale": len(reported) - multi,
             "multi_zone": multi,
             "excluded": len(excluded),
             "excluded_names": sorted(excluded["utility_name"].tolist()),
-            "awaiting_review": awaiting, "approved": approved,
+            "rejected": rejected, "approved": approved,
             "vintage": reported["vintage"].iloc[0],
             "data_year": int(reported["data_year"].iloc[0])}
 
@@ -250,7 +249,7 @@ def page_badges(ldc, nodes):
     cap3 = chart_caption("page3_nodal_signal.html")
     m = re.search(r"30-day window ending (\d{4}-\d{2}-\d{2})", cap3)
     p3_window = m.group(1) if m else "unknown"
-    p4 = ("Awaiting owner review" if ldc["approved"] == 0
+    p4 = ("No approved LDCs" if ldc["approved"] == 0
           else f'{ldc["approved"]} approved LDCs')
     return {
         "page1": "Summer preview, not annual",
@@ -296,7 +295,7 @@ def key_figures(page, ctx):
         ],
         "page4": [
             ("Approved rows", str(ldc["approved"])),
-            ("Awaiting owner review", str(ldc["awaiting_review"])),
+            ("Rejected rows", str(ldc["rejected"])),
             ("Signal method", ctx.get("signal_methods", "n/a")),
         ],
     }
@@ -385,7 +384,7 @@ def status_panel_html(ctx):
 <div class="status-card"><h3>Adoption (RRR)</h3>
 <p>Vintage {ldc["vintage"]}, data year {ldc["data_year"]}</p>
 <p>{ldc_in_scale} LDCs in scale, {ldc_multi} multi-zone, {ldc_excl} not reported</p>
-<p>Page 4: {ldc["approved"]} approved, {ldc["awaiting_review"]} awaiting owner review</p></div>
+<p>Page 4: {ldc["approved"]} approved, {ldc["rejected"]} rejected (rule-based approval; owner overrides in data/inputs/ldc_owner_overrides.csv)</p></div>
 </div>
 </section>"""
 
@@ -443,7 +442,7 @@ def methods_html(ctx, mc):
     gap_text = ("; ".join(gap_bits) if gap_bits
                 else "no missing or partial days") + \
         f' (trailing 35 days, {gaps["start"]} to {gaps["end"]}, computed from '\
-        'da_lmp_hourly.csv)'
+        'lmp_node_daily.csv)'
     terms = ", ".join(s.get("tariff_terms", []))
     return f"""
 <section id="tab-methods" class="tabpanel methods" aria-label="Methods and caveats">
@@ -483,8 +482,12 @@ selectable; Class B scenarios are kept separate from RPP.</p>
 <ul>
 <li>Zone aggregation <strong>withheld</strong>: node-to-zone coverage is
 54.2%, below the 90% bar. Page 3 is node-level only.</li>
-<li>Page 4 renders <strong>"Awaiting owner review"</strong> until the owner
-approves review-sheet rows; unreviewed rows are never plotted as findings.</li>
+<li>Page 4 uses <strong>rule-based approval</strong> (owner directive
+2026-10-01): an LDC is approved when it has at least one load node after
+filtering, is in_polygon, is not heterogeneous, and has adoption data.
+The owner_override column (data/inputs/ldc_owner_overrides.csv) wins over
+the rule. Heterogeneous or borrowed-node LDCs are drawn hollow and kept
+out of the correlation.</li>
 </ul>
 <h3>Known gaps</h3>
 <p>{html_mod.escape(gap_text)}. The scheduled collector retries incomplete
@@ -584,11 +587,25 @@ def apply_gate_to_charts():
         path.write_text(apply_release_gate(html_text), encoding="utf-8")
 
 
-def main():
-    now_utc = datetime.now(timezone.utc)
+def _build_times():
+    """(built_utc, built_toronto) display strings.
+
+    DER_MONITOR_BUILD_TIME pins the clock (ISO 8601) so reruns are
+    byte-identical for determinism checks; unset means "now".
+    """
+    fixed = os.environ.get("DER_MONITOR_BUILD_TIME")
+    now_utc = (datetime.fromisoformat(fixed) if fixed
+               else datetime.now(timezone.utc))
+    if now_utc.tzinfo is None:
+        now_utc = now_utc.replace(tzinfo=timezone.utc)
     built_utc = now_utc.strftime("%Y-%m-%d %H:%M UTC")
     built_toronto = now_utc.astimezone(
         ZoneInfo("America/Toronto")).strftime("%Y-%m-%d %H:%M %Z")
+    return built_utc, built_toronto
+
+
+def main():
+    built_utc, built_toronto = _build_times()
     commit = git_hash()
     ctx = build_context()
     html_text = build_index(ctx, built_utc, built_toronto, commit)

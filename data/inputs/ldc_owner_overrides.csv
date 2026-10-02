@@ -1,0 +1,21 @@
+licence_no,utility_name,owner_override,reason
+ED-2003-0043,Hydro One Networks Inc.,rejected,Residual multi-region territory; excluded from correlation.
+ED-2016-0360,Alectra Utilities Corporation,rejected,Nodes span Barrie to Hamilton (over 100 km); too heterogeneous.
+ED-2002-0497,Toronto Hydro-Electric System Limited,approved,37 load nodes in polygon; consistent signal.
+ED-2002-0556,Hydro Ottawa Limited,approved,34 load nodes in polygon; consistent signal.
+ED-2021-0280,GrandBridge Energy Inc.,approved,8 load nodes; Cambridge and Brantford about 35 km apart.
+ED-2019-0128,Elexicon Energy Inc.,rejected,Nodes span Durham to Belleville (over 100 km).
+ED-2002-0557,London Hydro Inc.,approved,8 load nodes; bus and battery nodes excluded.
+ED-2022-0006,Enova Power Corp.,approved,13 load nodes; compact territory.
+ED-2002-0527,ENWIN Utilities Ltd.,approved,12 load nodes after dropping generation and batteries.
+ED-2003-0135,Oakville Hydro Electricity Distribution Inc.,approved,4 load nodes; compact territory.
+ED-2003-0004,Burlington Hydro Inc.,approved,3 load nodes; compact territory.
+ED-2002-0563,Entegrus Powerlines Inc.,approved,3 load nodes after filtering; spread under 100 km; verify after re-run.
+ED-2002-0560,Oshawa PUC Networks Inc.,approved,4 load nodes; compact territory.
+ED-2007-0749,Niagara Peninsula Energy Inc.,approved,Approved only on the load-nodes-only re-run (Beck generation nodes excluded); 8 load nodes.
+ED-2018-0233,Synergy North Corporation,rejected,Kenora and Thunder Bay nodes about 470 km apart.
+ED-2002-0559,Greater Sudbury Hydro Inc.,approved,4 load nodes; compact territory.
+ED-2007-0624,Newmarket-Tay Power Distribution Ltd.,approved,"2 load nodes; borderline spread, under thresholds."
+ED-2003-0014,Milton Hydro Distribution Inc.,approved,4 load nodes; compact territory.
+ED-2002-0517,Bluewater Power Distribution Corporation,approved,6 industrial/load nodes in Sarnia after dropping generation.
+ED-2002-0546,PUC Distribution Inc.,approved,6 load nodes after quarantining the NORTHBAY coordinate.

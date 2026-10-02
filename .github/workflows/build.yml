@@ -81,11 +81,13 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
-          # The review sheet carries the owner's manual review, but the
-          # rebuild script regenerates it with a blank owner_status column.
-          # Never let this job modify the committed copy.
+          # Owner decisions live in data/inputs/ldc_owner_overrides.csv,
+          # which no build script writes to. The review sheet is now a
+          # regenerated transparency artifact (rule approval + overrides),
+          # so it rebuilds and commits normally. Guard the overrides file
+          # itself against any accidental modification by this job.
           git restore --source=HEAD --staged --worktree -- \
-            data/processed/crosswalk_review_top20.csv || true
+            data/inputs/ldc_owner_overrides.csv || true
 
           # collect.yml only fetches the raw histories; this job rebuilds
           # the derived layer from them, so stage those regenerated files

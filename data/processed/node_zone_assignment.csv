@@ -332,6 +332,10 @@ ELLWOODRSVC-LT.BATT_TG,OTTAWA,capacity_auction_table,ELLWOOD MTS
 ELMIRA-LT.BATT_LF,SOUTHWEST,capacity_auction_table,ELMIRA TS
 ELMIRA-LT.BATT_TG,SOUTHWEST,capacity_auction_table,ELMIRA TS
 ELMIRA-LT.T12,SOUTHWEST,capacity_auction_table,ELMIRA TS
+ELORABESS-LT.BATT_LF1,,unassigned,
+ELORABESS-LT.BATT_LF2,,unassigned,
+ELORABESS-LT.BATT_TG1,,unassigned,
+ELORABESS-LT.BATT_TG2,,unassigned,
 EMPIRESF-LT.AG_T1,,unassigned,
 ENBRCARDINAL-LT.T1_LF,,unassigned,
 ENBRHILTON-LT.T1_LF,,unassigned,
@@ -484,6 +488,10 @@ HAWTHORNE-LT.RODANCI_DRA,OTTAWA,capacity_auction_table,HAWTHORNE TS
 HAWTHORNE-LT.VOLTUS_DRA,OTTAWA,capacity_auction_table,HAWTHORNE TS
 HEALEY-LT.AG_M4,,unassigned,
 HEARST-LT_H1,NORTHEAST,capacity_auction_table,HEARST TS
+HEDLEYBESS-LT.BATT_LF1,,unassigned,
+HEDLEYBESS-LT.BATT_LF2,,unassigned,
+HEDLEYBESS-LT.BATT_TG1,,unassigned,
+HEDLEYBESS-LT.BATT_TG2,,unassigned,
 HENVEYNORTH-LT.AG_T1N,,unassigned,
 HENVEYSOUTH-LT.AG_T1S,,unassigned,
 HERRIDGELAKE-LT.T1_LF,NORTHEAST,capacity_auction_table,HERRIDGE LAKE DS
@@ -516,6 +524,7 @@ IVACO-LT.ALF,OTTAWA,capacity_auction_table,IVACO CTS
 IVACO-LT.LFQ,OTTAWA,capacity_auction_table,IVACO CTS
 IVACO-LT.LFY,OTTAWA,capacity_auction_table,IVACO CTS
 JARVIS-LT.T34,SOUTHWEST,capacity_auction_table,JARVIS TS
+JBLCAN-LT.T1_LF,,unassigned,
 JBLCAN-LT.T1_LF_DRA,,unassigned,
 JBLCTS-LT.LFB13,NIAGARA,capacity_auction_table,JBL CTS
 JELLICO-LT.T1_LF,,unassigned,
@@ -1045,12 +1054,3 @@ YORKCGS-LT.G2,,unassigned,
 YOUNGDAVIDSN-LT.TT26,,unassigned,
 YOUNGDAVIDSN-LT.TT_LF_DRA,,unassigned,
 ZURICH-LT.AG_T1,,unassigned,
-ELORABESS-LT.BATT_LF1,,unassigned,
-ELORABESS-LT.BATT_LF2,,unassigned,
-ELORABESS-LT.BATT_TG1,,unassigned,
-ELORABESS-LT.BATT_TG2,,unassigned,
-HEDLEYBESS-LT.BATT_LF1,,unassigned,
-HEDLEYBESS-LT.BATT_LF2,,unassigned,
-HEDLEYBESS-LT.BATT_TG1,,unassigned,
-HEDLEYBESS-LT.BATT_TG2,,unassigned,
-JBLCAN-LT.T1_LF,,unassigned,

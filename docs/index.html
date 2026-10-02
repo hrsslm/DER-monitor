@@ -82,19 +82,19 @@ files below.</p>
 <section aria-label="Data status">
 <h2>Data status</h2>
 <div class="status-grid">
-<div class="status-card"><h3>Collection (per feed)</h3><ul><li>da_lmp: 2026-10-02 12:09 UTC</li><li>da_zonal: 2026-10-02 12:09 UTC</li><li>fuelmix: 2026-10-02 12:09 UTC</li><li>lfda: 2026-10-02 12:09 UTC</li></ul></div>
+<div class="status-card"><h3>Collection (per feed)</h3><ul><li>da_lmp: 2026-10-01 18:21 UTC</li><li>da_zonal: 2026-10-01 18:20 UTC</li><li>fuelmix: 2026-10-01 18:21 UTC</li><li>lfda: 2026-10-01 18:20 UTC</li></ul></div>
 <div class="status-card"><h3>OEMP-era price history</h3>
 <p>77.0 days (2.5 months), 2026-07-01 to 2026-09-16</p>
 <p>First full 12-month window available on 2027-07-01 (assuming no gaps)</p>
 <p>Gaps: no gaps in the OEMP window</p></div>
 <div class="status-card"><h3>Wholesale signal</h3>
-<p>1,022 of 1,055 nodes drawn (33 lack coordinates)</p>
-<p>Node-to-zone coverage: 54.2% vs the 90% bar — aggregation withheld</p>
-<p>DA LMP day coverage (2026-08-30 to 2026-10-03): partial: 2026-08-30, 2026-10-03</p></div>
+<p>1,022 of 1,054 nodes drawn (32 lack coordinates)</p>
+<p>Node-to-zone coverage: 54.3% vs the 90% bar — aggregation withheld</p>
+<p>DA LMP day coverage (2026-08-30 to 2026-10-03): none</p></div>
 <div class="status-card"><h3>Adoption (RRR)</h3>
 <p>Vintage 2024-2, data year 2024</p>
 <p>52 LDCs in scale, 1 multi-zone, 5 not reported</p>
-<p>Page 4: 0 approved, 20 awaiting owner review</p></div>
+<p>Page 4: 33 approved, 25 rejected (rule-based approval; owner overrides in data/inputs/ldc_owner_overrides.csv)</p></div>
 </div>
 </section>
 <nav class="tabbar" aria-label="Dashboard pages"><button data-tab="page1" aria-selected="false">Page 1 — Value wedge</button><button data-tab="page2" aria-selected="false">Page 2 — Adoption</button><button data-tab="page3" aria-selected="false">Page 3 — Wholesale signal</button><button data-tab="page4" aria-selected="false">Page 4 — Adoption vs signal</button><button data-tab="methods" aria-selected="false">Methods and caveats</button></nav>
@@ -109,8 +109,8 @@ files below.</p>
 <h3>Commentary</h3>
 <div class="commentary placeholder"><p>[ANALYST COMMENTARY - TO BE WRITTEN BY AUTHOR]</p></div>
 <h3>Key figures</h3>
-<dl class="key-figures"><div><dt>Data window</dt><dd>2026-07-01 to 2026-09-16</dd></div><div><dt>OEMP-era hours</dt><dd>1,848 (77.0 days, 2.5 months)</dd></div><div><dt>As of</dt><dd>2026-10-02</dd></div><div><dt>Sources</dt><dd>IESO DA zonal price + LFDA; IESO fuel mix (solar shape); OEB RPP TOU/ULO commodity rates</dd></div></dl>
-<div class="caveats"><strong>Sources and caveats.</strong> Source: IESO day-ahead Ontario zonal price + LFDA (OEMP = DA-OZP + LFDA), IESO fuel mix (solar shape), OEB RPP TOU/ULO commodity rates (effective-dated). Data window: 2026-07-01 to 2026-09-16. As of: 2026-10-02. Summer preview, not annual. No headline percentage is computed for a preview. Caveats: RPP commodity rates include a Global Adjustment estimate and RPP cost recovery, so the wedge is not only an energy-value gap; the solar shape is province-wide transmission-visible solar, not rooftop net-metered output. [ANALYST COMMENTARY - TO BE WRITTEN BY AUTHOR]</div>
+<dl class="key-figures"><div><dt>Data window</dt><dd>2026-07-01 to 2026-09-16</dd></div><div><dt>OEMP-era hours</dt><dd>1,848 (77.0 days, 2.5 months)</dd></div><div><dt>As of</dt><dd>2026-09-30</dd></div><div><dt>Sources</dt><dd>IESO DA zonal price + LFDA; IESO fuel mix (solar shape); OEB RPP TOU/ULO commodity rates</dd></div></dl>
+<div class="caveats"><strong>Sources and caveats.</strong> Source: IESO day-ahead Ontario zonal price + LFDA (OEMP = DA-OZP + LFDA), IESO fuel mix (solar shape), OEB RPP TOU/ULO commodity rates (effective-dated). Data window: 2026-07-01 to 2026-09-16. As of: 2026-09-30. Summer preview, not annual. No headline percentage is computed for a preview. Caveats: RPP commodity rates include a Global Adjustment estimate and RPP cost recovery, so the wedge is not only an energy-value gap; the solar shape is province-wide transmission-visible solar, not rooftop net-metered output. [ANALYST COMMENTARY - TO BE WRITTEN BY AUTHOR]</div>
 </section>
 <section id="tab-page2" class="tabpanel" aria-label="Page 2 — DER adoption baseline">
 <h2>Page 2 — DER adoption baseline</h2>
@@ -123,11 +123,11 @@ files below.</p>
 <div class="commentary placeholder"><p>[ANALYST COMMENTARY - TO BE WRITTEN BY AUTHOR]</p></div>
 <h3>Key figures</h3>
 <dl class="key-figures"><div><dt>LDCs in colour scale</dt><dd>52</dd></div><div><dt>Multi-zone (out of scale)</dt><dd>1</dd></div><div><dt>Not reported</dt><dd>5</dd></div><div><dt>RRR vintage / data year</dt><dd>2024-2 / 2024</dd></div></dl>
-<div class="caveats"><strong>Sources and caveats.</strong> Source: OEB RRR 2.1.2, vintage 2024-2, data year 2024. Primary layer: net-metered capacity per 1,000 customers (Table 1 only). Embedded generation by fuel type (Table 3) is a separate selectable layer; the two are never combined. Polygons are indicative, not legal boundaries; polygon provenance and licence to be confirmed by owner before public release. [ANALYST COMMENTARY - TO BE WRITTEN BY AUTHOR]</div>
+<div class="caveats"><strong>Sources and caveats.</strong> Source: OEB RRR 2.1.2, vintage 2024-2, data year 2024. Primary layer: net-metered capacity per 1,000 customers (Table 1 only). Embedded generation by fuel type (Table 3) is a separate selectable layer; the two are never combined. Colour range is clipped to the 2nd-98th percentile per layer. Basemap: CARTO dark matter (c) OpenStreetMap contributors (c) CARTO. Polygons are indicative, not legal boundaries; polygon provenance and licence to be confirmed by owner before public release. [ANALYST COMMENTARY - TO BE WRITTEN BY AUTHOR]</div>
 </section>
 <section id="tab-page3" class="tabpanel" aria-label="Page 3 — Wholesale locational signal">
 <h2>Page 3 — Wholesale locational signal</h2>
-<span class="badge">Wholesale signal, 30 days ending 2026-10-01</span><br>
+<span class="badge">Wholesale signal, 30 days ending unknown</span><br>
 <iframe class="chart" title="Page 3 — Wholesale locational signal"
         src="charts/page3_nodal_signal.html"></iframe><br>
 <a class="fullscreen-link" href="charts/page3_nodal_signal.html" target="_blank"
@@ -135,12 +135,12 @@ files below.</p>
 <h3>Commentary</h3>
 <div class="commentary placeholder"><p>[ANALYST COMMENTARY - TO BE WRITTEN BY AUTHOR]</p></div>
 <h3>Key figures</h3>
-<dl class="key-figures"><div><dt>Nodes drawn</dt><dd>1,022 of 1,055 (33 lack coordinates)</dd></div><div><dt>Node-to-zone coverage</dt><dd>54.2% vs the 90% bar — aggregation withheld</dd></div><div><dt>Window</dt><dd>30 days ending 2026-10-01</dd></div></dl>
-<div class="caveats"><strong>Sources and caveats.</strong> Source: IESO day-ahead hourly LMP, 30-day window ending 2026-10-01; node coordinates from ieso_node_locations.csv (user-supplied). Values are per-node means of daily means; negatives kept. This is a wholesale locational signal for generators and dispatchable resources — not a retail price and not a distribution deferral value. [ANALYST COMMENTARY - TO BE WRITTEN BY AUTHOR]</div>
+<dl class="key-figures"><div><dt>Nodes drawn</dt><dd>1,022 of 1,054 (32 lack coordinates)</dd></div><div><dt>Node-to-zone coverage</dt><dd>54.3% vs the 90% bar — aggregation withheld</dd></div><div><dt>Window</dt><dd>30 days ending 2026-10-01</dd></div></dl>
+<div class="caveats"><strong>Sources and caveats.</strong> Source: IESO day-ahead hourly LMP, 35-day window 2026-08-30 to 2026-10-03; node coordinates from ieso_node_locations.csv (user-supplied). Values are per-node means of daily means; negatives kept. Colour range is clipped to the 2nd-98th percentile per metric. Basemap: CARTO dark matter (c) OpenStreetMap contributors (c) CARTO. This is a wholesale locational signal for generators and dispatchable resources — not a retail price and not a distribution deferral value. [ANALYST COMMENTARY - TO BE WRITTEN BY AUTHOR]</div>
 </section>
 <section id="tab-page4" class="tabpanel" aria-label="Page 4 — Adoption vs wholesale signal">
 <h2>Page 4 — Adoption vs wholesale signal</h2>
-<span class="badge">Awaiting owner review</span><br>
+<span class="badge">33 approved LDCs</span><br>
 <iframe class="chart" title="Page 4 — Adoption vs wholesale signal"
         src="charts/page4_adoption_vs_signal.html"></iframe><br>
 <a class="fullscreen-link" href="charts/page4_adoption_vs_signal.html" target="_blank"
@@ -148,8 +148,8 @@ files below.</p>
 <h3>Commentary</h3>
 <div class="commentary placeholder"><p>[ANALYST COMMENTARY - TO BE WRITTEN BY AUTHOR]</p></div>
 <h3>Key figures</h3>
-<dl class="key-figures"><div><dt>Approved rows</dt><dd>0</dd></div><div><dt>Awaiting owner review</dt><dd>20</dd></div><div><dt>Signal method</dt><dd>46 in polygon, 12 nearest within 30km, 0 none</dd></div></dl>
-<div class="caveats"><strong>Sources and caveats.</strong> x-axis: LDC-level wholesale signal = mean 30-day congestion of the LMP node(s) inside the LDC polygon, else the nearest node within 30 km (EPSG:3161). Multi-zone/residual LDCs (Hydro One) are excluded from the correlation. y-axis: net-metered capacity per 1,000 customers (OEB RRR 2.1.2 Table 1 only). Review assignments are not findings before owner approval. No causal claim is made. [ANALYST COMMENTARY - TO BE WRITTEN BY AUTHOR]</div>
+<dl class="key-figures"><div><dt>Approved rows</dt><dd>33</dd></div><div><dt>Rejected rows</dt><dd>25</dd></div><div><dt>Signal method</dt><dd>45 in polygon, 13 nearest within 30km, 0 none</dd></div></dl>
+<div class="caveats"><strong>Sources and caveats.</strong> x-axis: Wholesale locational premium: mean day-ahead LMP minus OZP ($/MWh), load nodes, 2026-09-02 to 2026-10-03. The premium is the LDC's equal-weighted mean over its load nodes of the per-node mean over matched hours of (DA LMP_h - DA OZP_h); nodes need 15 matched days. The premium is mostly marginal losses (about 0.97 correlation with the loss component); congestion is near zero at most nodes in this window. The window is a roughly 32-day shoulder-season sample and not annual. y-axis: net-metered capacity per 1,000 customers (OEB RRR 2.1.2 Table 1 only). Hollow markers are approved LDCs excluded from the correlation (heterogeneous or borrowed nearest node). No causal claim is made. [ANALYST COMMENTARY - TO BE WRITTEN BY AUTHOR]</div>
 </section>
 
 <section id="tab-methods" class="tabpanel methods" aria-label="Methods and caveats">
@@ -169,7 +169,7 @@ the two. RPP rates include a Global Adjustment estimate and RPP cost
 recovery, so the wedge is not only an energy-value gap.</li>
 </ul>
 <h3>Data sources, vintages, retention</h3>
-<table><tr><th>Feed</th><th>Last collected</th></tr><tr><td>da_lmp</td><td>2026-10-02 12:09 UTC</td></tr><tr><td>da_zonal</td><td>2026-10-02 12:09 UTC</td></tr><tr><td>fuelmix</td><td>2026-10-02 12:09 UTC</td></tr><tr><td>lfda</td><td>2026-10-02 12:09 UTC</td></tr></table>
+<table><tr><th>Feed</th><th>Last collected</th></tr><tr><td>da_lmp</td><td>2026-10-01 18:21 UTC</td></tr><tr><td>da_zonal</td><td>2026-10-01 18:20 UTC</td></tr><tr><td>fuelmix</td><td>2026-10-01 18:21 UTC</td></tr><tr><td>lfda</td><td>2026-10-01 18:20 UTC</td></tr></table>
 <ul>
 <li>IESO day-ahead zonal price: daily files from 2026-07-01 (rolling ~3
 months of index retention); LFDA annual files; IESO day-ahead hourly LMP;
@@ -189,11 +189,15 @@ selectable; Class B scenarios are kept separate from RPP.</p>
 <ul>
 <li>Zone aggregation <strong>withheld</strong>: node-to-zone coverage is
 54.2%, below the 90% bar. Page 3 is node-level only.</li>
-<li>Page 4 renders <strong>"Awaiting owner review"</strong> until the owner
-approves review-sheet rows; unreviewed rows are never plotted as findings.</li>
+<li>Page 4 uses <strong>rule-based approval</strong> (owner directive
+2026-10-01): an LDC is approved when it has at least one load node after
+filtering, is in_polygon, is not heterogeneous, and has adoption data.
+The owner_override column (data/inputs/ldc_owner_overrides.csv) wins over
+the rule. Heterogeneous or borrowed-node LDCs are drawn hollow and kept
+out of the correlation.</li>
 </ul>
 <h3>Known gaps</h3>
-<p>partial days (incomplete downloads, retried by the scheduled collector): 2026-08-30, 2026-10-03 (trailing 35 days, 2026-08-30 to 2026-10-03, computed from da_lmp_hourly.csv). The scheduled collector retries incomplete
+<p>no missing or partial days (trailing 35 days, 2026-08-30 to 2026-10-03, computed from lmp_node_daily.csv). The scheduled collector retries incomplete
 downloads on later runs.</p>
 <h3>Timezone convention</h3>
 <p>Config <code>TIMEZONE_MODE = EST_fixed</code>:
@@ -203,7 +207,7 @@ IESO source timestamps rederived to true UTC from fixed -05:00; joins in UTC; ta
 reports under the IESO's terms of use. LDC polygon provenance and licence
 to be confirmed by the owner before public release.</p>
 </section>
-<footer>Data: IESO public reports; OEB RRR open data (Open Government Licence &ndash; Ontario). LDC polygon provenance and licence to be confirmed by the owner before public release.<br>Built <span id="build-timestamp" data-utc="2026-10-02 12:09 UTC" data-toronto="2026-10-02 08:09 EDT">2026-10-02 12:09 UTC / 2026-10-02 08:09 EDT</span> &middot; commit c88433b.</footer>
+<footer>Data: IESO public reports; OEB RRR open data (Open Government Licence &ndash; Ontario). LDC polygon provenance and licence to be confirmed by the owner before public release.<br>Built <span id="build-timestamp" data-utc="2026-10-01 19:00 UTC" data-toronto="2026-10-01 15:00 EDT">2026-10-01 19:00 UTC / 2026-10-01 15:00 EDT</span> &middot; commit 11d2c1d.</footer>
 
 <script>
 (function () {

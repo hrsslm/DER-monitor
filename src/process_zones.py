@@ -1,7 +1,10 @@
 """2C: wholesale locational signal (Page 3) and LDC-zone crosswalk (Page 4).
 
 Reads:
-  data/processed/da_lmp_hourly.csv      30-day rolling DA LMP node history
+  data/processed/lmp_node_daily.csv    per-day compact DA LMP node history
+                                       (node_id, date, mean_lmp_minus_ozp,
+                                       mean_loss, mean_congestion, n_hours;
+                                       append-only, hourly stays in raw)
   data/processed/ieso_zone_table.csv    station -> electrical zone (extracted
                                         once from the IESO Capacity Auction
                                         Zone Table PDF; zones derived from
@@ -38,6 +41,7 @@ import csv
 import re
 import sys
 from collections import defaultdict
+from datetime import timedelta
 from pathlib import Path
 
 import geopandas as gpd
@@ -57,15 +61,6 @@ OVERRIDES = INPUTS / "ldc_zone_crosswalk_overrides.csv"
 STATION_TYPE_SUFFIXES = ("CTS", "MTS", "JCT", "CSS",
                          "SS", "TS", "GS", "DS", "SW")
 MIN_BASE_LEN = 5  # ignore very short station bases ("LEE DS" etc.)
-
-LMP_COLS = {
-    "node": "node",
-    "ts": "timestamp_utc",
-    "cong": "congestion_dollars_per_mwh",
-    "lmp": "lmp_dollars_per_mwh",
-    "loss": "loss_dollars_per_mwh",
-}
-
 
 def norm(s):
     """Uppercase alphanumeric only, for conservative name matching."""
@@ -127,35 +122,53 @@ def load_zone_table():
     return base_zones, sorted(zones), sorted(ambiguous)
 
 
-def per_node_rolling_means(lmp_path, days=30):
-    """30-day rolling mean of daily means, per node. Keeps negatives."""
-    df = pd.read_csv(
-        lmp_path,
-        usecols=[LMP_COLS["node"], LMP_COLS["ts"], LMP_COLS["cong"],
-                 LMP_COLS["lmp"], LMP_COLS["loss"]],
-    )
-    df["day"] = pd.to_datetime(df[LMP_COLS["ts"]], utc=True).dt.floor("D")
-    last_day = df["day"].max()
-    window = df[df["day"] > last_day - pd.Timedelta(days=days)]
-    daily = (
-        window.groupby([LMP_COLS["node"], "day"], as_index=False)
-        .agg({LMP_COLS["cong"]: "mean", LMP_COLS["lmp"]: "mean",
-              LMP_COLS["loss"]: "mean"})
-        .rename(columns={LMP_COLS["node"]: "node",
-                         LMP_COLS["cong"]: "d_cong",
-                         LMP_COLS["lmp"]: "d_lmp",
-                         LMP_COLS["loss"]: "d_loss"})
-    )
-    out = (
-        daily.groupby("node", as_index=False)
-        .agg(n_days=("day", "nunique"),
-             mean_congestion=("d_cong", "mean"),
-             mean_lmp=("d_lmp", "mean"),
-             mean_loss=("d_loss", "mean"))
-        .sort_values("node")
-        .reset_index(drop=True)
-    )
-    return out, last_day.date().isoformat(), window["day"].min().date().isoformat()
+MIN_MATCHED_DAYS = 15  # directive assumption 1: drop nodes below this
+
+
+def per_node_rolling_means(daily_path, days=32, zonal_path=None):
+    """Per-node window stats from the compact daily LMP store.
+
+    mean_premium is hour-weighted: sum(mean_lmp_minus_ozp * n_hours) /
+    sum(n_hours), which equals the mean over matched hours of
+    (LMP_h - OZP_h) -- never a difference of separate means. mean_lmp is
+    recovered as premium + the day's mean OZP (for the Page 3 toggle).
+    Nodes with fewer than MIN_MATCHED_DAYS distinct dates in the window
+    are dropped (returned separately for the QA log).
+    Returns (kept_df, dropped_df, last_day, first_day) as ISO dates.
+    """
+    df = pd.read_csv(daily_path)
+    df["date"] = pd.to_datetime(df["date"]).dt.date
+    last_day = df["date"].max()
+    first_day = last_day - timedelta(days=days - 1)
+    window = df[df["date"] >= first_day].copy()
+    # daily mean OZP, to recover the absolute LMP level for Page 3
+    zpath = Path(zonal_path) if zonal_path else PROCESSED / "da_zonal_hourly.csv"
+    zonal = pd.read_csv(zpath, usecols=["timestamp_utc",
+                                        "da_ozp_dollars_per_mwh"])
+    zonal["date"] = (pd.to_datetime(zonal["timestamp_utc"], utc=True)
+                     .dt.tz_convert("America/Toronto").dt.date)
+    ozp_day = zonal.groupby("date")["da_ozp_dollars_per_mwh"].mean()
+    window["ozp_day"] = window["date"].map(ozp_day)
+    window["d_lmp"] = window["mean_lmp_minus_ozp"] + window["ozp_day"]
+    kept, dropped = [], []
+    for node, grp in window.groupby("node_id"):
+        rec = {"node": node, "n_days": int(grp["date"].nunique())}
+        tot_h = float(grp["n_hours"].sum())
+        for src, dst in (("mean_lmp_minus_ozp", "mean_premium"),
+                         ("mean_congestion", "mean_congestion"),
+                         ("mean_loss", "mean_loss"),
+                         ("d_lmp", "mean_lmp")):
+            rec[dst] = float((grp[src] * grp["n_hours"]).sum() / tot_h)
+        (kept if rec["n_days"] >= MIN_MATCHED_DAYS else dropped).append(rec)
+    kept_df = pd.DataFrame(kept, columns=["node", "n_days", "mean_premium",
+                                         "mean_congestion", "mean_loss",
+                                         "mean_lmp"])
+    kept_df = kept_df.sort_values("node").reset_index(drop=True)
+    dropped_df = pd.DataFrame(dropped, columns=["node", "n_days",
+                                                "mean_premium",
+                                                "mean_congestion",
+                                                "mean_loss", "mean_lmp"])
+    return kept_df, dropped_df, last_day.isoformat(), first_day.isoformat()
 
 
 def build_crosswalk(layer, node_points, adoption):
@@ -223,8 +236,9 @@ def main():
          "skipped, Capacity Auction Zone Table used instead")
 
     # --- 2. node -> zone assignment ---
-    lmp_path = PROCESSED / "da_lmp_hourly.csv"
-    nodes = pd.read_csv(lmp_path, usecols=["node"])["node"].unique().tolist()
+    lmp_path = PROCESSED / "lmp_node_daily.csv"
+    nodes = (pd.read_csv(lmp_path, usecols=["node_id"])["node_id"]
+             .unique().tolist())
     assignments = []
     for node in nodes:
         zone, station = match_zone(node, base_zones)
@@ -268,17 +282,27 @@ def main():
 
     assign_df.to_csv(PROCESSED / "node_zone_assignment.csv", index=False)
 
-    # --- 4. per-node 30-day rolling means (the node-level Page 3 metric) ---
-    rolling, last_day, first_day = per_node_rolling_means(lmp_path)
+    # --- 4. per-node window stats (the node-level Page 3 metric + the
+    # Page 4 premium). 15-day rule drops thin nodes; they are logged. ---
+    rolling, dropped, last_day, first_day = per_node_rolling_means(lmp_path)
+    if len(dropped):
+        note("rolling_window", "dropped_below_15_days",
+             ",".join(sorted(dropped["node"].tolist())), len(dropped),
+             f"nodes with fewer than {MIN_MATCHED_DAYS} matched days in "
+             f"{first_day}..{last_day} excluded from the signal")
+        print(f"dropped {len(dropped)} nodes below {MIN_MATCHED_DAYS} "
+              f"matched days")
     rolling = rolling.merge(assign_df[["node", "zone", "zone_method"]],
                             on="node", how="left")
     rolling.to_csv(PROCESSED / "node_congestion_30d.csv", index=False)
-    print(f"30-day window {first_day}..{last_day}: "
+    print(f"window {first_day}..{last_day}: "
           f"{len(rolling)} nodes, mean days/node "
           f"{rolling['n_days'].mean():.1f}")
     note("rolling_window", "computed", f"{first_day}_to_{last_day}",
          len(rolling),
-         "30-day rolling means of daily means per node; negatives kept; "
+         "per-node window stats from the compact daily store: mean_premium "
+         "is the hour-weighted mean over matched hours of (LMP_h - OZP_h); "
+         "nodes below 15 matched days dropped; negatives kept; "
          "no zone aggregation per stop condition")
 
     # --- 5. LDC-zone crosswalk from in-polygon zoned nodes ---

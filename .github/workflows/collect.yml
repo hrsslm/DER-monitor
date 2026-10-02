@@ -1,10 +1,15 @@
 # DER monitor: daily price-history collection (data only).
 #
 # Backfills and accumulates IESO day-ahead zonal price, LFDA, day-ahead
-# LMP and fuel-mix history into data/processed/*_hourly.csv plus
-# data/processed/manifest.json. No charts, no site build -- those are
-# separate jobs. The fetcher is idempotent (manifest-tracked, dedupe
-# keep-last), so re-runs and overlapping schedules are safe.
+# LMP and fuel-mix history into data/processed plus data/processed/
+# manifest.json. No charts, no site build -- those are separate jobs.
+# The fetcher is idempotent (manifest-tracked, dedupe keep-last), so
+# re-runs and overlapping schedules are safe.
+#
+# DA LMP is node-level: only the compact per-day file
+# (data/processed/lmp_node_daily.csv: node_id, date, mean_lmp_minus_ozp,
+# mean_loss, mean_congestion, n_hours) is written -- append-only, no
+# rolling cut. Raw hourly files stay in the git-ignored data/raw cache.
 #
 # Schedule: twice daily at 06:00 and 18:00 UTC. IESO publishes the
 # day-ahead files around 12:31 Toronto time the day before delivery, so

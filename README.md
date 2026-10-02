@@ -20,8 +20,10 @@ Four evidence pages plus a methods tab, rendered as static HTML in `docs/`:
   selectable layers, never combined).
 - **Page 3 — Wholesale locational signal:** node-level day-ahead LMP
   congestion (zone aggregation withheld below 90% coverage).
-- **Page 4 — Adoption vs wholesale signal:** renders only after the owner
-  reviews the crosswalk rows; currently "Awaiting owner review".
+- **Page 4 — Adoption vs wholesale signal:** rule-based approval (owner
+  directive 2026-10-01; overrides in
+  `data/inputs/ldc_owner_overrides.csv`); x-axis is the wholesale
+  locational premium, mean day-ahead LMP minus OZP over load nodes.
 
 All chart pages are standalone Plotly HTML (CDN-hosted Plotly JS, no tokens,
 no analytics). `docs/index.html` embeds them as iframes with a data-status

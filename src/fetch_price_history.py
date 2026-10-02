@@ -6,9 +6,11 @@ For each feed (da_zonal, lfda, da_lmp, fuelmix):
   3. parse to hourly rows keyed on the UTC interval start,
   4. merge into data/processed/<feed>_hourly.csv (dedupe keep-last, sorted).
 
-DA LMP is node-level, so only a 35-day rolling window is kept (project
-rule: never commit node-level history). The rest accumulate full history
-so the rolling upstream retention does not lose data.
+DA LMP is node-level: hourly rows are compacted to a per-day grain
+(data/processed/lmp_node_daily.csv: node_id, date, mean_lmp_minus_ozp,
+mean_loss, mean_congestion, n_hours) before commit, append-only with no
+rolling cut. The premium is the mean over matched hours of (LMP_h -
+OZP_h). Raw hourly files stay in the git-ignored raw cache only.
 
 Timestamps: IESO hours are hour-ending in Toronto local time. est_fixed()
 below attaches a FIXED -05:00 offset (documented in docs/DATA_SOURCES.md);
@@ -211,11 +213,72 @@ def parse_da_lmp(path):
         rows.append({
             "timestamp_utc": utc_key(est_fixed(day, he)),
             "node": node,
+            "date": day,  # IESO delivery date (Toronto); compact grain below
             "lmp_dollars_per_mwh": num("LMP"),
             "loss_dollars_per_mwh": num("Energy Loss Price"),
             "congestion_dollars_per_mwh": num("Energy Congestion Price"),
         })
     return rows
+
+
+def compact_lmp_daily(hourly_rows, ozp_map=None):
+    """Hourly DA LMP rows -> per-day compact rows with matched-hour premium.
+
+    Each hour's LMP is joined to the DA OZP for the same timestamp_utc;
+    hours with no OZP (or no LMP) are unmatched and excluded. Per
+    (node_id, date): mean_lmp_minus_ozp is the mean over matched hours of
+    (LMP_h - OZP_h) -- never a difference of separate means. Loss and
+    congestion means use the same matched hours.
+
+    ozp_map is an optional {timestamp_utc: ozp} override (tests); when
+    None, the map is read from PROCESSED/da_zonal_hourly.csv.
+    """
+    ozp = dict(ozp_map) if ozp_map is not None else {}
+    if ozp_map is None:
+        zpath = PROCESSED / "da_zonal_hourly.csv"
+        if zpath.exists():
+            with open(zpath, newline="", encoding="utf-8") as fh:
+                for r in csv.DictReader(fh):
+                    v = (r.get("da_ozp_dollars_per_mwh") or "").strip()
+                    if v:
+                        ozp[r["timestamp_utc"]] = float(v)
+    acc = {}
+    unmatched = 0
+    for r in hourly_rows:
+        z = ozp.get(r["timestamp_utc"])
+        lmp = r.get("lmp_dollars_per_mwh")
+        if z is None or lmp is None:
+            unmatched += 1
+            continue
+        key = (r["node"], r["date"])
+        a = acc.setdefault(key, {"prem": 0.0, "loss": 0.0, "cong": 0.0,
+                                 "n": 0})
+        a["prem"] += lmp - z
+        if r.get("loss_dollars_per_mwh") is not None:
+            a["loss"] += r["loss_dollars_per_mwh"]
+        if r.get("congestion_dollars_per_mwh") is not None:
+            a["cong"] += r["congestion_dollars_per_mwh"]
+        a["n"] += 1
+    if unmatched:
+        warn(f"compact_lmp_daily: {unmatched} hourly rows had no matched "
+             f"OZP/LMP hour; excluded from daily means")
+    rows = []
+    for (node, date), a in acc.items():
+        n = a["n"]
+        rows.append({
+            "node_id": node,
+            "date": date,
+            "mean_lmp_minus_ozp": round(a["prem"] / n, 4),
+            "mean_loss": round(a["loss"] / n, 4),
+            "mean_congestion": round(a["cong"] / n, 4),
+            "n_hours": n,
+        })
+    return rows
+
+
+# Feeds compacted to a daily grain before commit (hourly rows stay in the
+# git-ignored raw cache only).
+COMPACT_DAILY_FEEDS = {"da_lmp"}
 
 
 def parse_fuelmix(path):
@@ -260,7 +323,7 @@ FEEDS = {
     "lfda": ("HourlyLFDA", "PUB_HourlyLFDA", parse_lfda,
              "lfda_hourly.csv", ("timestamp_utc",), None),
     "da_lmp": ("DAHourlyEnergyLMP", "PUB_DAHourlyEnergyLMP_", parse_da_lmp,
-               "da_lmp_hourly.csv", ("timestamp_utc", "node"), 32),
+               "lmp_node_daily.csv", ("node_id", "date"), None),
     "fuelmix": ("GenOutputbyFuelHourly", "PUB_GenOutputbyFuelHourly",
                 parse_fuelmix, "fuelmix_hourly.csv", ("timestamp_utc",),
                 None),
@@ -384,6 +447,8 @@ def run_feed(feed, manifest, force_days=0):
         parsed += 1
         print(f"  {feed}: {name}: {len(rows)} rows", flush=True)
     if new_rows:
+        if feed in COMPACT_DAILY_FEEDS:
+            new_rows = compact_lmp_daily(new_rows)
         total = merge_rows(PROCESSED / out_name, new_rows, key_fields,
                            rolling_days)
         print(f"  {feed}: {len(new_rows)} new rows -> {total} total",

@@ -95,7 +95,9 @@ def test_timestamp_isolated_to_one_element():
     assert html_text.count('id="build-timestamp"') == 1
 
 
-def test_two_runs_give_identical_docs():
+def test_two_runs_give_identical_docs(monkeypatch):
+    # pin the build clock so the check does not depend on same-minute luck
+    monkeypatch.setenv("DER_MONITOR_BUILD_TIME", "2026-10-01T12:00:00+00:00")
     rd.main()
     first = docs_hashes()
     rd.main()
@@ -123,7 +125,11 @@ def test_relative_links_and_iframe_targets_exist():
 
 
 def test_no_external_requests_other_than_plotly_cdn():
-    allowed = "https://cdn.plot.ly"
+    # plotly.js CDN, maplibre-gl JS/CSS CDN (map pages only), and CARTO
+    # basemap tiles loaded at runtime by the carto-darkmatter style.
+    allowed = ("https://cdn.plot.ly",
+               "https://cdn.jsdelivr.net/npm/maplibre-gl@",
+               "https://basemaps.cartocdn.com")
     for page in ["index.html", *CHART_FILES]:
         text = (DOCS / page).read_text(encoding="utf-8")
         for url in set(re.findall(r'https?://[^\s"\')<>]+', text)):
@@ -151,11 +157,12 @@ def test_page1_preview_label_and_no_headline():
     assert not re.search(r"\d+(?:\.\d+)?\s*%", p1), "headline % found on page 1"
 
 
-def test_page4_awaiting_review_with_zero_approved():
+def test_page4_rule_approval_counts():
     html_text = read_index()
     p4 = tabpanel(html_text, "page4")
-    assert "Awaiting owner review" in p4
-    assert re.search(r"Approved rows</dt>\s*<dd>0</dd>", p4)
+    assert re.search(r"Approved rows</dt>\s*<dd>33</dd>", p4)
+    assert re.search(r"Rejected rows</dt>\s*<dd>25</dd>", p4)
+    assert "Awaiting owner review" not in p4
 
 
 def test_commentary_placeholders_present():
@@ -177,7 +184,7 @@ def test_status_panel_matches_manifest_and_summary():
     assert summary["window_end"][:10] in html_text
     assert "54.2%" in html_text  # node-to-zone coverage vs the 90% bar
     assert "2024-2" in html_text  # RRR vintage
-    assert "1,022 of 1,055" in html_text  # node coverage
+    assert "1,022 of 1,054" in html_text  # node coverage
 
 
 # ---------------------------------------------------------------------------

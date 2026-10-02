@@ -629,6 +629,69 @@ and `data/processed/adoption_crosscheck.csv`.
 - **Wording.** Every nodal exhibit calls LMP a wholesale locational
   signal, never a retail price or a distribution-deferral value.
 
+## 9. Page 4 resolution directive (2026-10-01)
+Owner-accepted: LMP minus OZP as the x-axis, the NORTHBAY finding, no
+window extension. Rule-based approval replaces row-by-row review.
+
+- **Metric.** Per node, `premium = mean over matched hours of
+  (DA LMP_h - DA OZP_h)`; hours where either is missing are excluded
+  (never a difference of separate means). Nodes need at least 15 days of
+  matched data, else dropped and logged. LDC value = equal-weighted mean
+  over its load nodes. Loss and congestion means are kept for tooltips
+  only. Implemented in `src/fetch_price_history.py::compact_lmp_daily`
+  (per-day grain) and `src/process_zones.py::per_node_rolling_means`
+  (hour-weighted over the 32-day window).
+- **Load nodes only.** Name-pattern heuristic (IESO publishes no node
+  type): aggregates (`AG*`, `APG*`), generators, batteries, `*_DRA` and
+  `:LMP` transmission-bus nodes are excluded. If an LDC has no load node
+  left, it falls back to the nearest load node within 30 km
+  (`method = nearest_within_30km`).
+- **Quarantine.** `NORTHBAY-LT.TT_LF` is excluded (plots at Sault Ste.
+  Marie, ~380 km from North Bay; sibling `NORTHBAYGS-LT.AG12` plots at
+  North Bay). Automated check: any node more than 25 km from every
+  sibling sharing its name stem is flagged and quarantined; coordinates
+  are never altered. Also caught `CUMBERLAND-LT.LFBQ` (plots in
+  Burlington; sibling `CUMBERLAND-LT.TT12_LF` is at Ottawa). All four
+  nodes are listed in `qa_log`.
+- **Heterogeneous LDCs.** Flagged when within-LDC std of node premium
+  exceeds $1.00/MWh or load nodes span more than 100 km; drawn hollow
+  and excluded from the correlation. Hydro One stays excluded.
+- **Approval.** `owner_status = approved` when an LDC has at least one
+  load node after filtering, is `in_polygon`, is not heterogeneous, has
+  adoption data, and is not RRR-excluded; otherwise `rejected` with a
+  `status_reason`. `data/inputs/ldc_owner_overrides.csv` (`licence_no,
+  utility_name, owner_override, reason`) wins over the rule. Page 4 plots
+  all approved LDCs (not just the top 20); Spearman shown only when the
+  correlation n is at least 8. The top-20 sheet is kept for transparency.
+- **Wording.** X-axis: "Wholesale locational premium: mean day-ahead LMP
+  minus OZP ($/MWh), load nodes, [window]". Title: "Where DER is growing
+  vs where wholesale energy is priced above or below the provincial
+  average".
+- **Repo hygiene.** The committed DA LMP store is now the append-only
+  per-day compact file `data/processed/lmp_node_daily.csv` (`node_id,
+  date, mean_lmp_minus_ozp, mean_loss, mean_congestion, n_hours`); the
+  50 MB rolling `da_lmp_hourly.csv` was replaced by it (hourly files stay
+  in the git-ignored raw cache). `collect.yml` writes only the compact
+  file. `git count-objects -vH` on 2026-10-01: 34 MB — no history rewrite
+  needed (100 MB threshold not reached).
+
+## 10. MapLibre map rendering (2026-10-01)
+Pages 2 and 3 use Plotly's MapLibre traces (`choroplethmap` /
+`scattermap`, Plotly 5.24+; pinned `plotly==7.1.0`) with the
+`carto-darkmatter` basemap — no map token needed. maplibre-gl 5.23.0
+JS/CSS load from the jsDelivr CDN on the two map pages only; its
+built-in OSM/CARTO attribution is kept. Default view is Ontario
+(46.5, -82, zoom 4.8) with an Ontario / Southern Ontario (43.7, -79.4,
+zoom 7) zoom button pair. Each metric is its own trace with its own
+short-titled colourbar at the right edge; the metric toggle is one row
+of short-labelled buttons above the map (zoom buttons on a second row
+so long metric lists never overflow). Markers are small and
+semi-transparent; colour scales are diverging (RdBu), centred at zero
+when the metric's 2nd-98th-percentile range straddles zero, and always
+clipped to the 2nd-98th percentile. Page 4 stays a scatter plot (it is
+not a map); a smoke test (`tests/test_maplibre.py`) asserts no chart
+uses `scattergeo` or needs a token.
+
 ## 6. Phase 1 acceptance (directive additions)
 Beyond the build prompt's acceptance tests:
 - Tariff CSV loads, passes the 24-hour coverage check, and the OEB price

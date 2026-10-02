@@ -6,16 +6,19 @@ Outputs (docs/charts/):
   page3_nodal_signal.html     Wholesale locational signal (node level)
   page4_adoption_vs_signal.html  Adoption vs wholesale signal (owner-gated)
 
-Standalone HTML, Plotly JS from CDN (no tokens, no API keys). Each page
-carries a caption with source, data window, as-of date and caveat text.
-div_id values are fixed so reruns are byte-identical. No analytical
-commentary is written anywhere: interpretation placeholders read
-[ANALYST COMMENTARY - TO BE WRITTEN BY AUTHOR].
+Standalone HTML, Plotly JS from CDN (no tokens, no API keys). Pages 2 and 3
+use Plotly's MapLibre traces (choroplethmap / scattermap, Plotly 5.24+)
+with the carto-darkmatter basemap; maplibre-gl JS/CSS load from CDN and no
+map token is needed. Each page carries a caption with source, data window,
+as-of date and caveat text. div_id values are fixed so reruns are
+byte-identical. No analytical commentary is written anywhere:
+interpretation placeholders read [ANALYST COMMENTARY - TO BE WRITTEN BY AUTHOR].
 """
 import json
-from datetime import timezone
+from datetime import timedelta, timezone
 from pathlib import Path
 
+import numpy as np
 import pandas as pd
 import plotly.graph_objects as go
 import plotly.io as pio
@@ -29,20 +32,113 @@ CHARTS = ROOT / "docs" / "charts"
 PREVIEW_LABEL = "Summer preview, not annual"
 ANALYST = "[ANALYST COMMENTARY - TO BE WRITTEN BY AUTHOR]"
 
+# --- MapLibre basemap (Pages 2 and 3) --------------------------------------
+# Plotly's scattermap/choroplethmap traces (Plotly 5.24+) render with
+# maplibre-gl, loaded from CDN; carto-darkmatter needs no token and keeps
+# its built-in OSM/CARTO attribution.
+MAPLIBRE_VERSION = "5.23.0"
+MAPLIBRE_JS = ("https://cdn.jsdelivr.net/npm/maplibre-gl@"
+               f"{MAPLIBRE_VERSION}/dist/maplibre-gl.js")
+MAPLIBRE_CSS = ("https://cdn.jsdelivr.net/npm/maplibre-gl@"
+                f"{MAPLIBRE_VERSION}/dist/maplibre-gl.css")
+MAP_STYLE = "carto-darkmatter"
+ONTARIO_VIEW = {"lat": 46.5, "lon": -82.0, "zoom": 4.8}
+SOUTHERN_ONTARIO_VIEW = {"lat": 43.7, "lon": -79.4, "zoom": 7.0}
+DIVERGING = "RdBu"  # diverging scale; centred at zero when data span it
+
+
+def clip_range(values):
+    """2nd/98th percentile colour range for a metric.
+
+    Returns (lo, hi); guards degenerate input so the scale never collapses.
+    """
+    vals = np.asarray(list(values), dtype=float)
+    vals = vals[np.isfinite(vals)]
+    if not len(vals):
+        return 0.0, 1.0
+    lo, hi = (float(v) for v in np.percentile(vals, [2, 98]))
+    if not (np.isfinite(lo) and np.isfinite(hi)) or hi <= lo:
+        lo, hi = float(vals.min()), float(vals.max())
+        if hi <= lo:
+            hi = lo + 1e-6
+    return lo, hi
+
+
+def centred_mid(lo, hi):
+    """zmid/cmid: 0 when the range straddles zero, else None (sequential)."""
+    return 0 if lo < 0 < hi else None
+
+
+def base_map_layout():
+    """Shared MapLibre layout: carto-darkmatter, centred on Ontario."""
+    return dict(style=MAP_STYLE,
+                center=dict(lat=ONTARIO_VIEW["lat"], lon=ONTARIO_VIEW["lon"]),
+                zoom=ONTARIO_VIEW["zoom"])
+
+
+# Button rows sit just above the map frame; the page shell already
+# renders the <h1>, so the figures carry no Plotly title of their own
+# (avoids title/button overlap). The metric toggle gets its own row;
+# the zoom buttons sit on a second row so long metric lists (Page 2
+# has nine) never overflow or collide.
+BUTTONS_Y_METRIC = 1.12
+BUTTONS_Y_ZOOM = 1.05
+
+
+def zoom_menu():
+    """Ontario / Southern Ontario view buttons (second row, top-right)."""
+    def view(v):
+        return {"map.center.lat": v["lat"], "map.center.lon": v["lon"],
+                "map.zoom": v["zoom"]}
+    return dict(type="buttons", direction="right", x=1.0, xanchor="right",
+                y=BUTTONS_Y_ZOOM, yanchor="bottom", showactive=False,
+                buttons=[
+                    dict(label="Ontario", method="relayout",
+                         args=[view(ONTARIO_VIEW)]),
+                    dict(label="Southern Ontario", method="relayout",
+                         args=[view(SOUTHERN_ONTARIO_VIEW)]),
+                ])
+
+
+def metric_menu(buttons):
+    """Metric toggle (first row, top-left, above the map)."""
+    return dict(type="buttons", direction="right", x=0.0, xanchor="left",
+                y=BUTTONS_Y_METRIC, yanchor="bottom", showactive=True,
+                buttons=buttons)
+
+
+def map_margins():
+    """Room for the two button rows above and the colourbar at right."""
+    return dict(l=10, r=110, t=110, b=10)
+
+
+def map_layout_extra():
+    """Shared sizing: fill the container width, fixed height."""
+    return dict(autosize=True, height=640)
+
 
 def c_per_kwh(dollars_per_mwh):
     """$/MWh -> Canadian cents/kWh."""
     return dollars_per_mwh / 10.0
 
 
-def page_shell(title, heading, status_html, body_html, caption_html):
+def page_shell(title, heading, status_html, body_html, caption_html,
+               maplibre=False):
     """Wrap a chart body in a consistent page with status card and caption."""
+    maplibre_head = ""
+    if maplibre:
+        maplibre_head = (
+            f'<link href="{MAPLIBRE_CSS}" rel="stylesheet">\n'
+            f'<script src="{MAPLIBRE_JS}"></script>\n'
+            # The zoom buttons sit below the metric row; drop the Plotly
+            # modebar below both rows so nothing overlaps.
+            '<style>.js-plotly-plot .modebar { top: 92px !important; }</style>\n')
     return f"""<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>{title}</title>
+{maplibre_head}<title>{title}</title>
 <style>
 body {{ font-family: system-ui, -apple-system, sans-serif; margin: 0 auto;
        max-width: 1100px; padding: 1.5rem; color: #1a1a1a; }}
@@ -69,16 +165,18 @@ table.preview th {{ background: #f0f0f0; }}
 """
 
 
-def write_page(path, title, heading, status_html, body_html, caption_html):
+def write_page(path, title, heading, status_html, body_html, caption_html,
+               maplibre=False):
     CHARTS.mkdir(parents=True, exist_ok=True)
-    html = page_shell(title, heading, status_html, body_html, caption_html)
+    html = page_shell(title, heading, status_html, body_html, caption_html,
+                      maplibre=maplibre)
     path.write_text(html, encoding="utf-8")
     print(f"wrote {path.name} ({path.stat().st_size / 1e6:.2f} MB)")
 
 
 def chart_div(fig, div_id):
     return pio.to_html(fig, include_plotlyjs="cdn", full_html=False,
-                       div_id=div_id)
+                       div_id=div_id, config={"responsive": True})
 
 
 # ---------------------------------------------------------------------------
@@ -263,60 +361,74 @@ def page2():
                 f"({r[f'{layer}_per_1000']:.3f} MW/1000 customers)<br>"
                 f"Data year {int(r['data_year'])}, vintage {r['vintage']}")
 
-    layers = {"nm": ("Net metering (Table 1)", "nm_per_1000",
-                     "Net-metered MW per 1,000 customers")}
+    short = {"nm": "Net metering"}
     for fuel in FUELS:
-        layers[fuel] = (f"Embedded: {fuel} (Table 3)", f"{fuel}_per_1000",
-                        f"Embedded {fuel} MW per 1,000 customers")
+        short[fuel] = fuel.replace("_", " ").title().replace(
+            "Non Exporting Storage", "Non-exporting storage")
+    layers = {"nm": ("nm_per_1000", "MW/1k customers")}
+    for fuel in FUELS:
+        layers[fuel] = (f"{fuel}_per_1000", f"{short[fuel]} MW/1k")
+    keys = ["nm", *FUELS]
 
     def layer_arrays(key):
-        col = layers[key][1]
+        col = layers[key][0]
         vals = [rep.loc[l, col] for l in main_lic]
         return vals, [hover_main(l, key) for l in main_lic]
 
-    vals, hovers = layer_arrays("nm")
-    zmin, zmax = min(vals), max(vals)
-
+    # One choroplethmap trace per metric (own colourbar + short title);
+    # the toggle flips visibility. Grey traces stay on in every layer.
     fig = go.Figure()
-    fig.add_trace(go.Choropleth(
-        geojson=geo, locations=main_lic, z=vals,
-        colorscale="YlGn", zmin=zmin, zmax=zmax,
-        colorbar_title="MW / 1,000 customers",
-        customdata=hovers, hovertemplate="%{customdata}<extra></extra>",
-        name="reported LDCs", marker_line_width=0.5))
+    for i, key in enumerate(keys):
+        vals, hovers = layer_arrays(key)
+        lo, hi = clip_range(vals)
+        fig.add_trace(go.Choroplethmap(
+            geojson=geo, locations=main_lic, z=vals,
+            colorscale=DIVERGING, zmin=lo, zmax=hi,
+            zmid=centred_mid(lo, hi),
+            colorbar=dict(title=layers[key][1], x=1.0, xanchor="left",
+                          len=0.75),
+            marker=dict(line=dict(width=0.5,
+                                   color="rgba(255,255,255,0.45)")),
+            customdata=hovers, hovertemplate="%{customdata}<extra></extra>",
+            name=short[key], visible=(i == 0)))
+    grey_traces = 0
     if hz_lic:
         hz_hover = [f"{rep.loc[l, 'utility_name']}<br>Multi-zone/residual: "
                     f"kept out of colour-scale bounds"
                     for l in hz_lic]
-        fig.add_trace(go.Choropleth(
-            geojson=geo, locations=hz_lic, z=[1] * len(hz_lic),
-            colorscale=[[0, "#b0b0b0"], [1, "#b0b0b0"]], showscale=False,
+        fig.add_trace(go.Choroplethmap(
+            geojson=geo, locations=hz_lic, z=[0.5] * len(hz_lic),
+            colorscale=[[0, "#9e9e9e"], [1, "#9e9e9e"]], showscale=False,
+            marker=dict(line=dict(width=0.5,
+                                   color="rgba(255,255,255,0.45)")),
             customdata=hz_hover, hovertemplate="%{customdata}<extra></extra>",
-            name="multi-zone (excluded from scale)", marker_line_width=0.5))
+            name="Multi-zone (excluded from scale)", visible=True))
+        grey_traces += 1
     if excl_lic:
         names = {l: adoption.set_index("licence_no").loc[l, "utility_name"]
                  for l in excl_lic}
-        fig.add_trace(go.Choropleth(
-            geojson=geo, locations=excl_lic, z=[1] * len(excl_lic),
+        fig.add_trace(go.Choroplethmap(
+            geojson=geo, locations=excl_lic, z=[0.5] * len(excl_lic),
             colorscale=[[0, "#d9d9d9"], [1, "#d9d9d9"]], showscale=False,
+            marker=dict(line=dict(width=0.5,
+                                   color="rgba(255,255,255,0.45)")),
             customdata=[f"{names[l]}<br>Not reported in RRR 2.1.2"
                         for l in excl_lic],
             hovertemplate="%{customdata}<extra></extra>",
-            name="not reported", marker_line_width=0.5))
-    buttons = []
-    for key, (label, _col, cbar) in layers.items():
-        v, h = layer_arrays(key)
-        buttons.append(dict(
-            label=label, method="restyle",
-            args=[{"z": [v], "customdata": [h],
-                   "zmin": [min(v)], "zmax": [max(v)],
-                   "colorbar.title.text": [cbar]}, [0]]))
+            name="Not reported", visible=True))
+        grey_traces += 1
+    n_traces = len(keys) + grey_traces
+    buttons = [dict(
+        label=short[key], method="update",
+        args=[{"visible": ([i == j for j in range(len(keys))]
+                            + [True] * grey_traces)},
+              list(range(n_traces))])
+        for i, key in enumerate(keys)]
     fig.update_layout(
-        title="DER adoption baseline — Table 1 and Table 3 stay separate",
-        geo=dict(scope="north america", center=dict(lat=46.5, lon=-80.5),
-                 projection_scale=28, showland=False),
-        updatemenus=[dict(type="dropdown", x=0.0, y=1.02, showactive=True,
-                          buttons=buttons)],
+        map=base_map_layout(),
+        updatemenus=[metric_menu(buttons), zoom_menu()],
+        margin=map_margins(),
+        **map_layout_extra(),
     )
     div = chart_div(fig, "page2-adoption")
 
@@ -334,14 +446,17 @@ def page2():
         f"Source: OEB RRR 2.1.2, vintage {vintage}, data year {data_year}. "
         f"Primary layer: net-metered capacity per 1,000 customers (Table 1 "
         f"only). Embedded generation by fuel type (Table 3) is a separate "
-        f"selectable layer; the two are never combined. "
+        f"selectable layer; the two are never combined. Colour range is "
+        f"clipped to the 2nd-98th percentile per layer. "
+        f"Basemap: CARTO dark matter (c) OpenStreetMap contributors "
+        f"(c) CARTO. "
         f"Polygons are indicative, not legal boundaries; polygon provenance "
         f"and licence to be confirmed by owner before public release. "
         f"{ANALYST}")
     body = (f"{div}<p class='note'>LDCs not reported in RRR 2.1.2:</p>"
             f"<ul class='note'>{excl_list}</ul>")
     write_page(CHARTS / "page2_adoption.html", "DER adoption baseline",
-               "DER adoption baseline", status, body, caption)
+               "DER adoption baseline", status, body, caption, maplibre=True)
     return {"drawn": len(main_lic), "multi_zone": len(hz_lic),
             "excluded": len(excl_lic)}
 
@@ -361,44 +476,43 @@ def page3():
         assert nodes[col].notna().all() and \
             ~nodes[col].isin([float("inf"), float("-inf")]).any()
 
-    metrics = {"mean_congestion": "30-day mean congestion ($/MWh)",
-               "mean_lmp": "30-day mean LMP ($/MWh)",
-               "mean_loss": "30-day mean loss ($/MWh)"}
-    bounds = {m: float(nodes[m].abs().max()) for m in metrics}
+    metrics = {"mean_congestion": ("Congestion", "Congestion $/MWh"),
+               "mean_lmp": ("LMP", "LMP $/MWh"),
+               "mean_loss": ("Loss", "Loss $/MWh")}
+    keys = list(metrics)
 
-    def colorbar(m):
-        return metrics[m]
-
-    m0 = "mean_congestion"
+    # One scattermap trace per metric (own colourbar + short title);
+    # the toggle flips visibility. Diverging scale centred at zero,
+    # clipped to the 2nd-98th percentile per metric.
     fig = go.Figure()
-    fig.add_trace(go.Scattergeo(
-        lon=nodes["Longitude"], lat=nodes["Latitude"],
-        mode="markers",
-        marker=dict(color=nodes[m0], colorscale="RdBu_r",
-                    cmin=-bounds[m0], cmax=bounds[m0], cmid=0,
-                    colorbar_title=colorbar(m0),
-                    size=5, opacity=0.8),
-        customdata=nodes[["node", "mean_congestion", "mean_lmp",
-                          "mean_loss", "n_days"]].values,
-        hovertemplate=(
-            "%{customdata[0]}<br>congestion: %{customdata[1]:.2f} $/MWh<br>"
-            "LMP: %{customdata[2]:.2f} $/MWh<br>"
-            "loss: %{customdata[3]:.2f} $/MWh<br>"
-            "%{customdata[4]:.0f} days<extra></extra>"),
-        name="LMP nodes"))
+    for i, m in enumerate(keys):
+        label, cbar = metrics[m]
+        lo, hi = clip_range(nodes[m])
+        fig.add_trace(go.Scattermap(
+            lon=nodes["Longitude"], lat=nodes["Latitude"],
+            mode="markers",
+            marker=dict(size=6, opacity=0.7, color=nodes[m],
+                        colorscale=DIVERGING, cmin=lo, cmax=hi,
+                        cmid=centred_mid(lo, hi),
+                        colorbar=dict(title=cbar, x=1.0, xanchor="left",
+                                      len=0.75)),
+            customdata=nodes[["node", "mean_congestion", "mean_lmp",
+                              "mean_loss", "n_days"]].values,
+            hovertemplate=(
+                "%{customdata[0]}<br>congestion: %{customdata[1]:.2f} $/MWh<br>"
+                "LMP: %{customdata[2]:.2f} $/MWh<br>"
+                "loss: %{customdata[3]:.2f} $/MWh<br>"
+                "%{customdata[4]:.0f} days<extra></extra>"),
+            name=label, visible=(i == 0)))
     buttons = [dict(
-        label=metrics[m].split("30-day mean ")[1].capitalize(),
-        method="restyle",
-        args=[{"marker.color": [nodes[m].tolist()],
-               "marker.cmin": [-bounds[m]], "marker.cmax": [bounds[m]],
-               "marker.colorbar.title.text": [colorbar(m)]}, [0]])
-        for m in metrics]
+        label=metrics[m][0], method="update",
+        args=[{"visible": [k == m for k in keys]}, list(range(len(keys)))])
+        for m in keys]
     fig.update_layout(
-        title="Wholesale locational signal — node level",
-        geo=dict(scope="north america", center=dict(lat=46.5, lon=-80.5),
-                 projection_scale=28, showland=False),
-        updatemenus=[dict(type="buttons", direction="right", x=0.0, y=1.02,
-                          showactive=True, buttons=buttons)],
+        map=base_map_layout(),
+        updatemenus=[metric_menu(buttons), zoom_menu()],
+        margin=map_margins(),
+        **map_layout_extra(),
     )
     div = chart_div(fig, "page3-nodal-signal")
 
@@ -407,17 +521,23 @@ def page3():
               f"<b>Zone aggregation withheld:</b> node-to-zone coverage is "
               f"54.2%, below the 90% bar, so no zone-level congestion "
               f"findings are shown.")
+    daily = pd.read_csv(PROCESSED / "lmp_node_daily.csv", usecols=["date"])
+    win_start, win_end = daily["date"].min(), daily["date"].max()
+    win_days = daily["date"].nunique()
     caption = (
-        f"Source: IESO day-ahead hourly LMP, 30-day window ending "
-        f"2026-10-01; node coordinates from ieso_node_locations.csv "
-        f"(user-supplied). Values are per-node means of daily means; "
-        f"negatives kept. This is a wholesale locational signal for "
+        f"Source: IESO day-ahead hourly LMP, {win_days}-day window "
+        f"{win_start} to {win_end}; node coordinates from "
+        f"ieso_node_locations.csv (user-supplied). Values are per-node "
+        f"means of daily means; negatives kept. Colour range is clipped "
+        f"to the 2nd-98th percentile per metric. Basemap: CARTO dark "
+        f"matter (c) OpenStreetMap contributors (c) CARTO. "
+        f"This is a wholesale locational signal for "
         f"generators and dispatchable resources — not a retail price and "
         f"not a distribution deferral value. {ANALYST}")
     write_page(CHARTS / "page3_nodal_signal.html",
                "Wholesale locational signal (node level)",
                "Wholesale locational signal — node level",
-               status, div, caption)
+               status, div, caption, maplibre=True)
     return {"drawn": n_drawn, "total": n_total}
 
 
@@ -432,79 +552,114 @@ def spearman(x, y):
     return float(rx.corr(ry))
 
 
-def page4():
-    review = pd.read_csv(PROCESSED / "crosswalk_review_top20.csv")
-    review["owner_status"] = review["owner_status"].fillna("").str.strip()
-    approved = review[review["owner_status"].str.lower() == "approved"]
-    n = len(approved)
+def page4_marker_style(method, heterogeneous):
+    """Filled vs hollow marker assignment for Page 4.
 
+    Directive: heterogeneous LDCs and LDCs on borrowed nearest nodes are
+    drawn hollow and excluded from the correlation (they would inflate n
+    or mix unlike territories).
+    """
+    if method == "in_polygon" and not heterogeneous:
+        return "filled"
+    return "hollow"
+
+
+def page4():
+    signal = pd.read_csv(PROCESSED / "ldc_node_signal.csv")
+    signal["owner_status"] = signal["owner_status"].fillna("").str.strip()
+    approved = signal[signal["owner_status"].str.lower() == "approved"].copy()
+    n_approved = len(approved)
+
+    daily = pd.read_csv(PROCESSED / "lmp_node_daily.csv", usecols=["date"])
+    dates = pd.to_datetime(daily["date"]).dt.date
+    window_end = dates.max().isoformat()
+    window_start = (dates.max() - timedelta(days=31)).isoformat()
+    window = f"{window_start} to {window_end}"
+
+    x_label = ("Wholesale locational premium: mean day-ahead LMP minus "
+               f"OZP ($/MWh), load nodes, {window}")
     caption_base = (
-        "x-axis: LDC-level wholesale signal = mean 30-day congestion of "
-        "the LMP node(s) inside the LDC polygon, else the nearest node "
-        "within 30 km (EPSG:3161). Multi-zone/residual LDCs (Hydro One) are "
-        "excluded from the correlation. y-axis: net-metered capacity per "
-        "1,000 customers (OEB RRR 2.1.2 Table 1 only). Review assignments "
-        "are not findings before owner approval. No causal claim is made. "
+        f"x-axis: {x_label}. The premium is the LDC's equal-weighted mean "
+        "over its load nodes of the per-node mean over matched hours of "
+        "(DA LMP_h - DA OZP_h); nodes need 15 matched days. The premium is "
+        "mostly marginal losses (about 0.97 correlation with the loss "
+        "component); congestion is near zero at most nodes in this window. "
+        "The window is a roughly 32-day shoulder-season sample and not "
+        "annual. y-axis: net-metered capacity per 1,000 customers (OEB RRR "
+        "2.1.2 Table 1 only). Hollow markers are approved LDCs excluded "
+        "from the correlation (heterogeneous or borrowed nearest node). "
+        "No causal claim is made. "
         f"{ANALYST}")
 
-    if n == 0:
-        rows = "".join(
-            f"<tr><td>{r['licence_no']}</td><td>{r['utility_name']}</td>"
-            f"<td>{r['n_nodes']}</td><td>{r['method']}</td>"
-            f"<td>{r['mean_congestion']:.3f}</td></tr>"
-            for _, r in review.iterrows())
-        body = (f"<div class='card'><strong>Awaiting owner review.</strong> "
-                f"No rows have owner_status = approved, so no chart is "
-                f"drawn. n = 0 approved rows.</div>"
-                f"<p><b>Rows under owner review (not findings):</b></p>"
-                f"<table class='preview'><tr><th>Licence</th><th>LDC</th>"
-                f"<th>Nodes</th><th>Method</th><th>Mean congestion "
-                f"$/MWh</th></tr>{rows}</table>")
-        status = ("0 approved rows — awaiting owner review. "
-                  "Unreviewed rows are never plotted as findings.")
+    if n_approved == 0:
+        body = ("<div class='card'><strong>No approved LDCs.</strong> "
+                "No rows have owner_status = approved, so no chart is "
+                "drawn.</div>")
+        status = "0 approved rows."
         write_page(CHARTS / "page4_adoption_vs_signal.html",
-                   "Adoption vs wholesale signal",
+                   "Where DER is growing vs where wholesale energy is priced "
+                   "above or below the provincial average",
                    "Adoption vs wholesale signal", status, body,
                    caption_base)
         return {"approved": 0}
 
-    signal = pd.read_csv(PROCESSED / "ldc_node_signal.csv")
     adoption = pd.read_csv(PROCESSED / "ldc_adoption.csv")
     adoption["nm_per_1000"] = (
         adoption["netmetered_capacity_mw"] / adoption["customers"] * 1000.0)
-    df = (approved[["licence_no", "utility_name", "customers",
-                    "owner_status"]]
-          .merge(signal, on=["licence_no", "utility_name"])
-          .merge(adoption[["licence_no", "nm_per_1000"]], on="licence_no"))
-    df = df[~df["exclude_from_correlation"]]
-    df = df.dropna(subset=["mean_congestion", "nm_per_1000"])
-    n = len(df)
+    df = approved.merge(adoption[["licence_no", "nm_per_1000"]],
+                        on="licence_no")
+    df = df.dropna(subset=["mean_premium", "nm_per_1000"])
+    # Correlation set: filled markers only -- in-polygon, non-heterogeneous
+    # approved LDCs. Hollow markers (heterogeneous or borrowed nearest
+    # node) are drawn for transparency but excluded from the correlation.
+    df["marker"] = [page4_marker_style(m, h)
+                    for m, h in zip(df["method"], df["heterogeneous"])]
+    corr = df[df["marker"] == "filled"]
+    n = len(corr)
 
     fig = go.Figure()
-    fig.add_trace(go.Scatter(
-        x=df["mean_congestion"], y=df["nm_per_1000"], mode="markers+text",
-        text=df["utility_name"], textposition="top center",
-        customdata=df[["licence_no", "n_nodes", "method"]].values,
-        hovertemplate=(
-            "%{text}<br>signal: %{x:.3f} $/MWh<br>"
-            "net-metered: %{y:.3f} MW/1000 customers<br>"
-            "%{customdata[1]:.0f} node(s), %{customdata[2]}<extra></extra>"),
-        name="approved LDCs"))
+    for marker, sub in (("filled", df[df["marker"] == "filled"]),
+                        ("hollow", df[df["marker"] == "hollow"])):
+        if not len(sub):
+            continue
+        filled = marker == "filled"
+        fig.add_trace(go.Scatter(
+            x=sub["mean_premium"], y=sub["nm_per_1000"],
+            mode="markers+text", text=sub["utility_name"],
+            textposition="top center",
+            marker=dict(
+                color="rgba(31,119,180,1)" if filled else "rgba(0,0,0,0)",
+                line=dict(color="rgba(31,119,180,1)", width=2),
+                size=10),
+            customdata=sub[["licence_no", "n_nodes", "method",
+                            "mean_congestion", "mean_loss"]].values,
+            hovertemplate=(
+                "%{text}<br>premium: %{x:.3f} $/MWh<br>"
+                "net-metered: %{y:.3f} MW/1000 customers<br>"
+                "%{customdata[1]:.0f} load node(s), %{customdata[2]}<br>"
+                "congestion %{customdata[3]:.3f}, loss %{customdata[4]:.3f} "
+                "$/MWh (tooltip only)<extra></extra>"),
+            name=("Approved LDCs" if filled
+                  else "Approved, excluded from correlation")))
     corr_text = ""
     if n >= 8:
-        rho = spearman(df["mean_congestion"], df["nm_per_1000"])
+        rho = spearman(corr["mean_premium"], corr["nm_per_1000"])
         corr_text = f" Spearman rho = {rho:.2f} (n = {n})."
     fig.update_layout(
-        title=f"Adoption vs wholesale signal — {n} approved LDCs",
-        xaxis_title="LDC wholesale signal: mean 30-day congestion ($/MWh)",
+        title=("Where DER is growing vs where wholesale energy is priced "
+               f"above or below the provincial average (n = {n})"),
+        xaxis_title=x_label,
         yaxis_title="Net-metered MW per 1,000 customers (Table 1)")
     div = chart_div(fig, "page4-scatter")
 
-    status = f"{n} approved rows plotted.{corr_text}"
+    status = (f"{n_approved} approved LDCs plotted "
+              f"({n} in correlation).{corr_text}")
     write_page(CHARTS / "page4_adoption_vs_signal.html",
-               "Adoption vs wholesale signal",
+               "Where DER is growing vs where wholesale energy is priced "
+               "above or below the provincial average",
                "Adoption vs wholesale signal", status, div, caption_base)
-    return {"approved": n}
+    return {"approved": n_approved, "n_correlation": n,
+            "spearman": corr_text}
 
 
 def main():
