@@ -7,7 +7,7 @@
   "expected_hours": 1848,
   "coverage_pct": 100.0,
   "join_dropped_timestamps": 10584,
-  "as_of": "2026-10-02",
+  "as_of": "2026-10-03",
   "tariff_terms": [
     "2024-11-01 to 2025-10-31",
     "2025-11-01 to 2026-10-31"
