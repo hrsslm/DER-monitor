@@ -1,5 +1,5 @@
 phase,dataset,action,record_id,count,note
-2A,value_preview,run,2026-07-01..2026-09-16,1848,"10632 timestamps dropped in join; label=summer preview, not annual; no headline gap metric"
+2A,value_preview,run,2026-07-01..2026-09-16,1848,"10656 timestamps dropped in join; label=summer preview, not annual; no headline gap metric"
 2C,ieso_node_locations,suspect_coordinate_quarantined,CUMBERLAND-LT.LFBQ,1,"node more than 25 km from every sibling sharing its name stem (or the explicit NORTHBAY finding); coordinate kept as-is, node excluded from the signal"
 2C,ieso_node_locations,suspect_coordinate_quarantined,CUMBERLAND-LT.TT12_LF,1,"node more than 25 km from every sibling sharing its name stem (or the explicit NORTHBAY finding); coordinate kept as-is, node excluded from the signal"
 2C,ieso_node_locations,suspect_coordinate_quarantined,NORTHBAY-LT.TT_LF,1,"node more than 25 km from every sibling sharing its name stem (or the explicit NORTHBAY finding); coordinate kept as-is, node excluded from the signal"
@@ -8,8 +8,8 @@ phase,dataset,action,record_id,count,note
 2C,ldc_zone_crosswalk,ldc_without_zoned_nodes,"ED-2002-0493,ED-2002-0499,ED-2002-0500,ED-2002-0511,ED-2002-0520,ED-2002-0540,ED-2002-0542,ED-2002-0544,ED-2002-0554,ED-2002-0577,ED-2003-0003,ED-2003-0015,ED-2003-0027,ED-2003-0028,ED-2003-0033,ED-2003-0079,ED-2023-0202,ED-2023-0262",18,"LDC polygons containing no zoned LMP nodes; no crosswalk rows, left for owner review"
 2C,node_coordinates,excluded_missing,no_coordinates,33,1022/1055 LMP nodes have coordinates; nodes without are excluded from crosswalk voting
 2C,node_zone_report,skipped_missing_source,PUB_NodeZoneMap,1,"PUB_NodeZoneMap.xml/csv still 404 on 2026-09-30; ladder step 1 skipped, Capacity Auction Zone Table used instead"
-2C,rolling_window,computed,2026-09-04_to_2026-10-05,1054,per-node window stats from the compact daily store: mean_premium is the hour-weighted mean over matched hours of (LMP_h - OZP_h); nodes below 15 matched days dropped; negatives kept; no zone aggregation per stop condition
-2C,rolling_window,dropped_below_15_days,JBLCTS-LT.LFB13,1,nodes with fewer than 15 matched days in 2026-09-04..2026-10-05 excluded from the signal
+2C,rolling_window,computed,2026-09-05_to_2026-10-06,1054,per-node window stats from the compact daily store: mean_premium is the hour-weighted mean over matched hours of (LMP_h - OZP_h); nodes below 15 matched days dropped; negatives kept; no zone aggregation per stop condition
+2C,rolling_window,dropped_below_15_days,JBLCTS-LT.LFB13,1,nodes with fewer than 15 matched days in 2026-09-05..2026-10-06 excluded from the signal
 2C,zone_aggregation,stop_condition_fired,non_inferred_coverage,572,"non-inferred node-to-zone coverage 54.2% (572/1055) below 90%; k=3 inference NOT applied, no zone aggregation; Page 3 falls back to the node-level view"
 2C,zone_table,ambiguous_base_excluded,CUMBERLAND,1,station base(s) claimed by stations in different zones; excluded from matching
 2b,ldc_adoption,excluded_no_value,ED-2001-0090,0,"owner decision exclude_no_rrr (or no RRR name match): reported=False, no metric"
