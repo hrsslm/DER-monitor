@@ -2,4 +2,4 @@ zone_method,n_nodes,note
 node_zone_report,0,PUB_NodeZoneMap 404 (not public)
 capacity_auction_table,572,conservative longest-prefix station match
 k3_inference,0,not applied: stop condition fired
-unassigned,483,mostly generator/intertie-style nodes absent from the station table
+unassigned,497,mostly generator/intertie-style nodes absent from the station table
